@@ -1,13 +1,15 @@
 TARGET=mapf
 CC=g++
-CFLAGS=-g -Wall -Wextra
+CFLAGS=-g -Wall -Wextra -w
 
-all: state
-	${CC} ${CFLAGS} *.o -o ${TARGET} 
+all: state grid
+	${CC} ${CFLAGS} main.cpp *.o -o ${TARGET} 
 
 debug:
 	${CC} ${CFLAGS} -c debug.cpp
 
+grid:
+	${CC} ${CFLAGS} -c Grid.cpp
 state:
 	${CC} ${CFLAGS} -c State.cpp
 

@@ -1,36 +1,25 @@
 #ifndef STATE_H
 #define STATE_H
 
-#define DIM 4
+#include "Grid.h"
 
-#include <string>
-
-enum Card {	NORTH, SOUTH, EAST, WEST, WAIT};
-
-struct Point {
-	int x;
-	int y;
-	Point(int posx, int posy): x(posx), y(posy) {}
+struct Move {
+	Card	dir;
+	int	p;
+	Move(Card dir, int p):dir(dir),p(p) { };
 };
 
-class Grid {
-public:
-	bool* adj(const Point& pos) const;
+class State {
+public: 
 	void display(void);
-
-	Grid(int dimX, int dimY, Point** blocklist, int listlen);
-	~Grid();
-
+	State(Point* init, int n);
+	State(int n, const State& parent, const Move& move);
+	~State();
 private:
-	bool**	grid;
-	int	dimX;
-	int	dimY;	
+	int 	n;
+	const	State* parent;
+	Point*	pre_move;
+	Point*	post_move;
 };
-
-
-inline
-bool pointEquals(Point* p1, int i, int j) {
-	return (p1->x == i && p1->y == j);
-}
 
 #endif //STATE_H
