@@ -3,6 +3,10 @@
 
 #include "Grid.h"
 
+
+#include <iostream>
+using namespace std;
+
 struct Move {
 	Card	dir;
 	int	p;
@@ -11,9 +15,10 @@ struct Move {
 
 class State {
 public: 
-	void display(void);
+	void display(void);	// Display pre-moves and post-moves for ea. agent
 	int h(Point* goal);	// Heuristic value to goal
 	int g(void);	// Cost from root
+	Point* get_pos(int id);	// Get pre-move pos of agent id
 
 	State(Point* init, int n);
 	State(int n, const State& parent, const Move& move);
@@ -46,12 +51,17 @@ int State::g(void) {
 	return cost;
 }
 
+inline
+Point* State::get_pos(int id) {
+	return (id >= 0 && id < n) ? &pre_move[id] : NULL;
+}
 
 inline
 void State::increment_step(void) {
 	for (int i=0; i<n; i++)
 		pre_move[i] = post_move[i];
-	cost++;
+
+	cout << "\nNext step\n";
 }
 
 

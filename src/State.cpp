@@ -5,8 +5,8 @@ using namespace std;
 
 void State::display(void) {
 	for (int i=0; i<n; i++) {
-		cout << "(" << pre_move[i].x << "," << pre_move[i].y << ") ";
-		cout << "(" << post_move[i].x << "," << post_move[i].y << ")";
+		cout << "Pre=(" << pre_move[i].x << "," << pre_move[i].y << ") ";
+		cout << "Post=(" << post_move[i].x << "," << post_move[i].y << ")";
 		cout << endl;
 	}
 }
@@ -16,7 +16,7 @@ State::State(int n, const State& parent, const Move& move): n(n) {
 	this->parent = &parent;
 	int pid = move.p;
 
-	cost = parent.cost;
+	cost = parent.cost+1;
 	pre_move = new Point[n];
 	post_move = new Point[n];
 
