@@ -3,6 +3,7 @@
 #include <iostream>
 using namespace std;
 
+// Return array of booleans for valid moves
 bool* Grid::adj(const Point& pos) const {
 	int x = pos.x;
 	int y = pos.y;

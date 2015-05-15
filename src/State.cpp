@@ -12,11 +12,11 @@ void State::display(void) {
 }
 
 
-State::State(int n, const State& parent, const Move& move): n(n)
-{ 
+State::State(int n, const State& parent, const Move& move): n(n) { 
 	this->parent = &parent;
 	int pid = move.p;
 
+	cost = parent.cost;
 	pre_move = new Point[n];
 	post_move = new Point[n];
 
@@ -40,10 +40,12 @@ State::State(int n, const State& parent, const Move& move): n(n)
 		break;
 	default:;
 	}	
+	if (pid == n-1)	
+		increment_step();
 }
 
 // Specify initial state
-State::State(Point* init, int n): n(n) {
+State::State(Point* init, int n): n(n), cost(0) {
 	pre_move = new Point[n];
 	post_move = new Point[n];
 	for (int i=0; i<n; i++) {
