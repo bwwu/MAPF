@@ -1,3 +1,7 @@
+# Introduction
+An implementation of Multi-agent pathfinding using
+A* with Operator Decomposition (OD)
+
 ##Completed
 * A* BFS
 

@@ -1,9 +1,11 @@
 #ifndef STATE_H
 #define STATE_H
+/* Describes Search State
+		For A* search with Operator Decomposition
+		pre_move[n] and post_move[n] contains array of positions
+		for n players */
 
 #include "Grid.h"
-
-
 #include <iostream>
 using namespace std;
 
@@ -19,7 +21,8 @@ public:
 	int h(Point* goal);	// Heuristic value to goal
 	int g(void);	// Cost from root
 	Point* get_pos(int id);	// Get pre-move pos of agent id
-
+	
+	/**** Constructors ****/
 	State(Point* init, int n);
 	State(int n, const State& parent, const Move& move);
 	~State();

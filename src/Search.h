@@ -1,3 +1,11 @@
+#ifndef SEARCH_H
+#define SEARCH_H
+
+/* Implements A* exploration on a grid 
+		Maintains open list of search nodes and a goal state*/
+
+
+
 #include "State.h"
 
 #include <vector>
@@ -31,3 +39,5 @@ private:
 
 	vector<Node*> open;	//Open list
 };
+
+#endif //SEARCH_H
