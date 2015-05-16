@@ -33,8 +33,7 @@ void testSearch1() {
 	Point p1(0,0);
 	Point g1(4,4);
 	Search s(1, &p1, &g1, &g);
-	s.expand();
-	s.expand();
-	s.expand();
-	s.expand();
+
+	while (!s.expand());
+	
 }

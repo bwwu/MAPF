@@ -60,8 +60,6 @@ inline
 void State::increment_step(void) {
 	for (int i=0; i<n; i++)
 		pre_move[i] = post_move[i];
-
-	cout << "\nNext step\n";
 }
 
 

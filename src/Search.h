@@ -14,7 +14,7 @@ struct Node {
 
 class Search {
 public:
-	void expand(void);
+	bool expand(void);	// Return TRUE if goal is expanded
 	
 	
 	Search(int n, Point* init, Point* goal, Grid* g);
@@ -22,7 +22,8 @@ public:
 
 
 private:
-	Node* generate(Node* p, int dir);	// Generate child of node
+	Node*	generate(Node* p, int dir);	// Generate child of node
+	bool	is_goal(Node* nd);	// Return TRUE if nd is goal node
 
 	int 	n;
 	Grid* 	grid;

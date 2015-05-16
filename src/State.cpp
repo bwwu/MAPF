@@ -16,6 +16,8 @@ State::State(int n, const State& parent, const Move& move): n(n) {
 	this->parent = &parent;
 	int pid = move.p;
 
+	//cout << "N = " << n << endl;
+
 	cost = parent.cost+1;
 	pre_move = new Point[n];
 	post_move = new Point[n];
