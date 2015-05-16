@@ -1,8 +1,8 @@
+#include "Search.h"
 #include <limits>
+#include <list>
 #include <iostream>
 using namespace std;
-
-#include "Search.h"
 
 Search::Search(int n, Point* init, Point* goal, Grid* g):
 	n(n), goal(goal), grid(g) {
@@ -18,8 +18,7 @@ Search::Search(int n, Point* init, Point* goal, Grid* g):
 
 Search::~Search() {}
 
-bool
-Search::expand(void) {
+bool Search::expand(void) {
 	//cout << "Expanding\n========\n";
 	/* Choose node on open with min f cost */
 	int min = std::numeric_limits<int>::max();
@@ -74,6 +73,7 @@ Node* Search::generate(Node* p, int dir) {
 	child->turn = (p->turn+1 == n) ? 0 : p->turn+1;
 	child->s = new State(n, *(p->s), m);
 	child->f = p->s->g() + child->s->h(goal);
+	child->dir = dir;
 
 	/**** Debug ****
 	cout << "Generating move for Agent: " + (p->turn) <<
@@ -95,5 +95,36 @@ bool Search::is_goal(Node* nd) {
 			return false;
 	}
 	cout << "Found goal with cost " << nd->s->g() << "!\n";
+	backtrace(nd);
 	return true;
 }
+
+void Search::backtrace(Node* walk) {
+	if (!walk) return;
+	list<int> moves;
+		
+	do {
+		moves.push_front(walk->dir);	// dir that the parent
+		walk = walk->p;
+	} while (walk->p);
+
+	auto it = moves.begin();
+	for (it; it != moves.end(); it++)
+		switch((Card) *it) {
+		case NORTH:
+			cout << "North\n";
+			break;
+		case SOUTH:
+			cout << "South\n";
+			break;
+		case EAST:
+			cout << "East\n";
+			break;
+		case WEST:
+			cout << "West\n";
+		case WAIT:
+			cout << "Wait\n";
+		}
+}
+
+

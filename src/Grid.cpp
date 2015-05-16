@@ -1,5 +1,4 @@
 #include "Grid.h"
-
 #include <iostream>
 using namespace std;
 
@@ -17,19 +16,13 @@ bool* Grid::adj(const Point& pos) const {
 	adj[SOUTH] = y > 1 && grid[x][y-1];
 	adj[WEST] = x > 1 && grid[x-1][y];
 
-	/*
-
-	for (int i=0;i<DIM;i++) 
+	/*	for (int i=0;i<DIM;i++) 
 		cout << ((adj[i]) ? 1:0);
-	cout << endl;
-	*/
-
+	cout << endl; */
 
 	return adj;
 }
 		
-
-
 Grid::Grid(int x, int y, Point** blocklist, int listlen): dimX(x),dimY(y) {
 	Point** end	= blocklist + listlen;
 	grid = new bool*[dimX];
@@ -44,7 +37,6 @@ Grid::Grid(int x, int y, Point** blocklist, int listlen): dimX(x),dimY(y) {
 				grid[i][j] = true;
 		}
 	}
-
 }
 
 Grid::~Grid() {
