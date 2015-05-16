@@ -1,5 +1,6 @@
 ##Completed
 * A* BFS
+
 ##Todo
 * IDA*
 * Multi-agent colllision detection
