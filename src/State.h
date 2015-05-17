@@ -19,9 +19,10 @@ class State {
 public: 
 	void display(void);	// Display pre-moves and post-moves for ea. agent
 	int h(Point* goal);	// Heuristic value to goal
-	int g(void);	// Cost from root
+	int g(void);		// Cost from root
+	bool*	valid_moves(int, Grid*);	// list of valid moves for agent n
 	Point* get_pos(int id);	// Get pre-move pos of agent id
-	
+
 	/**** Constructors ****/
 	State(Point* init, int n);
 	State(int n, const State& parent, const Move& move);
@@ -34,6 +35,7 @@ private:
 	Point*	post_move;
 
 	void increment_step();
+	Point* collision(Point* p, int agent, bool post);
 };
 
 // Heuristic value -- Manhattan distance

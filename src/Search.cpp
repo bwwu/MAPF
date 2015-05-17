@@ -39,7 +39,6 @@ bool Search::expand(void) {
 		cout << "ERROR: NULL chosen for expansion\n";
 		return false;
 	}
-	
 	open.erase(del);	// Remove from open list
 
 	/* Check if node chosen for exp is goal */
@@ -48,20 +47,27 @@ bool Search::expand(void) {
 
 	/* Get adj list for position of agent about to move */
 	int turn = nd->turn;
-	Point* pt = nd->s->get_pos(turn);
-	bool* adjm = (pt) ? grid->adj(*pt) : NULL;
+//	Point* pt = nd->s->get_pos(turn);
+//	bool* adjm = (pt) ? grid->adj(*pt) : NULL;
+//
+//	if (!adjm) {
+//		cout << "ERROR\n";
+//		return false;
+//	}	
+//	for (int i=0; i<DIM; i++) 
+//		if (adjm[i]) {
+//			open.push_back(generate(nd, i));
+//		}
+//	open.push_back(generate(nd, WAIT));
+//
+//	delete [] adjm;
+	bool* valid_m = nd->s->valid_moves(turn, grid);
+	for (int i=0; i<DIM+1;i++) {
+		if (valid_m[i]) 
+			open.push_back(generate(nd,i));
+	}
 
-	if (!adjm) {
-		cout << "ERROR\n";
-		return false;
-	}	
-	for (int i=0; i<DIM; i++) 
-		if (adjm[i]) {
-			open.push_back(generate(nd, i));
-		}
-	open.push_back(generate(nd, WAIT));
-
-	delete [] adjm;
+	delete [] valid_m;
 	return false;
 }
 
@@ -75,7 +81,7 @@ Node* Search::generate(Node* p, int dir) {
 	child->f = p->s->g() + child->s->h(goal);
 	child->dir = dir;
 
-	/**** Debug ****
+	/****Debug****
 	cout << "Generating move for Agent: " + (p->turn) <<
 		" In direction: " << dir << "\n\tFrom: ";
 	child->p->s->display();

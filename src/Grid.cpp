@@ -11,10 +11,10 @@ bool* Grid::adj(const Point& pos) const {
 
 	bool* adj = new bool[DIM];
 
-	adj[NORTH] = y <= dimY-1 && grid[x][y+1];
-	adj[EAST] = x <= dimX-1 && grid[x+1][y];
-	adj[SOUTH] = y > 1 && grid[x][y-1];
-	adj[WEST] = x > 1 && grid[x-1][y];
+	adj[NORTH] = y < dimY-1 && grid[x][y+1];
+	adj[EAST] = x < dimX-1 && grid[x+1][y];
+	adj[SOUTH] = y >= 1 && grid[x][y-1];
+	adj[WEST] = x >= 1 && grid[x-1][y];
 
 	/*	for (int i=0;i<DIM;i++) 
 		cout << ((adj[i]) ? 1:0);
@@ -52,4 +52,25 @@ void Grid::display(void) {
 			cout << ((grid[i][j]) ? 1 : 0);
 		cout << endl;
 	}
+}
+
+/* Move direction -- return point resulting from moving direction dir */
+Point move_dir(Point* from, int dir) {
+	Point p(from->x, from->y);
+	switch(dir) {
+	case NORTH:
+		p.y++;
+		break;
+	case SOUTH:
+		p.y--;
+		break;
+	case EAST:
+		p.x++;
+		break;
+	case WEST:
+		p.x--;
+		break;
+	default:;
+	}
+	return p;
 }

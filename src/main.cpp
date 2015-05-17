@@ -7,11 +7,13 @@ using namespace std;
 
 void testState1();
 void testSearch1();
+void testSearch2();
 
 Point** gen_parr(int* list, int n);
 
 int main() {
 	testSearch1();
+	//testSearch2();
 	return 0;
 }
 
@@ -24,6 +26,21 @@ void testState1() {
 	c.display();
 
 	cout << sizeof(State) << endl;
+}
+
+void testSearch2() {
+	Point p(1,0);
+	Point init(0,0);
+	Point goal(2,0);	
+
+	Point* p_ptr = &p;
+	Grid g(3,3, &p_ptr, 1);
+	
+	g.display();
+
+	Search s(1, &init, &goal, &g);
+	while (!s.expand());
+
 }
 
 void testSearch1() {

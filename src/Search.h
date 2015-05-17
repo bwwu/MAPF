@@ -26,7 +26,6 @@ class Search {
 public:
 	bool expand(void);	// Return TRUE if goal is expanded
 	
-	
 	Search(int n, Point* init, Point* goal, Grid* g);
 	~Search();
 

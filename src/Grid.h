@@ -28,6 +28,7 @@ private:
 	int	dimY;	
 };
 
+Point move_dir(Point* from, int dir);
 
 inline
 bool pointEquals(Point* p1, int i, int j) {
