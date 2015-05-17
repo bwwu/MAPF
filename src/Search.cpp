@@ -1,6 +1,7 @@
 #include "Search.h"
 #include <limits>
 #include <list>
+#include <vector>
 #include <iostream>
 using namespace std;
 
@@ -107,30 +108,47 @@ bool Search::is_goal(Node* nd) {
 
 void Search::backtrace(Node* walk) {
 	if (!walk) return;
-	list<int> moves;
-		
-	do {
-		moves.push_front(walk->dir);	// dir that the parent
-		walk = walk->p;
-	} while (walk->p);
 
-	auto it = moves.begin();
-	for (it; it != moves.end(); it++)
-		switch((Card) *it) {
-		case NORTH:
-			cout << "North\n";
-			break;
-		case SOUTH:
-			cout << "South\n";
-			break;
-		case EAST:
-			cout << "East\n";
-			break;
-		case WEST:
-			cout << "West\n";
-		case WAIT:
-			cout << "Wait\n";
-		}
+	
+	do {
+		cout << "\nMove " << walk->dir << endl;
+		cout << "Agent " << walk->p->turn << endl;
+		walk = walk->p;
+	} while (walk->p); 
+
+//	vector<int> moves;
+//		
+//	do {
+//		moves.push_back(walk->dir);	// dir that the parent
+//		walk = walk->p;
+//	} while (walk->p);
+//
+//
+//	for (int i=0; i<n; i++) {
+//		cout << "Player " << i << " moves\n";
+//		for (int j = (moves.size()/n); j>=0; j--) {
+//			int it = moves[j*n+i];
+//		//auto it = moves[i].begin();
+//		//for (it; it != moves[0].end(); it++)
+//			switch((Card) it ) {
+//			case NORTH:
+//				cout << "North\n";
+//				break;
+//			case SOUTH:
+//				cout << "South\n";
+//				break;
+//			case EAST:
+//				cout << "East\n";
+//				break;
+//			case WEST:
+//				cout << "West\n";
+//			case WAIT:
+//				cout << "Wait\n";
+//			}
+//		}
+//	}
+//
+	
 }
 
 

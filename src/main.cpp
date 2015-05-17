@@ -12,8 +12,8 @@ void testSearch2();
 Point** gen_parr(int* list, int n);
 
 int main() {
-	testSearch1();
-	//testSearch2();
+	//testSearch1();
+	testSearch2();
 	return 0;
 }
 
@@ -30,15 +30,18 @@ void testState1() {
 
 void testSearch2() {
 	Point p(1,0);
-	Point init(0,0);
-	Point goal(2,0);	
+
+	int init[] = {0,0,3,0};
+	int goal[] = {3,0,0,0};
+	//Point init(0,0);
+	//Point goal(2,0);	
 
 	Point* p_ptr = &p;
-	Grid g(3,3, &p_ptr, 1);
+	Grid g(4,4, &p_ptr, 1);
 	
 	g.display();
 
-	Search s(1, &init, &goal, &g);
+	Search s(2, (Point*)init, (Point*)goal, &g);
 	while (!s.expand());
 
 }
