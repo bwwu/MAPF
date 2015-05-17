@@ -8,13 +8,22 @@ using namespace std;
 void testState1();
 void testSearch1();
 void testSearch2();
+void testSearch3();
+void testGrid1();
 
 Point** gen_parr(int* list, int n);
 
 int main() {
+	//testGrid1();
 	//testSearch1();
-	testSearch2();
+	//testSearch2();
+	testSearch3();
 	return 0;
+}
+
+void testGrid1() {
+	Grid g1("test.txt");
+
 }
 
 void testState1() {
@@ -28,13 +37,20 @@ void testState1() {
 	cout << sizeof(State) << endl;
 }
 
+void testSearch3() {
+	int init[] = {9,0,10,3};
+	int goal[] = {5,3,3,1};
+	Grid g("../grids/g1.txt");
+	
+	Search s(2, (Point*) init, (Point*) goal, &g);
+	while(!s.expand());
+}
 void testSearch2() {
+
 	Point p(1,0);
 
 	int init[] = {0,0,3,0};
 	int goal[] = {3,0,0,0};
-	//Point init(0,0);
-	//Point goal(2,0);	
 
 	Point* p_ptr = &p;
 	Grid g(4,4, &p_ptr, 1);

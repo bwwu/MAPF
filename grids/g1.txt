@@ -1,0 +1,31 @@
+111111111111
+000010000001
+000110000011
+111111111111
+
+Player 0 moves
+West
+Wait
+West
+West
+West
+West
+West
+South
+South
+West
+Wait
+
+Player 1 moves
+East
+North
+East
+North
+North
+West
+West
+West
+West
+West
+West
+

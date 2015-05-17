@@ -1,5 +1,7 @@
 #include "Grid.h"
 #include <iostream>
+#include <fstream>
+#include <vector>
 using namespace std;
 
 // Return array of booleans for valid moves
@@ -37,6 +39,35 @@ Grid::Grid(int x, int y, Point** blocklist, int listlen): dimX(x),dimY(y) {
 				grid[i][j] = true;
 		}
 	}
+}
+
+Grid::Grid(string pathname) {
+	string	line;
+	ifstream	file(pathname);
+	vector<string> grid_u;	// Unformatted grid
+
+	if (file.is_open()) {
+		while (getline(file,line) && line.size()) {
+			cout << line << endl;
+			grid_u.push_back(line);
+		}
+		file.close();
+		cout << "------\n";
+	}
+	else cout << "ERROR. Could not open file " + pathname + "\n";
+	
+	dimX = grid_u.at(0).size();
+	dimY = grid_u.size();
+	
+	grid = new bool* [dimX];
+	for (int i=0; i<dimX; i++) {
+		grid[i] = new bool[dimY];
+		for (int j=0; j<dimY; j++) {
+			grid[i][j] = (grid_u[dimY-1-j][i] == '1');
+
+		}
+	}
+	display();
 }
 
 Grid::~Grid() {

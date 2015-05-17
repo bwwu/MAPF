@@ -4,7 +4,7 @@
 #define DIM 4
 
 #include <string>
-
+using namespace std;
 enum Card {	NORTH, SOUTH, EAST, WEST, WAIT};
 
 struct Point {
@@ -20,6 +20,7 @@ public:
 	void display(void);
 
 	Grid(int dimX, int dimY, Point** blocklist, int listlen);
+	Grid(string pathname);
 	~Grid();
 
 private:

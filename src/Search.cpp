@@ -110,44 +110,45 @@ void Search::backtrace(Node* walk) {
 	if (!walk) return;
 
 	
-	do {
-		cout << "\nMove " << walk->dir << endl;
-		cout << "Agent " << walk->p->turn << endl;
-		walk = walk->p;
-	} while (walk->p); 
-
-//	vector<int> moves;
-//		
 //	do {
-//		moves.push_back(walk->dir);	// dir that the parent
+//		cout << "\nMove " << walk->dir << endl;
+//		cout << "Agent " << walk->p->turn << endl;
 //		walk = walk->p;
-//	} while (walk->p);
-//
-//
-//	for (int i=0; i<n; i++) {
-//		cout << "Player " << i << " moves\n";
-//		for (int j = (moves.size()/n); j>=0; j--) {
-//			int it = moves[j*n+i];
-//		//auto it = moves[i].begin();
-//		//for (it; it != moves[0].end(); it++)
-//			switch((Card) it ) {
-//			case NORTH:
-//				cout << "North\n";
-//				break;
-//			case SOUTH:
-//				cout << "South\n";
-//				break;
-//			case EAST:
-//				cout << "East\n";
-//				break;
-//			case WEST:
-//				cout << "West\n";
-//			case WAIT:
-//				cout << "Wait\n";
-//			}
-//		}
-//	}
-//
+//	} while (walk->p); 
+
+	vector<int> moves;
+		
+	do {
+		moves.push_back(walk->dir);	// dir that the parent
+		walk = walk->p;
+	} while (walk->p);
+
+	int blocksize = moves.size()/n;
+	for (int i=0; i<n; i++) {
+		cout << "\nPlayer " << i << " moves\n";
+		for (int j = blocksize-1; j>=0; j--) {
+			int it = moves[j*n+i];
+		//auto it = moves[i].begin();
+		//for (it; it != moves[0].end(); it++)
+			switch((Card) it ) {
+			case NORTH:
+				cout << "North\n";
+				break;
+			case SOUTH:
+				cout << "South\n";
+				break;
+			case EAST:
+				cout << "East\n";
+				break;
+			case WEST:
+				cout << "West\n";
+				break;
+			case WAIT:
+				cout << "Wait\n";
+			}
+		}
+	}
+
 	
 }
 
