@@ -3,6 +3,10 @@
 000110000011
 111111111111
 
+Found goal with cost 22!
+	Elapsed Time = 52s
+	Num Expansions = 116742 nodes
+
 Player 0 moves
 West
 Wait

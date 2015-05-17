@@ -1,3 +1,5 @@
+/* Written by Brandon Wu */
+
 #include "Grid.h"
 #include "State.h"
 #include "Search.h"

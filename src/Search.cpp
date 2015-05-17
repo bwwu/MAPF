@@ -1,12 +1,15 @@
+/* Written by Brandon Wu */
+
 #include "Search.h"
 #include <limits>
 #include <list>
 #include <vector>
 #include <iostream>
+#include <ctime>
 using namespace std;
 
 Search::Search(int n, Point* init, Point* goal, Grid* g):
-	n(n), goal(goal), grid(g) {
+	n(n), goal(goal), grid(g), exp_cnt(1) {
 	
 	/*	Add initial state to open list */
 	Node* tmp = new Node;
@@ -15,6 +18,9 @@ Search::Search(int n, Point* init, Point* goal, Grid* g):
 	tmp-> f = tmp->s->h(goal);
 	tmp->turn = 0;
 	open.push_back(tmp);
+
+
+	time(&start_t);
 }
 
 Search::~Search() {}
@@ -48,20 +54,7 @@ bool Search::expand(void) {
 
 	/* Get adj list for position of agent about to move */
 	int turn = nd->turn;
-//	Point* pt = nd->s->get_pos(turn);
-//	bool* adjm = (pt) ? grid->adj(*pt) : NULL;
-//
-//	if (!adjm) {
-//		cout << "ERROR\n";
-//		return false;
-//	}	
-//	for (int i=0; i<DIM; i++) 
-//		if (adjm[i]) {
-//			open.push_back(generate(nd, i));
-//		}
-//	open.push_back(generate(nd, WAIT));
-//
-//	delete [] adjm;
+
 	bool* valid_m = nd->s->valid_moves(turn, grid);
 	for (int i=0; i<DIM+1;i++) {
 		if (valid_m[i]) 
@@ -75,6 +68,8 @@ bool Search::expand(void) {
 Node* Search::generate(Node* p, int dir) {
 	Node* child = new Node;
 	Move m((Card)dir, p->turn);
+	
+	exp_cnt++;	//Increment num of nodes expanded
 
 	child->p = p;
 	child->turn = (p->turn+1 == n) ? 0 : p->turn+1;
@@ -101,7 +96,11 @@ bool Search::is_goal(Node* nd) {
 		if (goal[i].x != p->x || goal[i].y != p->y)
 			return false;
 	}
+
+	time_t end_t = time(NULL);
 	cout << "Found goal with cost " << nd->s->g() << "!\n";
+	cout << "\tElapsed Time = " << difftime(end_t, start_t) << "s\n";
+	cout << "\tNum Expansions = " << num_expansions() << " nodes\n";
 	backtrace(nd);
 	return true;
 }

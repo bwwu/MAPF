@@ -1,3 +1,5 @@
+/* Written by Brandon Wu */
+
 #include "State.h"
 
 #include <string>

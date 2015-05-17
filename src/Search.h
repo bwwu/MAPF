@@ -1,3 +1,5 @@
+/* Written by Brandon Wu */
+
 #ifndef SEARCH_H
 #define SEARCH_H
 
@@ -24,7 +26,8 @@ struct Node {
 
 class Search {
 public:
-	bool expand(void);	// Return TRUE if goal is expanded
+	bool	expand(void);	// Return TRUE if goal is expanded
+	int	num_expansions(void);	// Return num of node expansion
 	
 	Search(int n, Point* init, Point* goal, Grid* g);
 	~Search();
@@ -36,10 +39,15 @@ private:
 	void backtrace(Node* w);	// Determine path from root to w
 
 	int 	n;
+	int	exp_cnt;	// Number of node expansions
+	time_t	start_t;	// Start time
 	Grid* 	grid;
 	Point* 	goal;
 
-	vector<Node*> open;	//Open list
+	vector<Node*> open;	// Open list
 };
+
+inline
+int Search::num_expansions(void) { return exp_cnt; }
 
 #endif //SEARCH_H

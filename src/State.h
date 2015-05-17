@@ -1,3 +1,5 @@
+/* Written by Brandon Wu */
+
 #ifndef STATE_H
 #define STATE_H
 /* Describes Search State
