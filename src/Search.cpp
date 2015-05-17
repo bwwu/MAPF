@@ -5,11 +5,12 @@
 #include <list>
 #include <vector>
 #include <iostream>
+#include <iomanip>
 #include <ctime>
 using namespace std;
 
 Search::Search(int n, Point* init, Point* goal, Grid* g):
-	n(n), goal(goal), grid(g), exp_cnt(1) {
+	n(n), init(init), goal(goal), grid(g), exp_cnt(1) {
 	
 	/*	Add initial state to open list */
 	Node* tmp = new Node;
@@ -98,25 +99,31 @@ bool Search::is_goal(Node* nd) {
 	}
 
 	time_t end_t = time(NULL);
+	double diff_t = difftime(end_t, start_t);
+	cout << fixed;
 	cout << "Found goal with cost " << nd->s->g() << "!\n";
-	cout << "\tElapsed Time = " << difftime(end_t, start_t) << "s\n";
+	cout << "\tElapsed Time = " << setprecision(8) << diff_t << "s\n";
 	cout << "\tNum Expansions = " << num_expansions() << " nodes\n";
-	backtrace(nd);
+
+	vector<int>* moves =  backtrace(nd);
+	for (int i=0; i<n; i++) {
+		cout << "Player " << i <<  " pos\n";
+		int* arr = reconstruct_path(i, moves[i]);
+		for (int j=0; j< moves[i].size()+1; j++) {
+			cout << arr[j] << " ";
+		}
+		cout << endl;
+		delete [] arr;
+	}
+	delete [] moves;
 	return true;
 }
 
-void Search::backtrace(Node* walk) {
-	if (!walk) return;
-
+vector<int>* Search::backtrace(Node* walk) {
+	if (!walk) return NULL;
 	
-//	do {
-//		cout << "\nMove " << walk->dir << endl;
-//		cout << "Agent " << walk->p->turn << endl;
-//		walk = walk->p;
-//	} while (walk->p); 
-
+	vector<int>* agent_moves = new vector<int>[n];
 	vector<int> moves;
-		
 	do {
 		moves.push_back(walk->dir);	// dir that the parent
 		walk = walk->p;
@@ -126,9 +133,8 @@ void Search::backtrace(Node* walk) {
 	for (int i=0; i<n; i++) {
 		cout << "\nPlayer " << i << " moves\n";
 		for (int j = blocksize-1; j>=0; j--) {
-			int it = moves[j*n+i];
-		//auto it = moves[i].begin();
-		//for (it; it != moves[0].end(); it++)
+			int it = moves[j*n+(n-1-i)];
+			agent_moves[i].push_back(it);
 			switch((Card) it ) {
 			case NORTH:
 				cout << "North\n";
@@ -147,8 +153,25 @@ void Search::backtrace(Node* walk) {
 			}
 		}
 	}
-
-	
+	return agent_moves;
 }
 
+int*	Search::reconstruct_path(int agent, const vector<int>& tr) {
+	if (agent >= n) return NULL;
 
+	/*
+	cout << "Trace\n";
+	for (int i=0; i<tr.size(); i++) 
+		cout << tr[i] << " ";
+	cout << endl; */
+
+	int* path = new int[tr.size()+1];
+	Point init_s = init[agent];
+	
+	for (int i=0; i<tr.size(); i++) {
+		path[i] = grid->hash_pt(&init_s);
+		init_s = move_dir(&init_s, tr[i]);
+	}
+	path[tr.size()] = grid->hash_pt(&init_s);
+	return path;
+}

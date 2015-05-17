@@ -25,7 +25,7 @@ bool* State::valid_moves(int agent, Grid* grid) {
 		else vld[i] = false;
 	}
 	delete [] adjm;
-//
+
 //	cout << "ADJ For Pt " << pt->x << "," << pt->y << endl;
 //	for (int i=0; i<DIM+1;i++)
 //		if (vld[i]) cout << "1";
@@ -52,6 +52,8 @@ Point* State::collision(Point* p, int agent, bool post) {
 	for (int i=0; i<n; i++) {
 		if (i != agent && p->x == cmp[i].x && p->y == cmp[i].y)
 			return &cmp[i];
+		if (post && i == agent)	// Only search agents already placed
+			return NULL;
 	}
 	
 	return NULL;

@@ -36,13 +36,16 @@ public:
 private:
 	Node*	generate(Node* p, int dir);	// Generate child of node
 	bool	is_goal(Node* nd);	// Return TRUE if nd is goal node
-	void backtrace(Node* w);	// Determine path from root to w
+	vector<int>* backtrace(Node* w);	// Determine path from root to w
+	
+	int*	reconstruct_path(int agent, const vector<int>& tr);
 
 	int 	n;
 	int	exp_cnt;	// Number of node expansions
 	time_t	start_t;	// Start time
 	Grid* 	grid;
-	Point* 	goal;
+	Point* 	goal;	// Set of goal states
+	Point*	init;	// Set of initial states
 
 	vector<Node*> open;	// Open list
 };

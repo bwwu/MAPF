@@ -18,8 +18,9 @@ struct Point {
 
 class Grid {
 public:
-	bool* adj(const Point& pos) const;
-	void display(void);
+	bool*	adj(const Point& pos) const;
+	int	hash_pt(Point* p);	
+	void	display(void);
 
 	Grid(int dimX, int dimY, Point** blocklist, int listlen);
 	Grid(string pathname);
@@ -34,8 +35,14 @@ private:
 Point move_dir(Point* from, int dir);
 
 inline
+int Grid::hash_pt(Point* p) {
+	return (p->x)*dimY + p->y;
+}
+
+inline
 bool pointEquals(Point* p1, int i, int j) {
 	return (p1->x == i && p1->y == j);
 }
+
 
 #endif //GRID_H
