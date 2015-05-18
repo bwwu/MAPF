@@ -34,6 +34,7 @@ void testMapf1() {
 
 	Mapf solver(2, (Point*) init, (Point*) goal, &grid);
 	solver.resolve_conflicts();
+	solver.resolve_conflicts();
 	
 }
 

@@ -1,3 +1,4 @@
+/* Written by Brandon Wu */
 #ifndef MAPF_H
 #define MAPF_H
 
@@ -16,12 +17,15 @@ struct agent_t {	// Agent type
 class Mapf {
 public:
 	Mapf(int n, Point* s_init, Point* s_goal, Grid* gd);
-	void resolve_conflicts(void);
+	bool resolve_conflicts(void);
 private:
 	int n;		// Num of agents
 	Grid* grid;
 	vector<agent_t> agentlist;	// List of agents
 	vector<vector<int>> groups;	// Independent groups
+
+	bool group_conflict(vector<int>* g1,vector<int>* g2,int len1,int len2);
+	bool path_conflict(vector<int>* p1, vector<int>* p2, int len);
 };
 
 #endif	// MAPF_H
