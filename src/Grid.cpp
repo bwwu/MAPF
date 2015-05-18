@@ -107,3 +107,21 @@ Point move_dir(Point* from, int dir) {
 	}
 	return p;
 }
+
+/* Return direction */
+string dir2str(int dir) {
+	switch(dir) {
+	case NORTH:
+		return "North";
+	case SOUTH:
+		return "South";
+	case EAST:
+		return "East";
+	case WEST:
+		return "West";
+	case WAIT:
+		return "Wait";
+	default:
+		return "";
+	}
+}

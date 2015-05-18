@@ -33,6 +33,7 @@ private:
 };
 
 Point move_dir(Point* from, int dir);
+string dir2str(int dir);
 
 inline
 int Grid::hash_pt(Point* p) {

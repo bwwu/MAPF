@@ -28,6 +28,7 @@ class Search {
 public:
 	bool	expand(void);	// Return TRUE if goal is expanded
 	int	num_expansions(void);	// Return num of node expansion
+	vector<int>* path(void);	// Retrieve the path found from goal
 	
 	Search(int n, Point* init, Point* goal, Grid* g);
 	~Search();
@@ -46,6 +47,8 @@ private:
 	Grid* 	grid;
 	Point* 	goal;	// Set of goal states
 	Point*	init;	// Set of initial states
+
+	Node*	current;	// Set to goal node if found (TODO: make current)
 
 	vector<Node*> open;	// Open list
 };

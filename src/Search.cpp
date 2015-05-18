@@ -10,8 +10,14 @@
 using namespace std;
 
 Search::Search(int n, Point* init, Point* goal, Grid* g):
-	n(n), init(init), goal(goal), grid(g), exp_cnt(1) {
+	n(n), init(init), grid(g), exp_cnt(1) {
 	
+	current = NULL;
+
+	this->goal = new Point[n];
+	for (int i=0; i<n; i++)
+		this->goal[i] = goal[i];
+
 	/*	Add initial state to open list */
 	Node* tmp = new Node;
 	tmp->p = NULL;
@@ -19,12 +25,14 @@ Search::Search(int n, Point* init, Point* goal, Grid* g):
 	tmp-> f = tmp->s->h(goal);
 	tmp->turn = 0;
 	open.push_back(tmp);
-
+	
 
 	time(&start_t);
 }
 
-Search::~Search() {}
+Search::~Search() {
+	delete [] goal;
+}
 
 bool Search::expand(void) {
 	//cout << "Expanding\n========\n";
@@ -100,11 +108,13 @@ bool Search::is_goal(Node* nd) {
 
 	time_t end_t = time(NULL);
 	double diff_t = difftime(end_t, start_t);
+	current = nd;	// Set goal node
 	cout << fixed;
 	cout << "Found goal with cost " << nd->s->g() << "!\n";
 	cout << "\tElapsed Time = " << setprecision(8) << diff_t << "s\n";
 	cout << "\tNum Expansions = " << num_expansions() << " nodes\n";
-
+	
+	/*
 	vector<int>* moves =  backtrace(nd);
 	for (int i=0; i<n; i++) {
 		cout << "Player " << i <<  " pos\n";
@@ -115,11 +125,14 @@ bool Search::is_goal(Node* nd) {
 		cout << endl;
 		delete [] arr;
 	}
-	delete [] moves;
+	delete [] moves; */
 	return true;
 }
 
 vector<int>* Search::backtrace(Node* walk) {
+	/* Returns array of vectors of moves for each agent
+	 *	moves[i] is a vector of moves for agent 'i'
+	 */
 	if (!walk) return NULL;
 	
 	vector<int>* agent_moves = new vector<int>[n];
@@ -135,6 +148,8 @@ vector<int>* Search::backtrace(Node* walk) {
 		for (int j = blocksize-1; j>=0; j--) {
 			int it = moves[j*n+(n-1-i)];
 			agent_moves[i].push_back(it);
+			cout << dir2str(it) + "\n";
+			/*
 			switch((Card) it ) {
 			case NORTH:
 				cout << "North\n";
@@ -150,7 +165,7 @@ vector<int>* Search::backtrace(Node* walk) {
 				break;
 			case WAIT:
 				cout << "Wait\n";
-			}
+			} */
 		}
 	}
 	return agent_moves;
@@ -174,4 +189,20 @@ int*	Search::reconstruct_path(int agent, const vector<int>& tr) {
 	}
 	path[tr.size()] = grid->hash_pt(&init_s);
 	return path;
+}
+
+vector<int>* Search::path(void) {
+	if (!current) return NULL;		
+	
+	vector<int>*	pos = new vector<int>[n];
+	vector<int>*	moves = backtrace(current);
+	
+	for (int i=0; i<n; i++) {
+		int* arr = reconstruct_path(i, moves[i]);
+		for (int j=0; j<moves[i].size()+1; j++) {
+			pos[i].push_back(arr[j]);
+		}
+		delete [] arr;
+	}
+	return pos;	// Return list of pos for ea agent in search
 }

@@ -3,6 +3,7 @@
 #include "Grid.h"
 #include "State.h"
 #include "Search.h"
+#include "Mapf.h"
 
 #include <iostream>
 using namespace std;
@@ -12,6 +13,7 @@ void testSearch1();
 void testSearch2();
 void testSearch3();
 void testGrid1();
+void testMapf1();
 
 Point** gen_parr(int* list, int n);
 
@@ -19,13 +21,24 @@ int main() {
 	//testGrid1();
 	//testSearch1();
 	//testSearch2();
-	testSearch3();
+	//testSearch3();
+	testMapf1();
 	return 0;
+}
+
+void testMapf1() {
+
+	int init[] = {9,0,10,3};
+	int goal[] = {5,3,3,1};
+	Grid grid("../grids/g1.txt");
+
+	Mapf solver(2, (Point*) init, (Point*) goal, &grid);
+	solver.resolve_conflicts();
+	
 }
 
 void testGrid1() {
 	Grid g1("test.txt");
-
 }
 
 void testState1() {
