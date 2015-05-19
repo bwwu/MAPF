@@ -2,6 +2,7 @@
 #include "Mapf.h"
 
 Mapf::Mapf(int n, Point* s_init, Point* s_goal, Grid* gd): n(n), grid(gd) {
+	num_exp = 0;
 	/* Begin with n singleton groups */
 	for (int i=0; i<n; i++) {
 		// Create an agent_t struct for each agent and group for ea agent
@@ -35,8 +36,10 @@ bool Mapf::resolve_conflicts(void) {
 		// Find solution on group
 		Search s(len, s_init, s_goal, grid);
 		while (!s.expand());
+	
+		num_exp += s.num_expansions();
 
-		vector<int>* g_paths = s.path();	// Get the soln path
+		vector<int>* g_paths = s.path(false);	// Get the soln path
 		id_paths[i] = g_paths; 
 
 

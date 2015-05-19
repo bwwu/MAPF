@@ -191,17 +191,20 @@ int*	Search::reconstruct_path(int agent, const vector<int>& tr) {
 	return path;
 }
 
-vector<int>* Search::path(void) {
+vector<int>* Search::path(bool print=false) {
 	if (!current) return NULL;		
 	
 	vector<int>*	pos = new vector<int>[n];
 	vector<int>*	moves = backtrace(current);
 	
 	for (int i=0; i<n; i++) {
+		if (print) cout << "Player " << i << endl;
 		int* arr = reconstruct_path(i, moves[i]);
 		for (int j=0; j<moves[i].size()+1; j++) {
+			if (print) cout << arr[j] << " ";
 			pos[i].push_back(arr[j]);
 		}
+		if (print) cout << endl;
 		delete [] arr;
 	}
 	return pos;	// Return list of pos for ea agent in search

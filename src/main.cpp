@@ -14,6 +14,7 @@ void testSearch2();
 void testSearch3();
 void testGrid1();
 void testMapf1();
+void testMapf2();
 
 Point** gen_parr(int* list, int n);
 
@@ -22,8 +23,28 @@ int main() {
 	//testSearch1();
 	//testSearch2();
 	//testSearch3();
-	testMapf1();
+	testMapf2();
 	return 0;
+}
+void testMapf2() {
+	/* 8 Agents */
+	int init[] = {0,0, 1,0, 2,0, 3,0, 4,0, 19,0, 18,0, 17,0} ;
+	int goal[] = {19,5, 18,3, 14,5, 7,5, 3,9, 8,9, 9,9, 15,9};
+	//int goal[] = {19,20, 18,20, 14,20, 7,20, 3,20, 8,20, 9,20, 15,20};
+	Grid grid("../grids/g2.txt");
+
+	Mapf m(2, (Point*) init, (Point*) goal, &grid);
+	Search s(2, (Point*) init, (Point*) goal, &grid);
+
+	cout << "======\nSolving with ID...\n";
+	while(m.resolve_conflicts());
+	
+	cout << "Total cost " << m.num_expansions() << endl;
+
+	cout << "=====\nSolving without ID...\n";
+	while(!s.expand());
+	s.path(true);
+	cout << "Total cost " << s.num_expansions() << endl;
 }
 
 void testMapf1() {
@@ -33,8 +54,10 @@ void testMapf1() {
 	Grid grid("../grids/g1.txt");
 
 	Mapf solver(2, (Point*) init, (Point*) goal, &grid);
-	solver.resolve_conflicts();
-	solver.resolve_conflicts();
+
+	while(solver.resolve_conflicts());
+	
+	cout << "Total Cost " << solver.num_expansions() << endl;
 	
 }
 

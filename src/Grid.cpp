@@ -50,11 +50,10 @@ Grid::Grid(string pathname) {
 
 	if (file.is_open()) {
 		while (getline(file,line) && line.size()) {
-			cout << line << endl;
+			//cout << line << endl;
 			grid_u.push_back(line);
 		}
 		file.close();
-		cout << "------\n";
 	}
 	else cout << "ERROR. Could not open file " + pathname + "\n";
 	
