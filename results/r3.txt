@@ -1,0 +1,115 @@
+3 Agents 3x10 true distance
+
+0000111111
+1010101011
+1111111111
+BFS cost 11
+0000111111
+1010101011
+1111111111
+======
+Solving with ID...
+Found goal with cost 11!
+	Elapsed Time = 0.00000000s
+	Num Expansions = 39 nodes
+
+Player 0 moves
+East
+East
+East
+East
+East
+East
+East
+East
+East
+North
+North
+Group 0
+0 3 6 9 12 15 18 21 24 27 28 29 
+Found goal with cost 9!
+	Elapsed Time = 0.00000000s
+	Num Expansions = 33 nodes
+
+Player 0 moves
+East
+East
+East
+East
+East
+East
+East
+North
+North
+Group 1
+3 6 9 12 15 18 21 24 25 26 
+Found goal with cost 10!
+	Elapsed Time = 0.00000000s
+	Num Expansions = 34 nodes
+
+Player 0 moves
+South
+East
+East
+East
+East
+East
+East
+North
+North
+East
+Group 2
+1 0 3 6 9 12 15 18 19 20 23 
+Total cost 106
+=====
+Solving without ID...
+Found goal with cost 33!
+	Elapsed Time = 31.00000000s
+	Num Expansions = 93883 nodes
+
+Player 0 moves
+East
+East
+East
+East
+East
+East
+East
+East
+East
+North
+North
+
+Player 1 moves
+West
+East
+East
+East
+East
+East
+East
+East
+East
+North
+North
+
+Player 2 moves
+Wait
+South
+East
+East
+East
+East
+East
+East
+North
+North
+East
+Player 0
+0 3 6 9 12 15 18 21 24 27 28 29 
+Player 1
+3 0 3 6 9 12 15 18 21 24 25 26 
+Player 2
+1 1 0 3 6 9 12 15 18 19 20 23 
+Total cost 93883
+

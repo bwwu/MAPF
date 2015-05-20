@@ -10,11 +10,11 @@ deepening A* (IDA*) for lower space complexity.
 * Smarter checking of post-move collision
 * Prelim work for detecting conflict paths btw independent agents
 * Independence Detection (ID) implemented in Mapf module. 
+* Implemented True Distance Heuristic in Bfs module
 
 ##Todo
-* Replace Manhattan Distance with True Distance Heuristic.
 * Timing and expansion metrics
-* Some node expansions across all iterations
+* Reduce redundant node expansions across all iterations of ID
 * More testing for ID implementation
 * Multi-agent swap collisions
 * Prune branches (disallow reverse move)

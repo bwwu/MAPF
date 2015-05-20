@@ -23,7 +23,7 @@ Point** gen_parr(int* list, int n);
 void testBFS() { 
 
 	Grid g("../grids/g2.txt");
-	int arr[] = {0,0, 2,3};
+	int arr[] = {0,0, 9, 2};
 	Point* p = (Point*) arr;
 	Bfs bfs(p, p+1, &g);
 	cout << "BFS cost " << bfs.cost() << endl;
@@ -34,19 +34,20 @@ int main() {
 	//testSearch1();
 	//testSearch2();
 	//testSearch3();
+	testBFS();
 	testMapf2();
 	//testBFS();
 	return 0;
 }
 void testMapf2() {
 	/* 8 Agents */
-	int init[] = {0,0, 1,0, 2,0, 3,0, 4,0, 19,0, 18,0, 17,0} ;
-	int goal[] = {19,5, 18,3, 14,5, 7,5, 3,9, 8,9, 9,9, 15,9};
+	int init[] = {0,0, 1,0, 0,1, 3,0, 4,0, 19,0, 18,0, 17,0} ;
+	int goal[] = {9,2, 8,2, 7,2, 7,5, 3,9, 8,9, 9,9, 15,9};
 	//int goal[] = {19,20, 18,20, 14,20, 7,20, 3,20, 8,20, 9,20, 15,20};
 	Grid grid("../grids/g2.txt");
 
-	Mapf m(2, (Point*) init, (Point*) goal, &grid);
-	Search s(2, (Point*) init, (Point*) goal, &grid);
+	Mapf m(3, (Point*) init, (Point*) goal, &grid);
+	Search s(3, (Point*) init, (Point*) goal, &grid);
 
 	cout << "======\nSolving with ID...\n";
 	while(m.resolve_conflicts());
