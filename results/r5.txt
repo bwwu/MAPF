@@ -1,0 +1,115 @@
+10111
+11100
+10000
+11111
+======
+Solving with ID...
+Found goal with cost 7!
+	Elapsed Time = 0.00000000s
+	Num Expansions = 23 nodes
+
+Player 0 moves
+North
+North
+East
+East
+North
+East
+East
+Group 0
+0 1 2 6 10 11 15 19 
+Found goal with cost 12!
+	Elapsed Time = 0.00000000s
+	Num Expansions = 39 nodes
+
+Player 0 moves
+West
+West
+South
+South
+West
+West
+South
+South
+East
+East
+East
+East
+Group 1
+20 16 12 11 10 6 2 1 0 4 8 12 16 
+Conflict at t = 4. Value is 10
+Conflict found between Group 0 and 1. Merging...
+Found goal with cost 24!
+	Elapsed Time = 72.00000000s
+	Num Expansions = 118147 nodes
+
+Player 0 moves
+Wait
+North
+North
+East
+East
+North
+East
+East
+Wait
+West
+East
+Wait
+
+Player 1 moves
+South
+West
+West
+South
+West
+West
+South
+South
+East
+East
+East
+East
+Group 0
+0 0 1 2 6 10 11 15 19 19 15 19 19 
+20 19 15 11 10 6 2 1 0 4 8 12 16 
+Total cost 118209
+=====
+Solving without ID...
+Found goal with cost 24!
+	Elapsed Time = 134.00000000s
+	Num Expansions = 118147 nodes
+
+Player 0 moves
+Wait
+North
+North
+East
+East
+North
+East
+East
+Wait
+West
+East
+Wait
+
+Player 1 moves
+South
+West
+West
+South
+West
+West
+South
+South
+East
+East
+East
+East
+Player 0
+0 0 1 2 6 10 11 15 19 19 15 19 19 
+Player 1
+20 19 15 11 10 6 2 1 0 4 8 12 16 
+Total cost 118147
+
