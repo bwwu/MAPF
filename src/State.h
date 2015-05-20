@@ -8,6 +8,7 @@
 		for n players */
 
 #include "Grid.h"
+
 #include <iostream>
 using namespace std;
 
@@ -20,7 +21,9 @@ struct Move {
 class State {
 public: 
 	void display(void);	// Display pre-moves and post-moves for ea. agent
-	int h(Point* goal);	// Heuristic value to goal
+	int h(Point* goal);	// Manhattan Distance Heuristic
+	int h(Point* goal, Grid* g);	// True Distance Heuristic
+
 	int g(void);		// Cost from root
 	bool*	valid_moves(int, Grid*);	// list of valid moves for agent n
 	Point* get_pos(int id);	// Get pre-move pos of agent id

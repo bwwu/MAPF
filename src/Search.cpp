@@ -83,7 +83,10 @@ Node* Search::generate(Node* p, int dir) {
 	child->p = p;
 	child->turn = (p->turn+1 == n) ? 0 : p->turn+1;
 	child->s = new State(n, *(p->s), m);
-	child->f = p->s->g() + child->s->h(goal);
+
+	// Replace MANHATTAN DIST
+	child->f = p->s->g() + child->s->h(goal, grid);	// true dist
+	//child->f = p->s->g() + child->s->h(goal);	//manhatan
 	child->dir = dir;
 
 	/****Debug****

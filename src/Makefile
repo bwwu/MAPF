@@ -12,6 +12,6 @@ grid:
 state:
 	${CC} ${CFLAGS} -c State.cpp
 search:
-	${CC} ${CFLAGS} -c Search.cpp Mapf.cpp
+	${CC} ${CFLAGS} -c Search.cpp Mapf.cpp Bfs.cpp
 clean:
 	rm *.o ${TARGET}

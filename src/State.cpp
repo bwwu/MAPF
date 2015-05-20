@@ -1,7 +1,11 @@
 /* Written by Brandon Wu */
 
 #include "State.h"
+#include "Bfs.h"
 
+//#include "Search.h"
+
+#include <limits>
 #include <string>
 #include <iostream>
 using namespace std;
@@ -107,5 +111,18 @@ State::~State( ) {
 	delete [] post_move;
 }
 
-
+/* True distance heuristic */
+int State::h(Point* goal, Grid* grid) {
+	int dist = 0;
+	int max_int = numeric_limits<int>::max();
+	for (int i=0;i<n; i++) {
+		Point p_init = post_move[i];
+		Point p_goal = goal[i];
+		Bfs bfs(&p_init, &p_goal, grid);
+		if (bfs.cost() == max_int) 
+			return max_int;
+		dist += bfs.cost();
+	}
+	return dist;
+}
 

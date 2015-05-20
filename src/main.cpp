@@ -3,6 +3,7 @@
 #include "Grid.h"
 #include "State.h"
 #include "Search.h"
+#include "Bfs.h"
 #include "Mapf.h"
 
 #include <iostream>
@@ -18,12 +19,23 @@ void testMapf2();
 
 Point** gen_parr(int* list, int n);
 
+
+void testBFS() { 
+
+	Grid g("../grids/g2.txt");
+	int arr[] = {0,0, 2,3};
+	Point* p = (Point*) arr;
+	Bfs bfs(p, p+1, &g);
+	cout << "BFS cost " << bfs.cost() << endl;
+}
+
 int main() {
 	//testGrid1();
 	//testSearch1();
 	//testSearch2();
 	//testSearch3();
 	testMapf2();
+	//testBFS();
 	return 0;
 }
 void testMapf2() {
