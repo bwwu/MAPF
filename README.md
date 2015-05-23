@@ -13,6 +13,10 @@ deepening A* (IDA*) for lower space complexity.
 * Implemented True Distance Heuristic in Bfs module
 
 ##Todo
+* Make open list a heap
+* Store most recent standard node as parent to enable reverse move 
+detection
+* Pre-compute true distance heuristic
 * Timing and expansion metrics
 * Reduce redundant node expansions across all iterations of ID
 * More testing for ID implementation
