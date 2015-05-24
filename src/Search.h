@@ -33,7 +33,6 @@ public:
 	Search(int n, Point* init, Point* goal, Grid* g);
 	~Search();
 
-
 private:
 	Node*	generate(Node* p, int dir);	// Generate child of node
 	bool	is_goal(Node* nd);	// Return TRUE if nd is goal node

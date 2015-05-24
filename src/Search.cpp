@@ -7,7 +7,10 @@
 #include <iostream>
 #include <iomanip>
 #include <ctime>
+#include <algorithm>
 using namespace std;
+
+bool mincmp(Node*, Node*);
 
 Search::Search(int n, Point* init, Point* goal, Grid* g):
 	n(n), init(init), grid(g), exp_cnt(1) {
@@ -37,25 +40,34 @@ Search::~Search() {
 bool Search::expand(void) {
 	//cout << "Expanding\n========\n";
 	/* Choose node on open with min f cost */
-	int min = std::numeric_limits<int>::max();
+	//int min = std::numeric_limits<int>::max();
 	Node* nd = NULL;		//Node to expand
 
-	auto it = open.begin();
-	auto del = open.begin();
 
-	for (it; it < open.end(); it++) {
-		if((*it)->f <= min) {
-			min = (*it)->f;
-			del = it;
-			nd = *it;
-		}
-	}
+//	auto it = open.begin();
+//	auto del = open.begin();
+//
+//	for (it; it < open.end(); it++) {
+//		if((*it)->f <= min) {
+//			min = (*it)->f;
+//			del = it;
+//			nd = *it;
+//		}
+//	}
+//
+//	if (!nd) { 
+//		cout << "ERROR: NULL chosen for expansion\n";
+//		return false;
+//	}
+//	open.erase(del);	// Remove from open list
 
-	if (!nd) { 
+
+	if (open.empty()) {
 		cout << "ERROR: NULL chosen for expansion\n";
 		return false;
 	}
-	open.erase(del);	// Remove from open list
+	nd = *(open.begin());
+	open.erase(open.begin());
 
 	/* Check if node chosen for exp is goal */
 	if (is_goal(nd))
@@ -66,10 +78,19 @@ bool Search::expand(void) {
 
 	bool* valid_m = nd->s->valid_moves(turn, grid);
 	for (int i=0; i<DIM+1;i++) {
-		if (valid_m[i]) 
+		if (valid_m[i]) {
 			open.push_back(generate(nd,i));
+			make_heap(open.begin(), open.end(), mincmp);	// Min heap
+		}
 	}
+	//make_heap(open.begin(), open.end(), mincmp);	// Min heap
 
+	/* DEBUG */
+//	for (auto it = open.begin(); it != open.end(); it++) {
+//		cout << (*it)->f << " ";
+//	}	
+//	cout << " end of open\n";
+	/* DEBUG */
 	delete [] valid_m;
 	return false;
 }
@@ -88,15 +109,6 @@ Node* Search::generate(Node* p, int dir) {
 	child->f = p->s->g() + child->s->h(goal, grid);	// true dist
 	//child->f = p->s->g() + child->s->h(goal);	//manhatan
 	child->dir = dir;
-
-	/****Debug****
-	cout << "Generating move for Agent: " + (p->turn) <<
-		" In direction: " << dir << "\n\tFrom: ";
-	child->p->s->display();
-	cout << "\tTo: ";
-	child->s->display();
-	cout << "\t h(n) = " << child->f << endl;
-	**** Debug ****/
 
 	return child;
 }
@@ -152,23 +164,6 @@ vector<int>* Search::backtrace(Node* walk) {
 			int it = moves[j*n+(n-1-i)];
 			agent_moves[i].push_back(it);
 			cout << dir2str(it) + "\n";
-			/*
-			switch((Card) it ) {
-			case NORTH:
-				cout << "North\n";
-				break;
-			case SOUTH:
-				cout << "South\n";
-				break;
-			case EAST:
-				cout << "East\n";
-				break;
-			case WEST:
-				cout << "West\n";
-				break;
-			case WAIT:
-				cout << "Wait\n";
-			} */
 		}
 	}
 	return agent_moves;
@@ -211,4 +206,8 @@ vector<int>* Search::path(bool print=false) {
 		delete [] arr;
 	}
 	return pos;	// Return list of pos for ea agent in search
+}
+
+bool mincmp(Node* a, Node* b) {
+	return a->f > b->f;
 }

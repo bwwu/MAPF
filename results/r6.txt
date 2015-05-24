@@ -1,0 +1,87 @@
+000011111111111
+000000111100011
+100000101111111
+111111110000001
+111111111111111
+======
+Solving with ID...
+Found goal with cost 13!
+	Elapsed Time = 0.00000000s
+	Num Expansions = 150 nodes
+
+Player 0 moves
+East
+North
+East
+East
+East
+East
+East
+North
+North
+East
+East
+East
+South
+Group 0
+0 5 6 11 16 21 26 31 32 33 38 43 48 47 
+Found goal with cost 11!
+	Elapsed Time = 0.00000000s
+	Num Expansions = 120 nodes
+
+Player 0 moves
+East
+North
+East
+East
+East
+East
+North
+North
+East
+East
+South
+Group 1
+5 10 11 16 21 26 31 32 33 38 43 42 
+Total cost 270
+=====
+Solving without ID...
+Found goal with cost 26!
+	Elapsed Time = 18.00000000s
+	Num Expansions = 22250 nodes
+
+Player 0 moves
+East
+East
+East
+East
+North
+East
+East
+North
+North
+East
+East
+East
+South
+
+Player 1 moves
+East
+East
+East
+North
+East
+East
+North
+North
+East
+East
+South
+Wait
+Wait
+Player 0
+0 5 10 15 20 21 26 31 32 33 38 43 48 47 
+Player 1
+5 10 15 20 21 26 31 32 33 38 43 42 42 42 
+Total cost 22250
+
