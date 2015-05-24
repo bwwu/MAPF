@@ -5,7 +5,7 @@
 #include <queue>
 using namespace std;
 
-int reverse(int dir);	// Reverse a direction
+//int reverse(int dir);	// Reverse a direction
 
 void Bfs::search(void) {
 	queue<GNode> openlist;
@@ -58,5 +58,4 @@ int reverse(int dir) {
 	default:
 		return dir;
 	}
-
 }

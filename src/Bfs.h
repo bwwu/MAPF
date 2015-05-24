@@ -28,4 +28,6 @@ class Bfs {
 
 inline
 int Bfs::cost(void) { return solncost; }
+	
+int reverse(int dir);	// Return the reverse direction	
 #endif //BFS_H

@@ -65,8 +65,11 @@ Point* State::collision(Point* p, int agent, bool post) {
 
 /********* Constructors & Destructors *******/
 State::State(int n, const State& parent, const Move& move): n(n) { 
-	this->parent = &parent;
 	int pid = move.p;
+	if (pid)	// If agent id != 0
+		this->parent = (&parent)->parent;
+	else this->parent = &parent;
+
 
 	cost = parent.cost+1;
 	pre_move = new Point[n];

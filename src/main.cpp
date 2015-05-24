@@ -46,8 +46,8 @@ void testMapf2() {
 	//int goal[] = {19,20, 18,20, 14,20, 7,20, 3,20, 8,20, 9,20, 15,20};
 	Grid grid("../grids/g2.txt");
 
-	Mapf m(2, (Point*) init, (Point*) goal, &grid);
-	Search s(2, (Point*) init, (Point*) goal, &grid);
+	Mapf m(3, (Point*) init, (Point*) goal, &grid);
+	Search s(3, (Point*) init, (Point*) goal, &grid);
 
 	cout << "======\nSolving with ID...\n";
 	while(m.resolve_conflicts());

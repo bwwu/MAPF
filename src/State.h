@@ -35,7 +35,7 @@ public:
 private:
 	int 	n;
 	int	cost;
-	const	State* parent;
+	const	State* parent;	// Previous Standard node
 	Point*	pre_move;
 	Point*	post_move;
 
