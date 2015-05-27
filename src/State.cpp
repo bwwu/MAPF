@@ -2,6 +2,7 @@
 
 #include "State.h"
 #include "Bfs.h"
+#include "Globals.h"
 
 //#include "Search.h"
 
@@ -59,7 +60,6 @@ Point* State::collision(Point* p, int agent, bool post) {
 		if (post && i == agent)	// Only search agents already placed
 			return NULL;
 	}
-	
 	return NULL;
 }
 
@@ -69,7 +69,6 @@ State::State(int n, const State& parent, const Move& move): n(n) {
 	if (pid)	// If agent id != 0
 		this->parent = (&parent)->parent;
 	else this->parent = &parent;
-
 
 	cost = parent.cost+1;
 	pre_move = new Point[n];

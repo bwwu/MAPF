@@ -32,18 +32,21 @@ private:
 	int	dimY;	
 };
 
+/* Moved to Globals 
+-----------------------
 Point move_dir(Point* from, int dir);
 string dir2str(int dir);
-
+*/
 inline
 int Grid::hash_pt(Point* p) {
 	return (p->x)*dimY + p->y;
 }
-
+/*
 inline
 bool pointEquals(Point* p1, int i, int j) {
 	return (p1->x == i && p1->y == j);
 }
-
+----------------------
+*/
 
 #endif //GRID_H

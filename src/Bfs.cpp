@@ -1,6 +1,7 @@
 /* Written by Brandon Wu */
 
 #include "Bfs.h"
+#include "Globals.h"
 #include <limits>
 #include <queue>
 using namespace std;
@@ -44,7 +45,7 @@ Bfs::Bfs(Point* o, Point* d, Grid* g): orig(o), dest(d), grid(g) {
 	search();
 }
 
-
+/* Moved to Globals.cpp
 int reverse(int dir) {
 	switch(dir) {
 	case NORTH:
@@ -58,4 +59,4 @@ int reverse(int dir) {
 	default:
 		return dir;
 	}
-}
+} */

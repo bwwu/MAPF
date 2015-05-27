@@ -1,6 +1,7 @@
 /* Written by Brandon Wu */
 
 #include "Search.h"
+#include "Globals.h"
 #include <limits>
 #include <list>
 #include <vector>
@@ -77,6 +78,10 @@ bool Search::expand(void) {
 	int turn = nd->turn;
 
 	bool* valid_m = nd->s->valid_moves(turn, grid);
+
+	if (turn)	// If not agent 0's move
+		delete nd;		
+
 	for (int i=0; i<DIM+1;i++) {
 		if (valid_m[i]) {
 			open.push_back(generate(nd,i));
@@ -149,7 +154,19 @@ vector<int>* Search::backtrace(Node* walk) {
 	 *	moves[i] is a vector of moves for agent 'i'
 	 */
 	if (!walk) return NULL;
-	
+
+	vector <int>* moves = new vector<int>[n];
+	do {
+		State* parent = walk->p->s;
+		State* current = walk->s;
+		for (int i=0; i<n; i++) {
+			Point* a = parent->get_pos(i);
+			Point* b = current->get_pos(i);
+			moves[i].push_back(getdir(a,b));
+		}
+		walk = walk->p;
+	} while (walk->p);
+/*	
 	vector<int>* agent_moves = new vector<int>[n];
 	vector<int> moves;
 	do {
@@ -165,8 +182,16 @@ vector<int>* Search::backtrace(Node* walk) {
 			agent_moves[i].push_back(it);
 			cout << dir2str(it) + "\n";
 		}
-	}
+	} 
 	return agent_moves;
+*/
+	for (int i=0; i<n; i++) {
+		cout << "\nMoves for Agent " << i << endl;
+		reverse(moves[i].begin(), moves[i].end());
+		for (auto it = moves[i].begin(); it != moves[i].end(); it++) 
+			cout << dir2str(*it) + "\n";
+	}
+	return moves;
 }
 
 int*	Search::reconstruct_path(int agent, const vector<int>& tr) {

@@ -21,22 +21,31 @@ Point** gen_parr(int* list, int n);
 
 
 void testBFS() { 
-
 	Grid g("../grids/g2.txt");
 	int arr[] = {0,0, 9, 2};
 	Point* p = (Point*) arr;
 	Bfs bfs(p, p+1, &g);
 	cout << "BFS cost " << bfs.cost() << endl;
 }
-
+void testSearch4() {
+	int init[] = {0,0};
+	int goal[] = {2,2};
+	Grid grid("../grids/g3.txt");
+	
+	Search s(1, (Point*) init, (Point*) goal, &grid);
+	while(!s.expand());
+	cout << "Num expansions= " << s.num_expansions() << endl;
+	s.path(true);
+}
 int main() {
 	//testGrid1();
 	//testSearch1();
 	//testSearch2();
 	//testSearch3();
 	//testBFS();
-	testMapf2();
+	//testMapf2();
 	//testBFS();
+	testSearch4();
 	return 0;
 }
 void testMapf2() {

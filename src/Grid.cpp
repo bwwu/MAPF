@@ -1,6 +1,7 @@
 /* Written by Brandon Wu */
 
 #include "Grid.h"
+#include "Globals.h"
 #include <iostream>
 #include <fstream>
 #include <vector>
@@ -87,6 +88,7 @@ void Grid::display(void) {
 }
 
 /* Move direction -- return point resulting from moving direction dir */
+/* Moved to Globals
 Point move_dir(Point* from, int dir) {
 	Point p(from->x, from->y);
 	switch(dir) {
@@ -106,8 +108,10 @@ Point move_dir(Point* from, int dir) {
 	}
 	return p;
 }
-
+*/
 /* Return direction */
+/* Moved to Globals.h
+--------------
 string dir2str(int dir) {
 	switch(dir) {
 	case NORTH:
@@ -124,3 +128,4 @@ string dir2str(int dir) {
 		return "";
 	}
 }
+*/
