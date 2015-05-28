@@ -15,8 +15,9 @@ Mapf::Mapf(int n, Point* s_init, Point* s_goal, Grid* gd): n(n), grid(gd) {
 
 // Resolve conflicts among groups. If conflicts exist, merge groups
 bool Mapf::resolve_conflicts(void) {
-	// For each group find independent soln and look for conflicts
+	cout << "Starting to resolve conflicts\n";
 
+	// For each group find independent soln and look for conflicts
 	bool conflicts = false;	// Indicates whether conflicts found
 	vector<int>** id_paths = new vector<int>*[groups.size()];
 	
@@ -35,6 +36,7 @@ bool Mapf::resolve_conflicts(void) {
 		}
 		// Find solution on group
 		Search s(len, s_init, s_goal, grid);
+		cout << "Starting search\n";
 		while (!s.expand());
 	
 		num_exp += s.num_expansions();

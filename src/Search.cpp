@@ -69,27 +69,40 @@ bool Search::expand(void) {
 	nd = *(open.begin());
 	open.erase(open.begin());
 
+	cout << "\n expanding\n";
+	nd->s->display();	// DEBUG
+	if(nd->p) {
+		cout << "Parent\n";
+		nd->p->s->display();
+	}
+
 	/* Check if node chosen for exp is goal */
 	if (is_goal(nd))
 		return true;
-
+	
 	/* Get adj list for position of agent about to move */
 	int turn = nd->turn;
 
 	bool* valid_m = nd->s->valid_moves(turn, grid);
 
-	if (turn)	// If not agent 0's move
-		delete nd;		
+
+	cout << "Valid moves for Agent" << turn << "\n";
+	int lastmove = (nd->p) ? getdir(nd->s->get_pos(turn),
+		nd->p->s->get_pos(turn)) : WAIT;
+
+	if (lastmove != WAIT)
+		cout << "Last move was " + dir2str(lastmove) + "\n";
 
 	for (int i=0; i<DIM+1;i++) {
-		int lastmove = (nd->p) ? getdir(nd->s->get_pos(turn),
-			nd->p->s->get_pos(turn)) : -1;
-
 		if (valid_m[i] && i != lastmove) {
+			cout << dir2str(i) + "\n";	// DEBUG
 			open.push_back(generate(nd,i));
 			make_heap(open.begin(), open.end(), mincmp);	// Min heap
 		}
 	}
+
+	//if (turn)	// If not agent 0's move
+		//delete nd;		
 	//make_heap(open.begin(), open.end(), mincmp);	// Min heap
 
 	/* DEBUG */
@@ -108,20 +121,26 @@ Node* Search::generate(Node* p, int dir) {
 	
 	exp_cnt++;	//Increment num of nodes expanded
 
-	child->p = p;
+	child->p = (p->turn) ? p->p : p;
 	child->turn = (p->turn+1 == n) ? 0 : p->turn+1;
 	child->s = new State(n, *(p->s), m);
-
+	
 	// Replace MANHATTAN DIST
 	child->f = p->s->g() + child->s->h(goal, grid);	// true dist
 	//child->f = p->s->g() + child->s->h(goal);	//manhatan
 	child->dir = dir;
 
+	cout << "New state\n";
+	child->s->display();
+	if (child->p);
+		//cout << "\twith Parent:\n;
 	return child;
 }
 
 /* Return true if node is a goal node */
 bool Search::is_goal(Node* nd) {
+	if (nd->turn) return false;
+
 	for (int i=0; i<n; i++) {
 		Point* p = nd->s->get_pos(i);
 		if (goal[i].x != p->x || goal[i].y != p->y)

@@ -20,6 +20,9 @@ bool* State::valid_moves(int agent, Grid* grid) {
 	vld[WAIT] = (collision(pt, agent, true)) ? false : true;
 
 	bool* adjm = grid->adj(*pt);
+	if (!adjm) 
+		return vld;
+
 	for (int i=0; i<DIM; i++) {
 		if (adjm[i]) {
 			Point move = move_dir(pt, i);
@@ -66,11 +69,12 @@ Point* State::collision(Point* p, int agent, bool post) {
 /********* Constructors & Destructors *******/
 State::State(int n, const State& parent, const Move& move): n(n) { 
 	int pid = move.p;
+	cost = parent.cost+1;
+
 	if (pid)	// If agent id != 0
 		this->parent = (&parent)->parent;
 	else this->parent = &parent;
 
-	cost = parent.cost+1;
 	pre_move = new Point[n];
 	post_move = new Point[n];
 

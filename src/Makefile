@@ -1,17 +1,14 @@
 TARGET=mapf
 CC=g++
 CFLAGS=-g -Wall -Wextra -w -std=c++11
+SRCS=Globals.cpp Grid.cpp State.cpp Search.cpp Mapf.cpp Bfs.cpp test.cpp
 
-all: state grid search
+all: default
 	${CC} ${CFLAGS} main.cpp *.o -o ${TARGET} 
 
 debug:
 	${CC} ${CFLAGS} -c debug.cpp
-grid:
-	${CC} ${CFLAGS} -c Grid.cpp
-state:
-	${CC} ${CFLAGS} -c State.cpp
-search:
-	${CC} ${CFLAGS} -c Search.cpp Mapf.cpp Bfs.cpp Globals.cpp
+default:
+	${CC} ${CFLAGS} -c ${SRCS}
 clean:
 	rm *.o ${TARGET}
