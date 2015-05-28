@@ -29,7 +29,6 @@ Search::Search(int n, Point* init, Point* goal, Grid* g):
 	tmp-> f = tmp->s->h(goal);
 	tmp->turn = 0;
 	open.push_back(tmp);
-	
 
 	time(&start_t);
 }
@@ -83,7 +82,10 @@ bool Search::expand(void) {
 		delete nd;		
 
 	for (int i=0; i<DIM+1;i++) {
-		if (valid_m[i]) {
+		int lastmove = (nd->p) ? getdir(nd->s->get_pos(turn),
+			nd->p->s->get_pos(turn)) : -1;
+
+		if (valid_m[i] && i != lastmove) {
 			open.push_back(generate(nd,i));
 			make_heap(open.begin(), open.end(), mincmp);	// Min heap
 		}

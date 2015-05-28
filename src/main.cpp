@@ -29,7 +29,7 @@ void testBFS() {
 }
 void testSearch4() {
 	int init[] = {0,0};
-	int goal[] = {2,2};
+	int goal[] = {4,4};
 	Grid grid("../grids/g3.txt");
 	
 	Search s(1, (Point*) init, (Point*) goal, &grid);
