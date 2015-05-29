@@ -14,6 +14,7 @@ deepening A* (IDA*) for lower space complexity.
 * Changed open list to heap (verify performance)
 * Changed parent node to be most recent std node to disallow reverse move
 * Prune branches by disallowing moves in the reverse direction
+
 ##Todo
 * Improve test bench that does not require recompile for changing
 grids/agent positions
