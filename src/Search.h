@@ -19,9 +19,8 @@ struct Node {
 	int turn;	// id of agent to move
 	int dir;	// direction from parent
 	State* s;	
-	//Node* c[DIM+1];
 	Node *p;
-	//Move m;
+	bool operator<(const Node& lhs) const { return lhs.f < f; };
 };
 
 class Search {
@@ -50,6 +49,8 @@ private:
 	Node*	current;	// Set to goal node if found (TODO: make current)
 
 	vector<Node*> open;	// Open list
+	//priority_queue<Node*> open;	// Open list
+
 };
 
 inline
