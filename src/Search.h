@@ -11,6 +11,7 @@
 #include "State.h"
 
 #include <vector>
+#include <queue>
 #include <string>
 using namespace std;
 
@@ -21,6 +22,13 @@ struct Node {
 	State* s;	
 	Node *p;
 	bool operator<(const Node& lhs) const { return lhs.f < f; };
+};
+
+struct Node_t {
+	Node* n;
+	Node_t(Node* ptr): n(ptr){};
+	bool operator<(const Node_t& lhs) const { 
+		return n->operator<(*(lhs.n)); 	}
 };
 
 class Search {
@@ -48,8 +56,9 @@ private:
 
 	Node*	current;	// Set to goal node if found (TODO: make current)
 
-	vector<Node*> open;	// Open list
-	//priority_queue<Node*> open;	// Open list
+	//vector<Node*> open;	// Open list
+	priority_queue<Node_t> open;	// Open list
+	
 
 };
 

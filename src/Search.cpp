@@ -28,7 +28,7 @@ Search::Search(int n, Point* init, Point* goal, Grid* g):
 	tmp->s = new State(init, n);
 	tmp-> f = tmp->s->h(goal);
 	tmp->turn = 0;
-	open.push_back(tmp);
+	open.push((Node_t)tmp);
 
 	time(&start_t);
 }
@@ -45,8 +45,12 @@ bool Search::expand(void) {
 		cout << "ERROR: NULL chosen for expansion\n";
 		return false;
 	}
-	nd = *(open.begin());
-	open.erase(open.begin());
+	//nd = *(open.begin());
+	//open.erase(open.begin());
+
+	Node_t nt = open.top();
+	nd = nt.n;
+	open.pop();
 
 	/* Check if node chosen for exp is goal */
 	if (is_goal(nd))
@@ -63,8 +67,8 @@ bool Search::expand(void) {
 
 	for (int i=0; i<DIM+1;i++) {
 		if (valid_m[i] && i != lastmove) {
-			open.push_back(generate(nd,i));
-			make_heap(open.begin(), open.end(), mincmp);	// Min heap
+			open.push((Node_t)generate(nd,i));
+			//make_heap(open.begin(), open.end(), mincmp);	// Min heap
 		}
 	}
 
