@@ -46,7 +46,8 @@ int main() {
 	//testSearch2();
 	//testSearch3();
 	//testBFS();
-	testMapf_small();
+	//testMapf_small();
+	testMapf2();
 	//testBFS();
 	//testSearch4();
 	return 0;

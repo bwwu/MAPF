@@ -21,10 +21,6 @@ bool* Grid::adj(const Point& pos) const {
 	adj[SOUTH] = y >= 1 && grid[x][y-1];
 	adj[WEST] = x >= 1 && grid[x-1][y];
 
-	/*	for (int i=0;i<DIM;i++) 
-		cout << ((adj[i]) ? 1:0);
-	cout << endl; */
-
 	return adj;
 }
 		

@@ -1,10 +1,10 @@
+/* Written by Brandon Wu */
 #include "Globals.h"
 #include "Grid.h"
 
 bool valid_pt(Point* p, const Grid& g) {
 	return g.adj(*p);
 }
-
 
 /* Move point from in direction dir and Return resulting point */
 Point move_dir(Point* from, int dir) {

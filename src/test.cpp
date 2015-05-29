@@ -1,3 +1,4 @@
+/* Written by Brandon Wu */
 #include "Grid.h"
 #include "State.h"
 #include "Search.h"
@@ -24,9 +25,6 @@ void testMapf2() {
 	/* 8 Agents */
 	int init[] = {0,0, 1,0, 0,1, 3,0, 4,0, 19,0, 18,0, 17,0} ;
 	int goal[] = {9,2, 8,2, 7,3, 7,5, 3,9, 8,9, 9,9, 15,9};
-	//int goal[] = {19,20, 18,20, 14,20, 7,20, 3,20, 8,20, 9,20, 15,20};
-
-
 	
 	Grid grid("../grids/g2.txt");
 
@@ -41,12 +39,12 @@ void testMapf2() {
 	cout << "======\nSolving with ID...\n";
 	while(m.resolve_conflicts());
 	
-	cout << "Total cost " << m.num_expansions() << endl;
+	cout << "Total Nodes expanded:" << m.num_expansions() << endl;
 
 	cout << "=====\nSolving without ID...\n";
 	while(!s.expand());
 	s.path(true);
-	cout << "Total cost " << s.num_expansions() << endl;
+	cout << "Total Nodes expanded " << s.num_expansions() << endl;
 }
 
 void testMapf1() {

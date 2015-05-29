@@ -38,29 +38,8 @@ Search::~Search() {
 }
 
 bool Search::expand(void) {
-	//cout << "Expanding\n========\n";
 	/* Choose node on open with min f cost */
-	//int min = std::numeric_limits<int>::max();
 	Node* nd = NULL;		//Node to expand
-
-
-//	auto it = open.begin();
-//	auto del = open.begin();
-//
-//	for (it; it < open.end(); it++) {
-//		if((*it)->f <= min) {
-//			min = (*it)->f;
-//			del = it;
-//			nd = *it;
-//		}
-//	}
-//
-//	if (!nd) { 
-//		cout << "ERROR: NULL chosen for expansion\n";
-//		return false;
-//	}
-//	open.erase(del);	// Remove from open list
-
 
 	if (open.empty()) {
 		cout << "ERROR: NULL chosen for expansion\n";
@@ -68,13 +47,6 @@ bool Search::expand(void) {
 	}
 	nd = *(open.begin());
 	open.erase(open.begin());
-
-	cout << "\n expanding\n";
-	nd->s->display();	// DEBUG
-	if(nd->p) {
-		cout << "Parent\n";
-		nd->p->s->display();
-	}
 
 	/* Check if node chosen for exp is goal */
 	if (is_goal(nd))
@@ -85,32 +57,17 @@ bool Search::expand(void) {
 
 	bool* valid_m = nd->s->valid_moves(turn, grid);
 
-
-	cout << "Valid moves for Agent" << turn << "\n";
+	/* Disallow move in reverse direction */
 	int lastmove = (nd->p) ? getdir(nd->s->get_pos(turn),
 		nd->p->s->get_pos(turn)) : WAIT;
 
-	if (lastmove != WAIT)
-		cout << "Last move was " + dir2str(lastmove) + "\n";
-
 	for (int i=0; i<DIM+1;i++) {
 		if (valid_m[i] && i != lastmove) {
-			cout << dir2str(i) + "\n";	// DEBUG
 			open.push_back(generate(nd,i));
 			make_heap(open.begin(), open.end(), mincmp);	// Min heap
 		}
 	}
 
-	//if (turn)	// If not agent 0's move
-		//delete nd;		
-	//make_heap(open.begin(), open.end(), mincmp);	// Min heap
-
-	/* DEBUG */
-//	for (auto it = open.begin(); it != open.end(); it++) {
-//		cout << (*it)->f << " ";
-//	}	
-//	cout << " end of open\n";
-	/* DEBUG */
 	delete [] valid_m;
 	return false;
 }
@@ -130,10 +87,10 @@ Node* Search::generate(Node* p, int dir) {
 	//child->f = p->s->g() + child->s->h(goal);	//manhatan
 	child->dir = dir;
 
-	cout << "New state\n";
+	/*cout << "New state\n";	// DEBUG
 	child->s->display();
 	if (child->p);
-		//cout << "\twith Parent:\n;
+		//cout << "\twith Parent:\n;*/
 	return child;
 }
 

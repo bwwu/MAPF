@@ -1,8 +1,8 @@
+/* Written by Brandon Wu */
 #ifndef GLOBALS_H
 #define GLOBALS_H
 #include "Grid.h"
 
-// Previously defined in Grid.cpp -------
 /* Move point in a direction dir */
 Point move_dir(Point* from, int dir);
 /* Return string representation from direction enum */
@@ -16,5 +16,4 @@ inline
 bool pointEquals(Point* p1, int i, int j) {
 	return (p1->x == i && p1->y == j);
 }
-
 #endif //GLOBALS_H
