@@ -54,20 +54,14 @@ bool Mapf::resolve_conflicts(void) {
 		if (g_paths) {
 			for (int j=0; j<len; j++) {	// For ea agent in the group
 				int agent_id = groups[i][j];
-				//if (agentlist[agent_id].path)
-					//delete agentlist[agent_id].path;
 
-				//vector<int>* a_path = new vector<int>;
 				for (int k=0; k<g_paths[j].size(); k++) {	// For ea move
 					cout << g_paths[j][k] << " ";
-					//a_path->push_back(g_paths[i][k]);	// Update agent's soln
 				}
 				cout << endl;
-				//agentlist[agent_id].path = a_path;
 			}
 		}
 
-		//delete [] g_paths;
 		delete [] s_init;
 		delete [] s_goal;
 	}

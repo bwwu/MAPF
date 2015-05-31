@@ -5,6 +5,7 @@
 #include "Search.h"
 #include "Bfs.h"
 #include "Mapf.h"
+#include "Globals.h"
 
 #include <iostream>
 using namespace std;
@@ -40,13 +41,34 @@ void testSearch4() {
 	cout << "Num expansions= " << s.num_expansions() << endl;
 	s.path(true);
 }
-int main() {
+
+//void gentest(int argc, char* argv[])
+int main(int argc, char* argv[]) {
+
+	if (argc == 1) return -1;
+	
+	string path_g(argv[1]);
+	string path_a(argv[2]);
+	int num_agents = -1;
+
+	Point** states = readpos_agent(path_a,num_agents);
+	Grid grid("../grids/" + path_g);
+
+	if (num_agents == -1) return -1;
+
+	cout << "Solving MAPF on Grid:\n";
+	Mapf m(num_agents, states[0], states[1], &grid);
+	while (m.resolve_conflicts());
+	cout << "\tTotal Nodes Expanded: " << m.num_expansions() << endl;	
+	delete [] states[0];
+	delete [] states[1];
+	delete [] states;
 	//testGrid1();
 	//testSearch1();
 	//testSearch2();
 	//testSearch3();
 	//testBFS();
-	testMapf_small();
+	//testMapf_small();
 	//testMapf2();
 	//testBFS();
 	//testSearch4();

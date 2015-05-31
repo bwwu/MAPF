@@ -34,12 +34,6 @@ bool* State::valid_moves(int agent, Grid* grid) {
 	}
 	delete [] adjm;
 
-//	cout << "ADJ For Pt " << pt->x << "," << pt->y << endl;
-//	for (int i=0; i<DIM+1;i++)
-//		if (vld[i]) cout << "1";
-//		else cout << "0";
-//	cout << endl;
-
 	return vld;
 }
 

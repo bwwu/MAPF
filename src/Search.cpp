@@ -45,8 +45,6 @@ bool Search::expand(void) {
 		cout << "ERROR: NULL chosen for expansion\n";
 		return false;
 	}
-	//nd = *(open.begin());
-	//open.erase(open.begin());
 
 	Node_t nt = open.top();
 	nd = nt.n;
@@ -68,7 +66,6 @@ bool Search::expand(void) {
 	for (int i=0; i<DIM+1;i++) {
 		if (valid_m[i] && i != lastmove) {
 			open.push((Node_t)generate(nd,i));
-			//make_heap(open.begin(), open.end(), mincmp);	// Min heap
 		}
 	}
 
@@ -88,13 +85,8 @@ Node* Search::generate(Node* p, int dir) {
 	
 	// Replace MANHATTAN DIST
 	child->f = p->s->g() + child->s->h(goal, grid);	// true dist
-	//child->f = p->s->g() + child->s->h(goal);	//manhatan
 	child->dir = dir;
 
-	/*cout << "New state\n";	// DEBUG
-	child->s->display();
-	if (child->p);
-		//cout << "\twith Parent:\n;*/
 	return child;
 }
 
@@ -116,18 +108,6 @@ bool Search::is_goal(Node* nd) {
 	cout << "\tElapsed Time = " << setprecision(8) << diff_t << "s\n";
 	cout << "\tNum Expansions = " << num_expansions() << " nodes\n";
 	
-	/*
-	vector<int>* moves =  backtrace(nd);
-	for (int i=0; i<n; i++) {
-		cout << "Player " << i <<  " pos\n";
-		int* arr = reconstruct_path(i, moves[i]);
-		for (int j=0; j< moves[i].size()+1; j++) {
-			cout << arr[j] << " ";
-		}
-		cout << endl;
-		delete [] arr;
-	}
-	delete [] moves; */
 	return true;
 }
 
@@ -148,25 +128,7 @@ vector<int>* Search::backtrace(Node* walk) {
 		}
 		walk = walk->p;
 	} while (walk->p);
-/*	
-	vector<int>* agent_moves = new vector<int>[n];
-	vector<int> moves;
-	do {
-		moves.push_back(walk->dir);	// dir that the parent
-		walk = walk->p;
-	} while (walk->p);
 
-	int blocksize = moves.size()/n;
-	for (int i=0; i<n; i++) {
-		cout << "\nPlayer " << i << " moves\n";
-		for (int j = blocksize-1; j>=0; j--) {
-			int it = moves[j*n+(n-1-i)];
-			agent_moves[i].push_back(it);
-			cout << dir2str(it) + "\n";
-		}
-	} 
-	return agent_moves;
-*/
 	for (int i=0; i<n; i++) {
 		cout << "\nMoves for Agent " << i << endl;
 		reverse(moves[i].begin(), moves[i].end());
@@ -178,12 +140,6 @@ vector<int>* Search::backtrace(Node* walk) {
 
 int*	Search::reconstruct_path(int agent, const vector<int>& tr) {
 	if (agent >= n) return NULL;
-
-	/*
-	cout << "Trace\n";
-	for (int i=0; i<tr.size(); i++) 
-		cout << tr[i] << " ";
-	cout << endl; */
 
 	int* path = new int[tr.size()+1];
 	Point init_s = init[agent];

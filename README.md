@@ -2,6 +2,9 @@
 An implementation of Multi-agent pathfinding using
 A* with Operator Decomposition (OD). Written by Brandon Wu.
 
+##Current Metrics
+Node Generation Time:	74,120 Nodes/second
+
 ##Completed
 * Naive A* algorithm that stores all nodes expanded. Implement iterative
 deepening A* (IDA*) for lower space complexity.

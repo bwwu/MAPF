@@ -1,13 +1,12 @@
 /* Written by Brandon Wu */
-
 #ifndef GRID_H
 #define GRID_H
 
-#define DIM 4
+#define DIM 4	//Change to 8 from 4
 
 #include <string>
 using namespace std;
-enum Card {	NORTH, SOUTH, EAST, WEST, WAIT};
+enum Card {	NORTH, SOUTH, EAST, WEST, NE, NW, SE, SW, WAIT};
 
 struct Point {
 	int x;
@@ -32,21 +31,8 @@ private:
 	int	dimY;	
 };
 
-/* Moved to Globals 
------------------------
-Point move_dir(Point* from, int dir);
-string dir2str(int dir);
-*/
 inline
 int Grid::hash_pt(Point* p) {
 	return (p->x)*dimY + p->y;
 }
-/*
-inline
-bool pointEquals(Point* p1, int i, int j) {
-	return (p1->x == i && p1->y == j);
-}
-----------------------
-*/
-
 #endif //GRID_H

@@ -1,5 +1,4 @@
 /* Written by Brandon Wu */
-
 #include "Grid.h"
 #include "Globals.h"
 #include <iostream>
@@ -62,7 +61,6 @@ Grid::Grid(string pathname) {
 		grid[i] = new bool[dimY];
 		for (int j=0; j<dimY; j++) {
 			grid[i][j] = (grid_u[dimY-1-j][i] == '1');
-
 		}
 	}
 	display();
@@ -82,46 +80,3 @@ void Grid::display(void) {
 		cout << endl;
 	}
 }
-
-/* Move direction -- return point resulting from moving direction dir */
-/* Moved to Globals
-Point move_dir(Point* from, int dir) {
-	Point p(from->x, from->y);
-	switch(dir) {
-	case NORTH:
-		p.y++;
-		break;
-	case SOUTH:
-		p.y--;
-		break;
-	case EAST:
-		p.x++;
-		break;
-	case WEST:
-		p.x--;
-		break;
-	default:;
-	}
-	return p;
-}
-*/
-/* Return direction */
-/* Moved to Globals.h
---------------
-string dir2str(int dir) {
-	switch(dir) {
-	case NORTH:
-		return "North";
-	case SOUTH:
-		return "South";
-	case EAST:
-		return "East";
-	case WEST:
-		return "West";
-	case WAIT:
-		return "Wait";
-	default:
-		return "";
-	}
-}
-*/

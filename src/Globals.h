@@ -11,6 +11,10 @@ string dir2str(int dir);
 int reverse(int dir);
 /* Find the direction resulting btw the 2 points */
 int getdir(Point* a, Point* b);
+/* Read an array of points as initial positions and final positions
+	from a file */
+Point** readpos_agent(string pathname, int& n);
+
 
 inline
 bool pointEquals(Point* p1, int i, int j) {

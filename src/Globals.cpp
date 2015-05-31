@@ -2,6 +2,10 @@
 #include "Globals.h"
 #include "Grid.h"
 
+#include <fstream>
+#include <iostream>
+#include <vector>
+
 bool valid_pt(Point* p, const Grid& g) {
 	return g.adj(*p);
 }
@@ -81,3 +85,33 @@ int getdir(Point* a, Point* b) {
 		return WAIT;
 	}
 }
+
+Point** readpos_agent(string pathname, int& n) {
+	/*	@pathname = pathname to file
+		@n = set the number of agents
+	*/
+	ifstream file(pathname);
+
+	if (file.is_open()) {
+		int num_agents;
+		Point** arr = new Point*[2];
+		file >> num_agents;	// First line should contain the num of agents
+		arr[0] = new Point[num_agents];	// Initial state
+		arr[1] = new Point[num_agents];	// Goal states
+
+		for (int i=0; i<num_agents; i++) {
+			file >> arr[0][i].x;
+			file >> arr[0][i].y;
+			file >> arr[1][i].x;
+			file >> arr[1][i].y;
+		}
+		n = num_agents;
+		return arr;
+	}
+	else {
+		cout << "Cannot open file " + pathname + "\n";
+		return NULL;
+	}
+}
+
+

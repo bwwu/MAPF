@@ -33,12 +33,11 @@ void testMapf2() {
 		return;
 	}
 
-	Mapf m(2, (Point*) init, (Point*) goal, &grid);
-	Search s(2, (Point*) init, (Point*) goal, &grid);
+	Mapf m(3, (Point*) init, (Point*) goal, &grid);
+	Search s(3, (Point*) init, (Point*) goal, &grid);
 
 	cout << "======\nSolving with ID...\n";
 	while(m.resolve_conflicts());
-	
 	cout << "Total Nodes expanded:" << m.num_expansions() << endl;
 
 	cout << "=====\nSolving without ID...\n";
