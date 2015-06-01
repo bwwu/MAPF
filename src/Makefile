@@ -1,10 +1,10 @@
 TARGET=mapf
 CC=g++
-CFLAGS=-g -Wall -Wextra -w -std=c++11 -O2
+CFLAGS=-g -Wall -Wextra -std=c++11 -w
 SRCS=Globals.cpp Grid.cpp State.cpp Search.cpp Mapf.cpp Bfs.cpp test.cpp
 
 ifdef GPROF
-CFLAGS += -pg
+CFLAGS += -pg -O2
 endif
 
 all: default
@@ -14,4 +14,4 @@ debug:
 default:
 	${CC} ${CFLAGS} -c ${SRCS}
 clean:
-	rm *.o ${TARGET}
+	rm *.o ${TARGET} gmon.out

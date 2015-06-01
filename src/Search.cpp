@@ -64,7 +64,7 @@ bool Search::expand(void) {
 		nd->p->s->get_pos(turn)) : WAIT;
 
 	for (int i=0; i<DIM+1;i++) {
-		if (valid_m[i] && i != lastmove) {
+		if (valid_m[i]) { // && i != lastmove) {
 			open.push((Node_t)generate(nd,i));
 		}
 	}

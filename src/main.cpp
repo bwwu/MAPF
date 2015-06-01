@@ -1,5 +1,4 @@
 /* Written by Brandon Wu */
-
 #include "Grid.h"
 #include "State.h"
 #include "Search.h"
@@ -42,8 +41,12 @@ void testSearch4() {
 	s.path(true);
 }
 
+bool chksolution(int init[], int goal[], int len, Grid* g);
+
 //void gentest(int argc, char* argv[])
 int main(int argc, char* argv[]) {
+
+	//testMapf_small();
 
 	if (argc == 1) return -1;
 	
@@ -53,13 +56,21 @@ int main(int argc, char* argv[]) {
 
 	Point** states = readpos_agent(path_a,num_agents);
 	Grid grid("../grids/" + path_g);
-
+/*
 	if (num_agents == -1) return -1;
+	for (int i=0; i<num_agents; i++) {
+		Bfs bfs(&states[0][i], &states[1][i], &grid);
 
-	cout << "Solving MAPF on Grid:\n";
+		if (bfs.cost() > 100000)
+			cout << "No solution for agent " << i << endl;
+		else cout << "Cost for agent " << i << " "  << bfs.cost() << endl;
+
+	}*/
+	chksolution((int*)states[0], (int*)states[1], num_agents, &grid);
 	Mapf m(num_agents, states[0], states[1], &grid);
 	while (m.resolve_conflicts());
 	cout << "\tTotal Nodes Expanded: " << m.num_expansions() << endl;	
+
 	delete [] states[0];
 	delete [] states[1];
 	delete [] states;
@@ -83,7 +94,7 @@ void testMapf_small() {
 	Search s(2, (Point*) init, (Point*) goal, &grid);
 	while(!s.expand());
 	s.path(true);
-
+	cout << "------------------\n";
 	/*Mapf m(2, (Point*) init, (Point*) goal, &grid);
 	while(m.resolve_conflicts());*/
 

@@ -4,7 +4,7 @@
 #define BFS_H
 
 #include "Grid.h"
-#define DLIM 10000	// Limit search depth
+#define DLIM 1000000	// Limit search depth
 
 struct GNode {
 	Point p;	// This point

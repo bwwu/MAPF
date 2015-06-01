@@ -1,12 +1,15 @@
 /* Written by Brandon Wu */
-
 #include "Bfs.h"
 #include "Globals.h"
 #include <limits>
 #include <queue>
+#include <iostream>
 using namespace std;
 
 //int reverse(int dir);	// Reverse a direction
+void printpoint(Point p) {
+	cout << "(" << p.x << "," << p.y << ")\n";
+}
 
 void Bfs::search(void) {
 	queue<GNode> openlist;
@@ -22,16 +25,20 @@ void Bfs::search(void) {
 			solncost = sel.depth;
 			return;
 		}
+		/*cout << "PARENT: ";
+		printpoint(sel.p);*/
 
 		bool* adjlist = grid->adj(sel.p);
  		for (int i=0; i<DIM; i++) {
 			/* If dir i is adjacent and is not reverse 
 			 * dir from parent */
 			if (adjlist && i!=sel.dir &&  adjlist[i])  {
+			//if (adjlist &&  adjlist[i])  {
 				Point child = move_dir(&(sel.p), i);
 				int parentdir = reverse(i);
 				int depth = sel.depth+1;
-
+				/*cout << "\t" + dir2str(i);
+				printpoint(child);*/
 				openlist.push(GNode(child,parentdir,depth));
 			}
 		}

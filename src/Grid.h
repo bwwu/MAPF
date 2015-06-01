@@ -2,7 +2,7 @@
 #ifndef GRID_H
 #define GRID_H
 
-#define DIM 4	//Change to 8 from 4
+#define DIM 8	//Change to 8 from 4
 
 #include <string>
 using namespace std;

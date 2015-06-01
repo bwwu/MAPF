@@ -17,7 +17,9 @@ bool chksolution(int init[], int goal[], int len, Grid* g) {
 	for (int i=0; i<len; i+=2) {
 		Bfs bfs((Point*)&init[i],(Point*)&goal[i], g);
 		if (bfs.cost() > MAX_TOUR) return false;
+		cout << "Found path for " << i << endl;
 	}
+	cout << "Checked solutions OK\n";
 	return true;
 }
 

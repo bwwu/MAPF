@@ -15,10 +15,15 @@ bool* Grid::adj(const Point& pos) const {
 
 	bool* adj = new bool[DIM];
 
-	adj[NORTH] = y < dimY-1 && grid[x][y+1];
-	adj[EAST] = x < dimX-1 && grid[x+1][y];
-	adj[SOUTH] = y >= 1 && grid[x][y-1];
-	adj[WEST] = x >= 1 && grid[x-1][y];
+	adj[NORTH] = y<dimY-1 && grid[x][y+1];
+	adj[EAST] = x<dimX-1 && grid[x+1][y];
+	adj[SOUTH] = y>=1 && grid[x][y-1];
+	adj[WEST] = x>=1 && grid[x-1][y]; 
+	
+	adj[NE] = y<dimY-1 && x<dimX-1 && grid[x+1][y+1];
+	adj[NW] = y<dimY-1 && x>=1 && grid[x-1][y+1];
+	adj[SE] = y>=1 && x<dimX-1 && grid[x+1][y-1];
+	adj[SW] = y>=1 && x>=1 && grid[x-1][y-1];
 
 	return adj;
 }

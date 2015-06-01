@@ -16,19 +16,34 @@ Point move_dir(Point* from, int dir) {
 	switch(dir) {
 	case NORTH:
 		p.y++;
-		break;
+		return p;
 	case SOUTH:
 		p.y--;
-		break;
+		return p;
 	case EAST:
 		p.x++;
-		break;
+		return p;
 	case WEST:
 		p.x--;
-		break;
-	default:;
+		return p;
+	case NE:
+		p.y++;
+		p.x++;
+		return p;
+	case NW:
+		p.y++;
+		p.x--;
+		return p;
+	case SE:
+		p.y--;
+		p.x++;
+		return p;
+	case SW:
+		p.y--;
+		p.x--;
+	default:
+		return p;
 	}
-	return p;
 }
 
 /* Given direction return string representing the direction */
@@ -42,6 +57,14 @@ string dir2str(int dir) {
 		return "East";
 	case WEST:
 		return "West";
+	case NE:
+		return "Northeast";
+	case NW:
+		return "Northwest";
+	case SE:
+		return "Southeast";
+	case SW:
+		return "Southwest";
 	case WAIT:
 		return "Wait";
 	default:
@@ -60,6 +83,14 @@ int reverse(int dir) {
 		return EAST;
 	case EAST:
 		return WEST;
+	case NE:
+		return SW;
+	case NW:
+		return SE;
+	case SE:
+		return NW;
+	case SW:
+		return NE;
 	default:
 		return dir;
 	}
@@ -73,14 +104,22 @@ int getdir(Point* a, Point* b) {
 	dy = b->y - a->y;
 	diff = 4*dy + dx;
 	switch (diff) {
+	case 5:
+		return NE;
 	case 4:
 		return NORTH;
+	case 3:
+		return NW;
 	case 1:
 		return EAST;
 	case -1:
 		return WEST;
+	case -3:
+		return SE;
 	case -4:
 		return SOUTH;
+	case -5:
+		return SW;
 	default:
 		return WAIT;
 	}

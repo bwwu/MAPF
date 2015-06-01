@@ -76,22 +76,8 @@ State::State(int n, const State& parent, const Move& move): n(n) {
 		pre_move[i] = parent.pre_move[i];
 		post_move[i] = parent.post_move[i];
 	}
+	post_move[pid] = move_dir(&post_move[pid], move.dir);
 
-	switch(move.dir) {
-	case NORTH:
-		post_move[pid].y++;
-		break;
-	case SOUTH:
-		post_move[pid].y--;
-		break;
-	case EAST:
-		post_move[pid].x++;
-		break;
-	case WEST:
-		post_move[pid].x--;
-		break;
-	default:;
-	}	
 	if (pid == n-1)	
 		increment_step();
 }
