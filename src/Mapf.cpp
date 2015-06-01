@@ -53,8 +53,9 @@ bool Mapf::resolve_conflicts(void) {
 		cout << "Group " << i << endl;
 		if (g_paths) {
 			for (int j=0; j<len; j++) {	// For ea agent in the group
+	
 				int agent_id = groups[i][j];
-
+				cout << "   Agent: " << agent_id << "\t";
 				for (int k=0; k<g_paths[j].size(); k++) {	// For ea move
 					cout << g_paths[j][k] << " ";
 				}
@@ -106,7 +107,7 @@ Mapf::group_conflict(vector<int>* g1,vector<int>* g2,int len1,int len2) {
 	 * Consider all pairs of agents (u, v) where u in g1 and v in g2 */
 	for (int i=0; i<len1; i++) {
 		for (int j=0; j<len2; j++) {
-			if (path_conflict(&g1[i], &g2[i], plen))
+			if (path_conflict(&g1[i], &g2[j], plen))
 				return true;	
 		}
 	}
