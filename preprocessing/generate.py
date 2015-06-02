@@ -62,18 +62,19 @@ def maketest(dimX, dimY, p, k, path_g, path_a):
 if __name__ == "__main__":
 	
 	r.seed(t.time())
-	prefix = "t2_"
+	prefix = "t5_"
 	gdir = "../grids/"
 	adir = "../agents/"
-	testfile = "../tests/t4.test"
+	testfile = "../tests/t5.test"
 	num_tests = 10
 	
-	dimX = 20
-	dimY = 10
-	num_agents = 2
-	p = 0.4	# Probability of obstacle
+	dimX = 50
+	dimY = 30
+	num_agents = 6
+	p = 0.5	# Probability of obstacle
 	
 	f = open(testfile, 'w')
+	f.write("#num_tests="+str(num_tests)+"\tdim="+str(dimX)+"x"+str(dimY)+" num_agents="+str(num_agents)+" p="+str(p)+"\n")
 	for i in range(num_tests):
 		path_g = gdir + prefix + "g" + str(i) + ".txt"
 		path_a = adir + prefix + "a" + str(i) + ".txt"

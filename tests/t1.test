@@ -1,2 +1,21 @@
-../grids/g2.txt
-../agents/a1.txt
+#num_tests=10	dim=30x30 num_agents=4 p=0.4
+t1_g0.txt
+t1_a0.txt
+t1_g1.txt
+t1_a1.txt
+t1_g2.txt
+t1_a2.txt
+t1_g3.txt
+t1_a3.txt
+t1_g4.txt
+t1_a4.txt
+t1_g5.txt
+t1_a5.txt
+t1_g6.txt
+t1_a6.txt
+t1_g7.txt
+t1_a7.txt
+t1_g8.txt
+t1_a8.txt
+t1_g9.txt
+t1_a9.txt
