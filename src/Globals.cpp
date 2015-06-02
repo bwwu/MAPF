@@ -8,6 +8,8 @@
 #include <fstream>
 #include <iostream>
 #include <vector>
+#include <climits>
+#include <limits>
 
 bool valid_pt(Point* p, const Grid& g) {
 	return g.adj(*p);
@@ -163,10 +165,10 @@ bool mapftest(string testfile) {
 	
 	double avg_exp = 0;
 	int max_exp = 0;
-	int min_exp;
+	int min_exp = INT_MAX;
 	time_t max_t = 0;
 	double avg_t = 0;
-	time_t min_t;
+	double min_t = numeric_limits<double>::infinity();
 
 	vector<Mapf_t> mapf_tests;
 	
@@ -206,6 +208,10 @@ bool mapftest(string testfile) {
 			cout << "\tCollisions = " << it->collisions << endl;
 			cout << "\tNum expansions = " << it->num_exp << endl;
 
+			min_t = (it->time < min_t) ? it->time : min_t;
+			max_t = (it->time > max_t) ? it->time : max_t;
+			min_exp = (it->num_exp < min_exp) ? it->num_exp : min_exp;
+			max_exp = (it->num_exp > max_exp) ? it->num_exp : max_exp;
 			avg_exp += it->num_exp;	
 			avg_t += it->time;
 		}
@@ -215,8 +221,12 @@ bool mapftest(string testfile) {
 	avg_t = avg_t/pos;
 
 	cout << "###############################################\n";
+	cout << fixed;
+	cout << setprecision(2);
 	cout << "Average Node exp = " << avg_exp << endl;
+	cout << "\tMin = " << min_exp << "\tMax = " << max_exp << endl;
 	cout << "Average solution time = " << avg_t << endl;
+	cout << "\tMin = " << min_t << "\tMax = " << max_t << endl;
 
 	return true;
 }

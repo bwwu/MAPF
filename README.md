@@ -19,6 +19,7 @@ deepening A* (IDA*) for lower space complexity.
 * Changed open list to heap (verify performance)
 * Prune branches by disallowing moves in the reverse direction -- [REMOVED]
 * Added duplicate detection for BFS search
+* Added test generation suite
 
 ##Todo
 * Make struct of test vectors {grid name, agents, num exp, time}
@@ -28,4 +29,5 @@ deepening A* (IDA*) for lower space complexity.
 * Remove Memory leaks
 
 ##Bugs
-List bugs here
+* Some maps cannot be solved although a solution supposedly exists
+* There is no way to kill a search that is taking too long
