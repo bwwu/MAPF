@@ -165,7 +165,7 @@ bool mapftest(string testfile) {
 	int max_exp = 0;
 	int min_exp;
 	time_t max_t = 0;
-	time_t avg_t = 0;
+	double avg_t = 0;
 	time_t min_t;
 
 	vector<Mapf_t> mapf_tests;

@@ -80,7 +80,6 @@ bool Mapf::resolve_conflicts(void) {
 			
 				/* Merge the groups */
 				cout << "Conflict found between Group " << i << " and " << j;
-				cout << ". Merging...\n";
 				collisions++;
 				vector<int>* g1 = &groups[i];
 				vector<int>* g2 = &groups[j];

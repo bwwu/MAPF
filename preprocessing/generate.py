@@ -1,6 +1,7 @@
 #!/usr/bin/python
 
 import random as r
+import time as t
 
 def printgrid(matrix, path):
 	f = open(path, 'w')
@@ -60,15 +61,16 @@ def maketest(dimX, dimY, p, k, path_g, path_a):
 
 if __name__ == "__main__":
 	
-	prefix = "t1_"
+	r.seed(t.time())
+	prefix = "t2_"
 	gdir = "../grids/"
 	adir = "../agents/"
-	testfile = "../tests/t3.test"
-	num_tests = 20
+	testfile = "../tests/t4.test"
+	num_tests = 10
 	
 	dimX = 20
-	dimY = 20
-	num_agents = 5
+	dimY = 10
+	num_agents = 2
 	p = 0.4	# Probability of obstacle
 	
 	f = open(testfile, 'w')
