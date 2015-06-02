@@ -69,7 +69,8 @@ bool Mapf::resolve_conflicts(void) {
 
 	for (int i=0; i<num_groups-1; i++) {
 		int len1 = groups[i].size();
-		for (int j=i+1; j<num_groups; j++) {	// For ea pair of groups
+		for (int j=i+1; j<num_groups && !conflicts; j++) {	
+			// For ea pair of groups
 			int len2 = groups[j].size();
 			
 			/* If there is a path conflict between groups i and j */
