@@ -15,12 +15,10 @@ deepening A* (IDA*) for lower space complexity.
 * Independence Detection (ID) implemented in Mapf module. 
 * Implemented True Distance Heuristic in Bfs module
 * Changed open list to heap (verify performance)
-* Changed parent node to be most recent std node to disallow reverse move
-* Prune branches by disallowing moves in the reverse direction
+* Prune branches by disallowing moves in the reverse direction -- [REMOVED]
 
 ##Todo
-* Improve test bench that does not require recompile for changing
-grids/agent positions
+* Make struct of test vectors {grid name, agents, num exp, time}
 * Pre-compute true distance heuristic
 * Timing and expansion metrics
 * Reduce redundant node expansions across all iterations of ID

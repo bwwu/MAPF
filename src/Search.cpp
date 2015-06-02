@@ -29,8 +29,6 @@ Search::Search(int n, Point* init, Point* goal, Grid* g):
 	tmp-> f = tmp->s->h(goal);
 	tmp->turn = 0;
 	open.push((Node_t)tmp);
-
-	//time(&start_t);
 }
 
 Search::~Search() {
@@ -69,6 +67,8 @@ bool Search::expand(void) {
 		}
 	}
 
+	if (turn) delete nd;
+
 	delete [] valid_m;
 	return false;
 }
@@ -99,13 +99,8 @@ bool Search::is_goal(Node* nd) {
 		if (goal[i].x != p->x || goal[i].y != p->y)
 			return false;
 	}
-
-	//time_t end_t = time(NULL);
-	//time_t diff_t = difftime(end_t, start_t);
 	current = nd;	// Set goal node
-	//cout << fixed;
-	cout << "Found goal with cost " << nd->s->g() << "!\n";
-	//cout << "\tElapsed Time = " << setprecision(8) << diff_t << "s\n";
+	cout << "Found goal with cost " << nd->s->g()/n << "!\n";
 	cout << "\tNum Expansions = " << num_expansions() << " nodes\n";
 	
 	return true;

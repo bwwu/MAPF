@@ -1,7 +1,6 @@
 /* Written by Brandon Wu */
 #ifndef MAPF_H
 #define MAPF_H
-/* Written by Brandon Wu */
 
 #include "Search.h"
 #include "Grid.h"

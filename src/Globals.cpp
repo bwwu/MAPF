@@ -192,8 +192,6 @@ bool mapftest(string testfile) {
 
 Mapf_t run_mapf(string path_g, string path_a) {
 
-	//string path_g(argv[1]);
-	//string path_a(argv[2]);
 	int num_agents = -1;
 
 	Point** states = readpos_agent(path_a,num_agents);
