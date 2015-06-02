@@ -24,6 +24,10 @@ class Bfs {
 		Grid* grid;
 		Point* orig;	// Origin point
 		Point* dest;	// Dest point	
+		
+		bool* visited;	// Set of visited points
+		int	len;	// Num of points
+		Point dim;
 };
 
 inline

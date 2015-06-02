@@ -17,7 +17,7 @@ void Bfs::search(void) {
 
 	int itcount = 0;	// Iteration count
 
-	while (!openlist.empty() && itcount < DLIM) {
+	while (!openlist.empty()) { // && itcount < DLIM) {
 		GNode sel = openlist.front();
 		openlist.pop();
 
@@ -39,7 +39,11 @@ void Bfs::search(void) {
 				int depth = sel.depth+1;
 				/*cout << "\t" + dir2str(i);
 				printpoint(child);*/
-				openlist.push(GNode(child,parentdir,depth));
+				int hash = child.x*dim.y + child.y;
+				if (!visited[hash]) {
+					openlist.push(GNode(child,parentdir,depth));
+					visited[hash] = true;
+				}
 			}
 		}
 		delete [] adjlist;
@@ -49,21 +53,10 @@ void Bfs::search(void) {
 
 Bfs::Bfs(Point* o, Point* d, Grid* g): orig(o), dest(d), grid(g) {
 	solncost = numeric_limits<int>::max();
+
+	dim = g->dim();
+	len = dim.x*dim.y;
+	visited = new bool[len]();
+	
 	search();
 }
-
-/* Moved to Globals.cpp
-int reverse(int dir) {
-	switch(dir) {
-	case NORTH:
-		return SOUTH;
-	case SOUTH:
-		return NORTH;
-	case WEST:
-		return EAST;
-	case EAST:
-		return WEST;
-	default:
-		return dir;
-	}
-} */
