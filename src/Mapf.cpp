@@ -5,6 +5,7 @@ using namespace std;
 
 Mapf::Mapf(int n, Point* s_init, Point* s_goal, Grid* gd): n(n), grid(gd) {
 	num_exp = 0;
+	collisions = 0;
 	time(&start_t);
 
 	/* Begin with n singleton groups */
@@ -80,6 +81,7 @@ bool Mapf::resolve_conflicts(void) {
 				/* Merge the groups */
 				cout << "Conflict found between Group " << i << " and " << j;
 				cout << ". Merging...\n";
+				collisions++;
 				vector<int>* g1 = &groups[i];
 				vector<int>* g2 = &groups[j];
 				g1->insert(g1->end(), g2->begin(), g2->end());

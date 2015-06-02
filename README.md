@@ -3,7 +3,9 @@ An implementation of Multi-agent pathfinding using
 A* with Operator Decomposition (OD). Written by Brandon Wu.
 
 ##Current Metrics
-Node Generation Time:	74,120 Nodes/second
+Node Generation Time:	
+74,120 Nodes/second	(5/29/15)
+12,625 Nodes/second	(6/1/15)	-- Smarter duplicate detection on large maps
 
 ##Completed
 * Naive A* algorithm that stores all nodes expanded. Implement iterative
@@ -16,14 +18,13 @@ deepening A* (IDA*) for lower space complexity.
 * Implemented True Distance Heuristic in Bfs module
 * Changed open list to heap (verify performance)
 * Prune branches by disallowing moves in the reverse direction -- [REMOVED]
+* Added duplicate detection for BFS search
 
 ##Todo
 * Make struct of test vectors {grid name, agents, num exp, time}
 * Pre-compute true distance heuristic
-* Timing and expansion metrics
 * Reduce redundant node expansions across all iterations of ID
 * More testing for ID implementation
-* Multi-agent swap collisions
 * Remove Memory leaks
 
 ##Bugs

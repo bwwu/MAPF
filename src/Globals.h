@@ -6,6 +6,7 @@
 struct Mapf_t{	// MAPF Test Node 
 	int 	num_agents;	// # of agents in the puzzle
 	int	num_exp;	// Total # of node expansions
+	int	collisions;	// Num of group collisions
 	time_t	time;	// Total time taken
 	bool 	solved;	// Whether MAPF could solve the puzzle
 	Point	dim;	// Dimensions of the grid

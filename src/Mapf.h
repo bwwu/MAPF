@@ -20,11 +20,13 @@ public:
 	Mapf(int n, Point* s_init, Point* s_goal, Grid* gd);
 	bool resolve_conflicts(void);
 
-	int num_expansions(void);
+	int	num_expansions(void);
 	time_t	get_time(void);
+	int	get_collisions(void);
 private:
 	int n;		// Num of agents
 	int num_exp;	// Total node exp
+	int collisions;	// Num of collisions
 	time_t	start_t;
 	time_t	diff_t;	// Total time elapsed
 
@@ -45,4 +47,7 @@ inline
 time_t Mapf::get_time(void) {
 	return diff_t;
 }
+
+inline
+int Mapf::get_collisions(void) { return collisions; }
 #endif	// MAPF_H

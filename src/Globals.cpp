@@ -160,6 +160,13 @@ bool mapftest(string testfile) {
 	string line;
 	ifstream file(testfile);
 	int pos = 0, total=0;	// Number of test instances
+	
+	double avg_exp = 0;
+	int max_exp = 0;
+	int min_exp;
+	time_t max_t = 0;
+	time_t avg_t = 0;
+	time_t min_t;
 
 	vector<Mapf_t> mapf_tests;
 	
@@ -184,7 +191,32 @@ bool mapftest(string testfile) {
 	}
 
 	file.close();
+	cout << "###############################################\n";
 	cout << "Solved " << pos << "/" << total << " instances\n";
+
+	int i=0;
+	for (auto it = mapf_tests.begin(); it != mapf_tests.end(); it++) {
+		if (it->solved) {
+			cout << "Instance " << i++ << endl;
+			cout << "\tGrid x=" << it->dim.x << ", y=" << it->dim.y << endl;
+			cout << fixed;
+			cout << "\tNum agents = " << it->num_agents << endl;
+			cout << "\tTime = ";
+			cout << setprecision(8) << it->time << "s\n";
+			cout << "\tCollisions = " << it->collisions << endl;
+			cout << "\tNum expansions = " << it->num_exp << endl;
+
+			avg_exp += it->num_exp;	
+			avg_t += it->time;
+		}
+	}
+	
+	avg_exp = avg_exp/pos;
+	avg_t = avg_t/pos;
+
+	cout << "###############################################\n";
+	cout << "Average Node exp = " << avg_exp << endl;
+	cout << "Average solution time = " << avg_t << endl;
 
 	return true;
 }
@@ -193,7 +225,7 @@ bool mapftest(string testfile) {
 Mapf_t run_mapf(string path_g, string path_a) {
 
 	int num_agents = -1;
-
+	path_a = "../agents/" + path_a;
 	Point** states = readpos_agent(path_a,num_agents);
 	Grid grid("../grids/" + path_g);
 
@@ -212,6 +244,8 @@ Mapf_t run_mapf(string path_g, string path_a) {
 
 	info.solved = true;
 	info.num_exp = m.num_expansions();
+	info.time = m.get_time();
+	info.collisions = m.get_collisions();
 
 	delete [] states[0];
 	delete [] states[1];
