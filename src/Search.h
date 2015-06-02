@@ -36,6 +36,7 @@ public:
 	bool	expand(void);	// Return TRUE if goal is expanded
 	int	num_expansions(void);	// Return num of node expansion
 	vector<int>* path(bool print);	// Retrieve the path found from goal
+	//time_t	elapsedtime(void);	// Get the time elapsed
 	
 	Search(int n, Point* init, Point* goal, Grid* g);
 	~Search();
@@ -49,7 +50,8 @@ private:
 
 	int 	n;
 	int	exp_cnt;	// Number of node expansions
-	time_t	start_t;	// Start time
+	//time_t	start_t;	// Start time
+	//time_t	diff_t;
 	Grid* 	grid;
 	Point* 	goal;	// Set of goal states
 	Point*	init;	// Set of initial states
@@ -64,5 +66,10 @@ private:
 
 inline
 int Search::num_expansions(void) { return exp_cnt; }
+/*
+inline
+time_t Search::elapsedtime(void) {
+	return diff_t;
+}*/
 
 #endif //SEARCH_H

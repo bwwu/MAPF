@@ -1,6 +1,7 @@
 /* Written by Brandon Wu */
 #ifndef MAPF_H
 #define MAPF_H
+/* Written by Brandon Wu */
 
 #include "Search.h"
 #include "Grid.h"
@@ -21,9 +22,12 @@ public:
 	bool resolve_conflicts(void);
 
 	int num_expansions(void);
+	time_t	get_time(void);
 private:
 	int n;		// Num of agents
 	int num_exp;	// Total node exp
+	time_t	start_t;
+	time_t	diff_t;	// Total time elapsed
 
 	Grid* grid;
 	vector<agent_t> agentlist;	// List of agents
@@ -36,5 +40,10 @@ private:
 inline
 int Mapf::num_expansions(void) {
 	return num_exp;
+}
+
+inline
+time_t Mapf::get_time(void) {
+	return diff_t;
 }
 #endif	// MAPF_H

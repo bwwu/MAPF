@@ -1,7 +1,10 @@
 /* Written by Brandon Wu */
 #include "Globals.h"
 #include "Grid.h"
+#include "test.h"
+/* TODO: Move chksolution out of test.cpp and into globals */
 
+#include <iomanip>
 #include <fstream>
 #include <iostream>
 #include <vector>
@@ -153,4 +156,69 @@ Point** readpos_agent(string pathname, int& n) {
 	}
 }
 
+bool mapftest(string testfile) {
+	string line;
+	ifstream file(testfile);
+	int pos = 0, total=0;	// Number of test instances
+
+	vector<Mapf_t> mapf_tests;
+	
+	if(!file.is_open()) return false;
+	
+	while(getline(file,line)) {
+		if (line[0] == '#') continue;	
+
+		string grid_path = line;
+		string agent_path;
+		getline(file, agent_path);
+		cout << "grid path= "+grid_path+"\t agent path= "+agent_path+"\n";
+
+		Mapf_t tmp = run_mapf(grid_path, agent_path);
+		mapf_tests.push_back(tmp);
+		if (tmp.solved)
+			pos++;
+
+		else cout << "Cannot solve instance " << total << endl;
+
+		total++;
+	}
+
+	file.close();
+	cout << "Solved " << pos << "/" << total << " instances\n";
+
+	return true;
+}
+
+
+Mapf_t run_mapf(string path_g, string path_a) {
+
+	//string path_g(argv[1]);
+	//string path_a(argv[2]);
+	int num_agents = -1;
+
+	Point** states = readpos_agent(path_a,num_agents);
+	Grid grid("../grids/" + path_g);
+
+	Mapf_t info(num_agents, 0, 0, false, grid.dim());
+
+	if (!chksolution((int*)states[0], (int*)states[1], num_agents, &grid))
+		return info;
+
+	Mapf m(num_agents, states[0], states[1], &grid);
+
+
+	while (m.resolve_conflicts());
+	cout << "\tTotal Nodes Expanded: " << m.num_expansions() << endl;	
+	cout << fixed;
+	cout << "\tTotal Time " << setprecision(8) << m.get_time() << "s\n";
+
+	info.solved = true;
+	info.num_exp = m.num_expansions();
+
+	delete [] states[0];
+	delete [] states[1];
+	delete [] states;
+
+	return info;
+}
 

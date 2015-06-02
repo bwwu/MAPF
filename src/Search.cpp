@@ -30,7 +30,7 @@ Search::Search(int n, Point* init, Point* goal, Grid* g):
 	tmp->turn = 0;
 	open.push((Node_t)tmp);
 
-	time(&start_t);
+	//time(&start_t);
 }
 
 Search::~Search() {
@@ -100,12 +100,12 @@ bool Search::is_goal(Node* nd) {
 			return false;
 	}
 
-	time_t end_t = time(NULL);
-	double diff_t = difftime(end_t, start_t);
+	//time_t end_t = time(NULL);
+	//time_t diff_t = difftime(end_t, start_t);
 	current = nd;	// Set goal node
-	cout << fixed;
+	//cout << fixed;
 	cout << "Found goal with cost " << nd->s->g() << "!\n";
-	cout << "\tElapsed Time = " << setprecision(8) << diff_t << "s\n";
+	//cout << "\tElapsed Time = " << setprecision(8) << diff_t << "s\n";
 	cout << "\tNum Expansions = " << num_expansions() << " nodes\n";
 	
 	return true;

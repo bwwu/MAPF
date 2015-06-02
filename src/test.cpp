@@ -5,13 +5,13 @@
 #include "Bfs.h"
 #include "Mapf.h"
 #include "Globals.h"
+#include "test.h"
 
 #define MAX_TOUR 1000
 
 #include <iostream>
 using namespace std;
 
-Point** gen_parr(int* list, int n);
 
 bool chksolution(int init[], int goal[], int len, Grid* g) {
 	for (int i=0; i<len; i+=2) {
@@ -127,3 +127,37 @@ Point** gen_parr(int* list, int n) {
 		plist[i] = (Point*) (list+2*i);
 	return plist;
 }
+
+
+void testMapf_small() {
+	int init[] = {0,0,0,2};
+	int goal[] = {0,1,1,0};
+	Grid grid("../grids/g4.txt");
+	
+	Search s(2, (Point*) init, (Point*) goal, &grid);
+	while(!s.expand());
+	s.path(true);
+	cout << "------------------\n";
+	/*Mapf m(2, (Point*) init, (Point*) goal, &grid);
+	while(m.resolve_conflicts());*/
+
+}
+
+void testBFS() { 
+	Grid g("../grids/g2.txt");
+	int arr[] = {0,1, 7, 2};
+	Point* p = (Point*) arr;
+	Bfs bfs(p, p+1, &g);
+	cout << "BFS cost " << bfs.cost() << endl;
+}
+void testSearch4() {
+	int init[] = {0,0};
+	int goal[] = {4,4};
+	Grid grid("../grids/g3.txt");
+	
+	Search s(1, (Point*) init, (Point*) goal, &grid);
+	while(!s.expand());
+	cout << "Num expansions= " << s.num_expansions() << endl;
+	s.path(true);
+}
+

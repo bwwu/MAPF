@@ -20,6 +20,7 @@ public:
 	bool*	adj(const Point& pos) const;
 	int	hash_pt(Point* p);	
 	void	display(void);
+	Point	dim(void);	// Dimension of the grid
 
 	Grid(int dimX, int dimY, Point** blocklist, int listlen);
 	Grid(string pathname);
@@ -34,5 +35,9 @@ private:
 inline
 int Grid::hash_pt(Point* p) {
 	return (p->x)*dimY + p->y;
+}
+inline
+Point Grid::dim(void) {
+	return Point(dimX, dimY);
 }
 #endif //GRID_H

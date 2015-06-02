@@ -1,8 +1,12 @@
 /* Written by Brandon Wu */
 #include "Mapf.h"
+#include <iomanip>
+using namespace std;
 
 Mapf::Mapf(int n, Point* s_init, Point* s_goal, Grid* gd): n(n), grid(gd) {
 	num_exp = 0;
+	time(&start_t);
+
 	/* Begin with n singleton groups */
 	for (int i=0; i<n; i++) {
 		// Create an agent_t struct for each agent and group for ea agent
@@ -15,7 +19,6 @@ Mapf::Mapf(int n, Point* s_init, Point* s_goal, Grid* gd): n(n), grid(gd) {
 
 // Resolve conflicts among groups. If conflicts exist, merge groups
 bool Mapf::resolve_conflicts(void) {
-	cout << "Starting to resolve conflicts\n";
 
 	// For each group find independent soln and look for conflicts
 	bool conflicts = false;	// Indicates whether conflicts found
@@ -36,19 +39,16 @@ bool Mapf::resolve_conflicts(void) {
 		}
 		// Find solution on group
 		Search s(len, s_init, s_goal, grid);
-		cout << "Starting search\n";
 		while (!s.expand());
-	
+
 		num_exp += s.num_expansions();
 
 		vector<int>* g_paths = s.path(false);	// Get the soln path
 		id_paths[i] = g_paths; 
 
-
 		/* TODO: Determine conflicts across groups 
 			then proceed to record positions if no conflicts are found
 		*/
-
 
 		cout << "Group " << i << endl;
 		if (g_paths) {
@@ -88,6 +88,10 @@ bool Mapf::resolve_conflicts(void) {
 
 			}
 		}
+	}
+	if (!conflicts) {
+		time_t end_t = time(NULL);
+		diff_t = difftime(end_t, start_t);
 	}
 
 	for (int i=0; i<num_groups; i++)
