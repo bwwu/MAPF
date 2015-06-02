@@ -4,6 +4,9 @@
 #include "Bfs.h"
 #include "Grid.h"
 #include <unordered_map>
+#include <climits>
+#include <iostream>
+using namespace std;
 
 struct Key {
 	Point init;	// Initial state
@@ -21,16 +24,16 @@ private:
 	void populate(void);
 	void search(Point& o, Point& d);
 	Grid* g;
+	int dimX;	
+	int dimY;
 	int** table;	// Lookup table for BFS heuristic
 };
 
 inline
-int Distance::lookup(const Point& i, const Point& g) {
-	Point dim = this->g->dim();
-	int dimX = dim.x;
-	int dimY = dim.y;
-
-	return table[i.x*dimY+i.y][g.x*dimY+g.y];
+int Distance::lookup(const Point& i, const Point& dest) {
+	//cout << "Lookup " << i.x << "," << i.y;
+	//cout << " " << dest.x << "," << dest.y << endl;
+	return table[i.x*dimY+i.y][dest.x*dimY+dest.y];
 
 }
 

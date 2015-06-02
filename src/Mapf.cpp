@@ -6,6 +6,8 @@ using namespace std;
 Mapf::Mapf(int n, Point* s_init, Point* s_goal, Grid* gd): n(n), grid(gd) {
 	num_exp = 0;
 	collisions = 0;
+	dlt = new Distance(grid);
+	cout << "DLT created. Starting MAPF\n";
 	time(&start_t);
 
 	/* Begin with n singleton groups */
@@ -39,7 +41,7 @@ bool Mapf::resolve_conflicts(void) {
 			s_goal[j] = agentlist[agent_id].goal;
 		}
 		// Find solution on group
-		Search s(len, s_init, s_goal, grid);
+		Search s(len, s_init, s_goal, grid, dlt);
 		while (!s.expand());
 
 		num_exp += s.num_expansions();

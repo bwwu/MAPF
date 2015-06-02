@@ -31,6 +31,8 @@ private:
 	time_t	diff_t;	// Total time elapsed
 
 	Grid* grid;
+	Distance* dlt;	// Distance lookup table
+
 	vector<agent_t> agentlist;	// List of agents
 	vector<vector<int>> groups;	// Independent groups
 

@@ -8,6 +8,7 @@
 		for n players */
 
 #include "Grid.h"
+#include "Distance.h"
 
 #include <iostream>
 using namespace std;
@@ -22,7 +23,8 @@ class State {
 public: 
 	void display(void);	// Display pre-moves and post-moves for ea. agent
 	int h(Point* goal);	// Manhattan Distance Heuristic
-	int h(Point* goal, Grid* g);	// True Distance Heuristic
+	//int h(Point* goal, Grid* g);	// True Distance Heuristic
+	int h(Point* goal, Distance* d);	// True Distance Heuristic
 
 	int g(void);		// Cost from root
 	bool*	valid_moves(int, Grid*);	// list of valid moves for agent n

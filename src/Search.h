@@ -36,7 +36,7 @@ public:
 	int	num_expansions(void);	// Return num of node expansion
 	vector<int>* path(bool print);	// Retrieve the path found from goal
 	
-	Search(int n, Point* init, Point* goal, Grid* g);
+	Search(int n, Point* init, Point* goal, Grid* g, Distance* d=NULL);
 	~Search();
 
 private:
@@ -53,6 +53,8 @@ private:
 	Point*	init;	// Set of initial states
 
 	Node*	current;	// Set to goal node if found (TODO: make current)
+
+	Distance* dlt;	// True distance lookup table
 
 	priority_queue<Node_t> open;	// Open list
 	

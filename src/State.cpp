@@ -98,16 +98,17 @@ State::~State( ) {
 }
 
 /* True distance heuristic */
-int State::h(Point* goal, Grid* grid) {
+int State::h(Point* goal, Distance* d) {
 	int dist = 0;
 	int max_int = numeric_limits<int>::max();
 	for (int i=0;i<n; i++) {
 		Point p_init = post_move[i];
 		Point p_goal = goal[i];
-		Bfs bfs(&p_init, &p_goal, grid);
-		if (bfs.cost() == max_int) 
+		//Bfs bfs(&p_init, &p_goal, grid);
+		int cost = d->lookup(p_init, p_goal);
+		if (cost == max_int) 
 			return max_int;
-		dist += bfs.cost();
+		dist += cost;
 	}
 	return dist;
 }
