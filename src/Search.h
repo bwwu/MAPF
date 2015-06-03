@@ -57,6 +57,7 @@ private:
 	Distance* dlt;	// Distance lookup table
 
 	priority_queue<Node_t> open;	// Open list
+	vector<Node*> closed;
 	
 
 };

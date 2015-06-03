@@ -33,6 +33,13 @@ Search::Search(int n, Point* init, Point* goal, Grid* g, Distance* d):
 
 Search::~Search() {
 	delete [] goal;
+	while(!open.empty()) {
+		Node_t t = open.top();
+		delete t.n;
+		open.pop();
+	}
+	for (auto it = closed.begin(); it != closed.end(); it++)
+		delete (*it);
 }
 
 int Search::expand(void) {
@@ -72,6 +79,7 @@ int Search::expand(void) {
 	}
 
 	if (turn) delete nd;
+	else closed.push_back(nd);
 
 	delete [] valid_m;
 	return 0;
