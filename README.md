@@ -31,3 +31,4 @@ deepening A* (IDA*) for lower space complexity.
 ##Bugs
 * Some maps cannot be solved although a solution supposedly exists
 * There is no way to kill a search that is taking too long
+* preprocessed BFS causes issues
