@@ -246,8 +246,16 @@ Mapf_t run_mapf(string path_g, string path_a) {
 
 	Mapf m(num_agents, states[0], states[1], &grid);
 
-
-	while (m.resolve_conflicts());
+	int res;
+	while (res = m.resolve_conflicts()) {
+		if (res == 2) {
+			delete [] states[0];
+			delete [] states[1];
+			delete [] states;
+			cout << "Failed to solve!\n";
+			return info;
+		}
+	}
 	cout << "\tTotal Nodes Expanded: " << m.num_expansions() << endl;	
 	cout << fixed;
 	cout << "\tTotal Time " << setprecision(8) << m.get_time() << "s\n";

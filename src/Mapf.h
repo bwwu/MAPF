@@ -18,7 +18,7 @@ struct agent_t {	// Agent type
 class Mapf {
 public:
 	Mapf(int n, Point* s_init, Point* s_goal, Grid* gd);
-	bool resolve_conflicts(void);
+	int resolve_conflicts(void);
 
 	int	num_expansions(void);
 	time_t	get_time(void);

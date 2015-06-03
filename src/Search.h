@@ -32,7 +32,7 @@ struct Node_t {
 
 class Search {
 public:
-	bool	expand(void);	// Return TRUE if goal is expanded
+	int	expand(void);	// Return 1 if goal is expanded
 	int	num_expansions(void);	// Return num of node expansion
 	vector<int>* path(bool print);	// Retrieve the path found from goal
 	

@@ -19,7 +19,7 @@ Mapf::Mapf(int n, Point* s_init, Point* s_goal, Grid* gd): n(n), grid(gd) {
 }
 
 // Resolve conflicts among groups. If conflicts exist, merge groups
-bool Mapf::resolve_conflicts(void) {
+int Mapf::resolve_conflicts(void) {
 
 	// For each group find independent soln and look for conflicts
 	bool conflicts = false;	// Indicates whether conflicts found
@@ -40,7 +40,13 @@ bool Mapf::resolve_conflicts(void) {
 		}
 		// Find solution on group
 		Search s(len, s_init, s_goal, grid);
-		while (!s.expand());
+		int result;
+		while (!(result = s.expand())) ;
+		if (result == 2) {
+			delete [] s_init;
+			delete [] s_goal;
+			return 2;
+		}
 
 		num_exp += s.num_expansions();
 
@@ -99,7 +105,7 @@ bool Mapf::resolve_conflicts(void) {
 	for (int i=0; i<num_groups; i++)
 		delete [] id_paths[i];
 	delete [] id_paths;
-	return conflicts;
+	return (conflicts) ? 1 : 0;
 }
 
 bool

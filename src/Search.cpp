@@ -35,7 +35,7 @@ Search::~Search() {
 	delete [] goal;
 }
 
-bool Search::expand(void) {
+int Search::expand(void) {
 	/* Choose node on open with min f cost */
 	Node* nd = NULL;		//Node to expand
 
@@ -50,8 +50,12 @@ bool Search::expand(void) {
 
 	/* Check if node chosen for exp is goal */
 	if (is_goal(nd))
-		return true;
+		return 1;
 	
+	if (nd->s->g() >= COST_THRESH) {
+		cout << "Exceeded cost threshold";
+		return 2;
+	}
 	/* Get adj list for position of agent about to move */
 	int turn = nd->turn;
 
@@ -70,7 +74,7 @@ bool Search::expand(void) {
 	if (turn) delete nd;
 
 	delete [] valid_m;
-	return false;
+	return 0;
 }
 
 Node* Search::generate(Node* p, int dir) {
