@@ -13,8 +13,8 @@ using namespace std;
 
 bool mincmp(Node*, Node*);
 
-Search::Search(int n, Point* init, Point* goal, Grid* g, Distance* d):
-	n(n), init(init), grid(g), exp_cnt(1), dlt(d) {
+Search::Search(int n, Point* init, Point* goal, Grid* g):
+	n(n), init(init), grid(g), exp_cnt(1) {
 	
 	current = NULL;
 
@@ -84,8 +84,7 @@ Node* Search::generate(Node* p, int dir) {
 	child->s = new State(n, *(p->s), m);
 	
 	// Replace MANHATTAN DIST
-	//child->f = p->s->g() + child->s->h(goal, grid);	// true dist
-	child->f = p->s->g() + child->s->h(goal, dlt);	// true dist
+	child->f = p->s->g() + child->s->h(goal, grid);	// true dist
 	child->dir = dir;
 
 	return child;
