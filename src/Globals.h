@@ -3,7 +3,7 @@
 #define GLOBALS_H
 #include "Grid.h"
 
-#define COST_THRESH 50
+#define COST_THRESH 25
 
 struct Mapf_t{	// MAPF Test Node 
 	int 	num_agents;	// # of agents in the puzzle

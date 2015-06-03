@@ -1,5 +1,6 @@
 /* Written by Brandon Wu */
 #include "Mapf.h"
+#include "Distance.h"
 #include <iomanip>
 using namespace std;
 
@@ -7,6 +8,7 @@ Mapf::Mapf(int n, Point* s_init, Point* s_goal, Grid* gd): n(n), grid(gd) {
 	num_exp = 0;
 	collisions = 0;
 	time(&start_t);
+	dlt = new Distance(grid);
 
 	/* Begin with n singleton groups */
 	for (int i=0; i<n; i++) {
@@ -16,6 +18,10 @@ Mapf::Mapf(int n, Point* s_init, Point* s_goal, Grid* gd): n(n), grid(gd) {
 		list.push_back(i);
 		groups.push_back(list);
 	}
+}
+
+Mapf::~Mapf() {
+	delete dlt;
 }
 
 // Resolve conflicts among groups. If conflicts exist, merge groups
@@ -39,7 +45,7 @@ int Mapf::resolve_conflicts(void) {
 			s_goal[j] = agentlist[agent_id].goal;
 		}
 		// Find solution on group
-		Search s(len, s_init, s_goal, grid);
+		Search s(len, s_init, s_goal, grid, dlt);
 		int result;
 		while (!(result = s.expand())) ;
 		if (result == 2) {

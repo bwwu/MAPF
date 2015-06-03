@@ -112,3 +112,18 @@ int State::h(Point* goal, Grid* grid) {
 	return dist;
 }
 
+/* True distance heuristic that uses distance lookup table*/
+int State::h(Point* goal, Distance* d) {
+	int dist = 0;
+	int max_int = numeric_limits<int>::max();
+	for (int i=0;i<n; i++) {
+		Point p_init = post_move[i];
+		Point p_goal = goal[i];
+		int cost = d->lookup(p_init, p_goal);
+		if (cost == max_int) 
+			return max_int;
+		dist += cost;
+	}
+	return dist;
+}
+

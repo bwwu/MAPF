@@ -1,7 +1,7 @@
 /* Written by Brandon Wu */
 #ifndef MAPF_H
 #define MAPF_H
-
+#include "Distance.h"
 #include "Search.h"
 #include "Grid.h"
 
@@ -18,6 +18,7 @@ struct agent_t {	// Agent type
 class Mapf {
 public:
 	Mapf(int n, Point* s_init, Point* s_goal, Grid* gd);
+	~Mapf();
 	int resolve_conflicts(void);
 
 	int	num_expansions(void);
@@ -30,6 +31,7 @@ private:
 	time_t	start_t;
 	time_t	diff_t;	// Total time elapsed
 
+	Distance* dlt;	//Distance lookup table
 	Grid* grid;
 	vector<agent_t> agentlist;	// List of agents
 	vector<vector<int>> groups;	// Independent groups

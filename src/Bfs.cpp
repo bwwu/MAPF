@@ -57,6 +57,6 @@ Bfs::Bfs(Point* o, Point* d, Grid* g): orig(o), dest(d), grid(g) {
 	dim = g->dim();
 	len = dim.x*dim.y;
 	visited = new bool[len]();
-	
-	search();
+	if (grid->clear(*o) && grid->clear(*d))	
+		search();
 }

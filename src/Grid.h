@@ -18,6 +18,7 @@ struct Point {
 class Grid {
 public:
 	bool*	adj(const Point& pos) const;
+	bool	clear(const Point& pos) const;
 	int	hash_pt(Point* p);	
 	void	display(void);
 	Point	dim(void);	// Dimension of the grid
@@ -39,5 +40,11 @@ int Grid::hash_pt(Point* p) {
 inline
 Point Grid::dim(void) {
 	return Point(dimX, dimY);
+}
+inline
+bool Grid::clear(const Point& pos) const {
+	return (pos.x>=0 && pos.x<dimX && pos.y>=0 && 
+		pos.y<dimY && grid[pos.x][pos.y]);
+
 }
 #endif //GRID_H
