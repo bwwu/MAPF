@@ -1,7 +1,7 @@
 TARGET=mapf
 CC=g++
 CFLAGS=-g -Wall -Wextra -std=c++11 -w
-SRCS=Globals.cpp Grid.cpp State.cpp Search.cpp Mapf.cpp Bfs.cpp test.cpp Distance.cpp
+SRCS=Globals.cpp Grid.cpp State.cpp Search.cpp Mapf.cpp Bfs.cpp test.cpp
 TRASH=${TARGET}
 
 ifdef GPROF
