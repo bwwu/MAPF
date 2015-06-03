@@ -68,8 +68,8 @@ if __name__ == "__main__":
 	testfile = "../tests/t5.test"
 	num_tests = 15
 	
-	dimX = 30
-	dimY = 30
+	dimX = 20
+	dimY = 15
 	num_agents = 4
 	p = 0.4	# Probability of obstacle
 	
