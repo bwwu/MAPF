@@ -1,0 +1,688 @@
+grid path= t5_g0.txt	 agent path= t5_a0.txt
+11101111101011111100
+11010111111110101111
+11101110111001001001
+00011011011110010110
+01010110010111000101
+11101010111101111011
+11110110011111101101
+01011101101001010100
+11001101000000111000
+11110011101110011100
+00011011111100111111
+10100111010111111101
+01110101111001101110
+01110110011011010000
+11111001101011110101
+01001011011001001101
+11011011101001110000
+11011101110110011111
+01110111001111001011
+00111101001110111110
+Found path for 0
+Checked solutions OK
+Found goal with cost 3!
+	Num Expansions = 30 nodes
+
+Moves for Agent 0
+Southeast
+Southwest
+South
+Group 0
+   Agent: 0	75 94 73 72 
+Found goal with cost 17!
+	Num Expansions = 569 nodes
+
+Moves for Agent 0
+Southeast
+Southeast
+East
+East
+Northeast
+Southeast
+Southeast
+East
+Southeast
+South
+Southeast
+Southeast
+Southeast
+Southeast
+Southeast
+Southeast
+Southeast
+Group 1
+   Agent: 1	59 78 97 117 137 158 177 196 216 235 234 253 272 291 310 329 348 367 
+	Total Nodes Expanded: 599
+	Total Time 2s
+grid path= t5_g1.txt	 agent path= t5_a1.txt
+10110101111111011010
+11110000110100011111
+11111010101011110011
+11110001101101110000
+10100101011100111101
+11110101100011000011
+11000111110011011100
+00111010110110111100
+11011010101111011010
+11100011010010111111
+00010111101100100110
+10110100111101101011
+10111001111111011110
+10100001100100001001
+10011111110001011001
+01111011100010101010
+10111111111101101001
+01000101001011111000
+01000011111010111111
+01100110000000100011
+Found path for 0
+Checked solutions OK
+Found goal with cost 15!
+	Num Expansions = 274 nodes
+
+Moves for Agent 0
+West
+Northwest
+Northwest
+Northwest
+North
+Northwest
+Southwest
+Southwest
+Northwest
+Northwest
+North
+Northwest
+North
+North
+Northeast
+Group 0
+   Agent: 0	208 188 169 150 131 132 113 92 71 52 33 34 15 16 17 38 
+Found goal with cost 2!
+	Num Expansions = 12 nodes
+
+Moves for Agent 0
+Northwest
+Northwest
+Group 1
+   Agent: 1	43 24 5 
+	Total Nodes Expanded: 286
+	Total Time 2s
+grid path= t5_g2.txt	 agent path= t5_a2.txt
+10011100001100100010
+10101101011111110000
+11001001100001111101
+01001001111110000101
+00100111010101001111
+11001011111110001111
+01101001110101110100
+10111001110010011111
+10010001111100101111
+01100111010110011011
+00111101111110010100
+10111000101101000001
+11100111011000011011
+00111110110001110110
+00110111110110000000
+11111100000100101011
+01000101000011101011
+01101101011111111111
+10000101101011101111
+00011010101011010100
+Found path for 0
+Checked solutions OK
+Found goal with cost 16!
+	Num Expansions = 524 nodes
+
+Moves for Agent 0
+Northwest
+Northeast
+North
+North
+North
+North
+Northeast
+Northwest
+Northeast
+North
+Northwest
+Northwest
+Northeast
+Northwest
+North
+Northwest
+Group 0
+   Agent: 0	42 23 44 45 46 47 48 69 50 71 72 53 34 55 36 37 18 
+Found goal with cost 16!
+	Num Expansions = 230 nodes
+
+Moves for Agent 0
+South
+South
+South
+South
+Southeast
+Northeast
+East
+Northeast
+Southeast
+Northeast
+Northeast
+Northwest
+Northeast
+Northeast
+East
+Northeast
+Group 1
+   Agent: 1	105 104 103 102 101 120 141 161 182 201 222 243 224 245 266 286 307 
+	Total Nodes Expanded: 754
+	Total Time 1s
+grid path= t5_g3.txt	 agent path= t5_a3.txt
+01000011001010110010
+01111100110110001111
+01010100101010110111
+01111000110110011111
+11011111110111011001
+11101001011101010000
+10111111011000100001
+00111000110111001011
+11111111001001001111
+00101101100101011101
+00000110111111001000
+10010101111100111011
+10111100100111110110
+11110111011101111111
+11111110101101111000
+11110011011111010011
+11001100001111001111
+10011111111011001010
+11101100110101111111
+00101111111111110111
+Found path for 0
+Checked solutions OK
+Found goal with cost 18!
+	Num Expansions = 241 nodes
+
+Moves for Agent 0
+Southwest
+Southwest
+Southwest
+Southwest
+Southwest
+Northwest
+Northwest
+Southwest
+Southwest
+West
+Southwest
+Southwest
+South
+Southwest
+Southwest
+Southwest
+Southwest
+Southwest
+Group 0
+   Agent: 0	398 377 356 335 314 293 274 255 234 213 193 172 151 150 129 108 87 66 45 
+Found goal with cost 16!
+	Num Expansions = 321 nodes
+
+Moves for Agent 0
+Southwest
+Southwest
+Southwest
+West
+West
+Northwest
+Southwest
+West
+Southwest
+South
+Southwest
+Southwest
+Southwest
+Southwest
+Northwest
+Southwest
+Group 1
+   Agent: 1	335 314 293 272 252 232 213 192 172 151 150 129 108 87 66 47 26 
+	Total Nodes Expanded: 562
+	Total Time 2s
+grid path= t5_g4.txt	 agent path= t5_a4.txt
+01010110000111100101
+00101110010100001110
+00011111101111011001
+10011001001110110111
+10101100110110111011
+11111000011111010100
+01110111011101111111
+00100011010111101111
+01001111101110111010
+00110100110001100011
+00100111011110101101
+01111111011111010011
+11000101110111111111
+10110001001111000100
+11110001100011001110
+10010010010110101111
+00100110011111100100
+10110111001111110010
+01001010110001100101
+11110110111100110001
+Found path for 0
+Checked solutions OK
+Found goal with cost 6!
+	Num Expansions = 27 nodes
+
+Moves for Agent 0
+West
+Southwest
+Southwest
+Northwest
+Southwest
+Southwest
+Group 0
+   Agent: 0	279 259 238 217 198 177 156 
+Found goal with cost 10!
+	Num Expansions = 136 nodes
+
+Moves for Agent 0
+Northeast
+Northeast
+North
+Northeast
+East
+Northeast
+North
+Northeast
+Northeast
+Northeast
+Group 1
+   Agent: 1	190 211 232 233 254 274 295 296 317 338 359 
+	Total Nodes Expanded: 163
+	Total Time 1s
+grid path= t5_g5.txt	 agent path= t5_a5.txt
+10011101010110010000
+10111101101001101011
+01101011101101110001
+00101110010000001001
+10001010010001100001
+00010111101011001111
+11011100011001010101
+11001011100001110111
+01111100111001010111
+10100100101100010010
+10111111011111001100
+11111010011011111010
+10111111111111110110
+11110011111001110101
+10110000000001111000
+01111100111101110100
+01101110001011101001
+01001111010101100110
+00011011110111110000
+10001100111110100000
+Found path for 0
+Checked solutions OK
+Found goal with cost 21!
+	Num Expansions = 1162 nodes
+
+Moves for Agent 0
+South
+Southwest
+South
+South
+Southwest
+West
+Southwest
+Southwest
+West
+West
+West
+Northwest
+Southwest
+West
+Southwest
+Northwest
+West
+West
+Southwest
+Northwest
+Northwest
+Group 0
+   Agent: 0	394 393 372 371 370 349 329 308 287 267 247 227 208 187 167 146 127 107 87 66 47 28 
+Found goal with cost 7!
+	Num Expansions = 47 nodes
+
+Moves for Agent 0
+Northwest
+Northwest
+Northwest
+Northwest
+Northwest
+Northeast
+Northwest
+Group 1
+   Agent: 1	267 248 229 210 191 172 193 174 
+	Total Nodes Expanded: 1209
+	Total Time 2s
+grid path= t5_g6.txt	 agent path= t5_a6.txt
+11101111111111101110
+11111100110001101101
+00111011101111011101
+11001011010111011110
+11001111111100100111
+11000100100011110111
+11001001111110101110
+01001111010011101100
+01111001111110110110
+10111011101011110111
+11101001111111010101
+01111000111111001001
+00011110110111111101
+01111101111111010010
+11100111111100100111
+11110010111110101000
+11101110111110111101
+00011110001101010011
+01010111101100011110
+01000110000101111101
+Found path for 0
+Checked solutions OK
+Found goal with cost 15!
+	Num Expansions = 843 nodes
+
+Moves for Agent 0
+Southwest
+Southeast
+Southwest
+Southwest
+Southwest
+Southwest
+Southwest
+West
+Southwest
+West
+Southwest
+Southwest
+Southwest
+Southwest
+Southwest
+Group 0
+   Agent: 0	376 355 374 353 332 311 290 269 249 228 208 187 166 145 124 103 
+Found goal with cost 10!
+	Num Expansions = 265 nodes
+
+Moves for Agent 0
+East
+East
+Southeast
+Northeast
+Southeast
+East
+Northeast
+East
+Northeast
+East
+Group 1
+   Agent: 1	151 171 191 210 231 250 270 291 311 332 352 
+	Total Nodes Expanded: 1108
+	Total Time 2s
+grid path= t5_g7.txt	 agent path= t5_a7.txt
+11111111100110000110
+11111111111011110101
+11011111110011110111
+11100111110010011010
+11111111111111111101
+00011101110101001000
+01111011100101111111
+10101011110101000010
+11111010010111111010
+10101111100001100100
+11101110101000100010
+01011110111011111011
+01110001110011101001
+11110011111110110100
+01011000010111000011
+11110110110011111111
+11010001111000000111
+01111100100101110011
+11111001011111001001
+11111110100010100001
+Found path for 0
+Checked solutions OK
+Found goal with cost 7!
+	Num Expansions = 158 nodes
+
+Moves for Agent 0
+South
+Southeast
+Southeast
+Southeast
+Southwest
+Southwest
+Southeast
+Group 0
+   Agent: 0	117 116 135 154 173 152 131 150 
+Found goal with cost 15!
+	Num Expansions = 514 nodes
+
+Moves for Agent 0
+Northeast
+Northwest
+Northwest
+North
+North
+North
+North
+Northwest
+Northwest
+Northwest
+Northeast
+Northeast
+Northeast
+Northeast
+East
+Group 1
+   Agent: 1	201 222 203 184 185 186 187 188 169 150 131 152 173 194 215 235 
+	Total Nodes Expanded: 672
+	Total Time 2s
+grid path= t5_g8.txt	 agent path= t5_a8.txt
+01100011011111101111
+10111001001001000110
+00110111010001110000
+00001111101011110111
+01111111110111110000
+11011001110101110000
+01001011110111101101
+10011111010111110011
+10101010110011011011
+11001101110111100110
+00111001110111111011
+00111110110011111111
+00101001111111111011
+11110000110010000111
+11111111111110011011
+10111101111001110000
+00111110011100011010
+10111111101100011010
+10011101011111110101
+11011111001111011111
+Found path for 0
+Checked solutions OK
+Found goal with cost 15!
+	Num Expansions = 524 nodes
+
+Moves for Agent 0
+Northwest
+West
+Northwest
+Northwest
+Northwest
+Northwest
+Northwest
+North
+Northwest
+North
+North
+Northwest
+Northwest
+Northeast
+North
+Group 0
+   Agent: 0	385 366 346 327 308 289 270 251 252 233 234 235 216 197 218 219 
+Found goal with cost 9!
+	Num Expansions = 154 nodes
+
+Moves for Agent 0
+West
+Southwest
+West
+Northwest
+West
+West
+Northwest
+West
+Southwest
+Group 1
+   Agent: 1	325 305 284 264 245 225 205 186 166 145 
+	Total Nodes Expanded: 678
+	Total Time 1s
+grid path= t5_g9.txt	 agent path= t5_a9.txt
+11110001001110000010
+01010101000110110000
+11111001011110101010
+01010101111100110111
+01100101010111010100
+11100001010010010101
+10010110010001011010
+01101111110010111101
+01010010100001010101
+10111000100101010101
+11100011100010001000
+10111001111011000010
+10111000101101011100
+11111011111100111110
+01111110101001011111
+01101000110011111101
+00100010110000101011
+00111100110111001101
+01001110001011110010
+11101110111011001111
+Found path for 0
+Checked solutions OK
+Found goal with cost 5!
+	Num Expansions = 27 nodes
+
+Moves for Agent 0
+South
+Southwest
+Southwest
+Southwest
+Southeast
+Group 0
+   Agent: 0	77 76 55 34 13 32 
+Found goal with cost 6!
+	Num Expansions = 85 nodes
+
+Moves for Agent 0
+Northwest
+Northeast
+North
+Northwest
+Northeast
+Northeast
+Group 1
+   Agent: 1	29 10 31 32 13 34 55 
+Conflict at t = 4. Value is 13
+Conflict found between Group 0 and 1Found goal with cost 6!
+	Num Expansions = 307 nodes
+
+Moves for Agent 0
+South
+Southwest
+Southwest
+Southwest
+Wait
+Southeast
+
+Moves for Agent 1
+Northeast
+Northeast
+Northwest
+Northeast
+Northwest
+North
+Group 0
+   Agent: 0	77 76 55 34 13 13 32 
+   Agent: 1	29 50 71 52 73 54 55 
+	Total Nodes Expanded: 419
+	Total Time 2s
+###############################################
+Solved 10/10 instances
+Instance 0
+	Grid x=20, y=20
+	Num agents = 2
+	Time = 2s
+	Collisions = 0
+	Num expansions = 599
+Instance 1
+	Grid x=20, y=20
+	Num agents = 2
+	Time = 2s
+	Collisions = 0
+	Num expansions = 286
+Instance 2
+	Grid x=20, y=20
+	Num agents = 2
+	Time = 1s
+	Collisions = 0
+	Num expansions = 754
+Instance 3
+	Grid x=20, y=20
+	Num agents = 2
+	Time = 2s
+	Collisions = 0
+	Num expansions = 562
+Instance 4
+	Grid x=20, y=20
+	Num agents = 2
+	Time = 1s
+	Collisions = 0
+	Num expansions = 163
+Instance 5
+	Grid x=20, y=20
+	Num agents = 2
+	Time = 2s
+	Collisions = 0
+	Num expansions = 1209
+Instance 6
+	Grid x=20, y=20
+	Num agents = 2
+	Time = 2s
+	Collisions = 0
+	Num expansions = 1108
+Instance 7
+	Grid x=20, y=20
+	Num agents = 2
+	Time = 2s
+	Collisions = 0
+	Num expansions = 672
+Instance 8
+	Grid x=20, y=20
+	Num agents = 2
+	Time = 1s
+	Collisions = 0
+	Num expansions = 678
+Instance 9
+	Grid x=20, y=20
+	Num agents = 2
+	Time = 2s
+	Collisions = 1
+	Num expansions = 419
+###############################################
+Average Node exp = 645.00
+	Min = 163	Max = 1209
+Average solution time = 1.70
+	Min = 1.00	Max = 2
