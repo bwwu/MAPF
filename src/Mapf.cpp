@@ -31,6 +31,7 @@ int Mapf::resolve_conflicts(void) {
 	// For each group find independent soln and look for conflicts
 	bool conflicts = false;	// Indicates whether conflicts found
 	vector<int>** id_paths = new vector<int>*[groups.size()];
+	int oldlen = groups.size();
 	
 	int num_groups = groups.size();
 	
@@ -57,6 +58,7 @@ int Mapf::resolve_conflicts(void) {
 		if (result == 2) {
 			delete [] s_init;
 			delete [] s_goal;
+			delete [] id_paths;
 			return 2;
 		}
 
@@ -85,6 +87,7 @@ int Mapf::resolve_conflicts(void) {
 		delete [] s_init;
 		delete [] s_goal;
 	}
+
 	cout << "group conflict resolution start\n";
 	for (int i=0; i<num_groups-1; i++) {
 		int len1 = groups[i].size();
@@ -117,6 +120,7 @@ int Mapf::resolve_conflicts(void) {
 	cout << "Group conflict resolution end\n";
 	for (int i=0; i<num_groups; i++)
 		delete [] id_paths[i];
+
 	delete [] id_paths;
 	return (conflicts) ? 1 : 0;
 }

@@ -196,6 +196,7 @@ vector<int>* Search::path(bool print=false) {
 		if (print) cout << endl;
 		delete [] arr;
 	}
+	delete [] moves;
 	return pos;	// Return list of pos for ea agent in search
 }
 

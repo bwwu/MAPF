@@ -16,6 +16,7 @@ struct GNode {
 class Bfs {
 	public:
 		Bfs(Point* o, Point* d, Grid* g);
+		~Bfs();
 		int cost(void);
 		
 	private:

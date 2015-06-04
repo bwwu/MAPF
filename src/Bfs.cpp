@@ -60,3 +60,8 @@ Bfs::Bfs(Point* o, Point* d, Grid* g): orig(o), dest(d), grid(g) {
 	if (grid->clear(*o) && grid->clear(*d))	
 		search();
 }
+
+Bfs::~Bfs() {
+	delete [] visited;
+
+}
