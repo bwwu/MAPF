@@ -1,0 +1,8285 @@
+grid path= t7_g0.txt	 agent path= t7_a0.txt
+11011011111100111111
+11111010110001000100
+00111101100011010111
+10010100111101101011
+10101110111101100011
+01110001101001010101
+11011011111000000101
+10001100011011011111
+11011101111010000010
+00100011111111010100
+10101011011010110010
+11111010101110011010
+10100010001001000110
+01101100110100101111
+11100111010000011001
+10001111111110010000
+01110011101000011101
+10011011101011100101
+10000011101011010001
+11001111100101101111
+dimX = 20 dimY = 20
+Found path for 0
+Found path for 2
+Found path for 4
+Checked solutions OK
+resolve_conflicts start
+starting search groupsize 1
+Found goal with cost 18!
+	Num Expansions = 552 nodes
+***********
+Done
+
+Moves for Agent 0
+West
+Northwest
+North
+Northeast
+North
+North
+North
+Northwest
+North
+Northwest
+Northwest
+Northwest
+Northwest
+Northwest
+Northwest
+Southwest
+Northwest
+Northwest
+Group 0
+   Agent: 0	224 204 185 186 207 208 209 210 191 192 173 154 135 116 97 78 57 38 19 
+resolve_conflicts end
+starting search groupsize 1
+Found goal with cost 14!
+	Num Expansions = 287 nodes
+***********
+Done
+
+Moves for Agent 0
+North
+Northwest
+Northeast
+North
+Northeast
+Northeast
+North
+Northeast
+Northeast
+North
+Northwest
+Northwest
+Northwest
+Northwest
+Group 1
+   Agent: 1	124 125 106 127 128 149 170 171 192 213 214 195 176 157 138 
+resolve_conflicts end
+starting search groupsize 1
+Found goal with cost 17!
+	Num Expansions = 487 nodes
+***********
+Done
+
+Moves for Agent 0
+Southeast
+South
+Southwest
+Southeast
+East
+East
+Northeast
+East
+Southeast
+East
+Northeast
+East
+Southeast
+South
+South
+Southeast
+Northeast
+Group 2
+   Agent: 2	7 26 25 4 23 43 63 84 104 123 143 164 184 203 202 201 220 241 
+resolve_conflicts end
+starting search groupsize 1
+Found goal with cost 18!
+	Num Expansions = 1009 nodes
+***********
+Done
+
+Moves for Agent 0
+Southwest
+Southeast
+South
+Southwest
+Southeast
+Southeast
+Southeast
+South
+South
+Southeast
+Southwest
+Southwest
+South
+South
+Southeast
+South
+South
+Southeast
+Group 3
+   Agent: 3	178 157 176 175 154 173 192 211 210 209 228 207 186 185 184 203 202 201 220 
+resolve_conflicts end
+starting search groupsize 1
+Found goal with cost 6!
+	Num Expansions = 27 nodes
+***********
+Done
+
+Moves for Agent 0
+Southeast
+Southwest
+Southeast
+South
+South
+Southeast
+Group 4
+   Agent: 4	352 371 350 369 368 367 386 
+resolve_conflicts end
+starting search groupsize 1
+Found goal with cost 13!
+	Num Expansions = 117 nodes
+***********
+Done
+
+Moves for Agent 0
+Northwest
+Northwest
+Northeast
+North
+North
+Northeast
+Northeast
+Northeast
+North
+Northwest
+Northeast
+Northwest
+West
+Group 5
+   Agent: 5	320 301 282 303 304 305 326 347 368 369 350 371 352 332 
+resolve_conflicts end
+group conflict resolution start
+Group conflict resolution end
+	Total Nodes Expanded: 2479
+	Total Time 2s
+grid path= t7_g1.txt	 agent path= t7_a1.txt
+11000110010111110100
+10011111110101001111
+01101111001011111111
+01111111001110111010
+11010100011111111001
+11011110001111100110
+01111101111110110100
+01100111111111010011
+10100110111110011101
+10111001101110010100
+00010111011011111110
+01111101010101111010
+11011100001110011111
+00011011011100001111
+11101010010101100000
+10110010100011000110
+11110111111100100111
+01101000110010110110
+00011100111110111111
+00101011111000100100
+dimX = 20 dimY = 20
+Found path for 0
+Found path for 2
+Found path for 4
+Checked solutions OK
+resolve_conflicts start
+starting search groupsize 1
+Found goal with cost 7!
+	Num Expansions = 38 nodes
+***********
+Done
+
+Moves for Agent 0
+Southwest
+South
+Southeast
+South
+South
+Southeast
+Southeast
+Group 0
+   Agent: 0	129 108 107 126 125 124 143 162 
+resolve_conflicts end
+starting search groupsize 1
+Found goal with cost 11!
+	Num Expansions = 305 nodes
+***********
+Done
+
+Moves for Agent 0
+Southeast
+Northeast
+Northeast
+East
+East
+East
+East
+Southeast
+Southeast
+East
+Southeast
+Group 1
+   Agent: 1	57 76 97 118 138 158 178 198 217 236 256 275 
+resolve_conflicts end
+starting search groupsize 1
+Found goal with cost 17!
+	Num Expansions = 1068 nodes
+***********
+Done
+
+Moves for Agent 0
+West
+West
+Northwest
+West
+Northwest
+Northwest
+Northwest
+Northwest
+Northwest
+West
+West
+Southwest
+Southwest
+Southwest
+Southwest
+Southwest
+West
+Group 2
+   Agent: 2	367 347 327 308 288 269 250 231 212 193 173 153 132 111 90 69 48 28 
+resolve_conflicts end
+starting search groupsize 1
+Found goal with cost 5!
+	Num Expansions = 90 nodes
+***********
+Done
+
+Moves for Agent 0
+Northeast
+East
+Northeast
+East
+East
+Group 3
+   Agent: 3	76 97 117 138 158 178 
+resolve_conflicts end
+starting search groupsize 1
+Found goal with cost 17!
+	Num Expansions = 1094 nodes
+***********
+Done
+
+Moves for Agent 0
+Northeast
+East
+Southeast
+Northeast
+Southeast
+Southeast
+East
+East
+Southeast
+Southeast
+Southeast
+East
+Southeast
+East
+Northeast
+Southeast
+Southeast
+Group 4
+   Agent: 4	53 74 94 113 134 153 172 192 212 231 250 269 289 308 328 349 368 387 
+resolve_conflicts end
+starting search groupsize 1
+Found goal with cost 14!
+	Num Expansions = 237 nodes
+***********
+Done
+
+Moves for Agent 0
+Southwest
+Northwest
+Northwest
+Northwest
+West
+Southwest
+West
+West
+West
+West
+Northwest
+Southwest
+Southwest
+Southwest
+Group 5
+   Agent: 5	342 321 302 283 264 244 223 203 183 163 143 124 103 82 61 
+resolve_conflicts end
+group conflict resolution start
+Conflict at t = 8. Value is 212
+Conflict found between Group 2 and 4
+Group conflict resolution end
+resolve_conflicts start
+starting search groupsize 1
+Found goal with cost 7!
+	Num Expansions = 38 nodes
+***********
+Done
+
+Moves for Agent 0
+Southwest
+South
+Southeast
+South
+South
+Southeast
+Southeast
+Group 0
+   Agent: 0	129 108 107 126 125 124 143 162 
+resolve_conflicts end
+starting search groupsize 1
+Found goal with cost 11!
+	Num Expansions = 305 nodes
+***********
+Done
+
+Moves for Agent 0
+Southeast
+Northeast
+Northeast
+East
+East
+East
+East
+Southeast
+Southeast
+East
+Southeast
+Group 1
+   Agent: 1	57 76 97 118 138 158 178 198 217 236 256 275 
+resolve_conflicts end
+starting search groupsize 2
+Found goal with cost 17!
+	Num Expansions = 4116 nodes
+***********
+Done
+
+Moves for Agent 0
+Southwest
+Northwest
+Northwest
+West
+West
+Southwest
+Northwest
+Northwest
+West
+Northwest
+West
+Southwest
+Southwest
+West
+West
+West
+West
+
+Moves for Agent 1
+East
+Northeast
+Northeast
+Southeast
+Southeast
+East
+Southeast
+East
+Southeast
+Southeast
+Southeast
+Southeast
+Northeast
+East
+East
+Southeast
+Southeast
+Group 2
+   Agent: 2	367 346 327 308 288 268 247 228 209 189 170 150 129 108 88 68 48 28 
+   Agent: 4	53 73 94 115 134 153 173 192 212 231 250 269 288 309 329 349 368 387 
+resolve_conflicts end
+starting search groupsize 1
+Found goal with cost 5!
+	Num Expansions = 90 nodes
+***********
+Done
+
+Moves for Agent 0
+Northeast
+East
+Northeast
+East
+East
+Group 3
+   Agent: 3	76 97 117 138 158 178 
+resolve_conflicts end
+starting search groupsize 1
+Found goal with cost 14!
+	Num Expansions = 237 nodes
+***********
+Done
+
+Moves for Agent 0
+Southwest
+Northwest
+Northwest
+Northwest
+West
+Southwest
+West
+West
+West
+West
+Northwest
+Southwest
+Southwest
+Southwest
+Group 4
+   Agent: 5	342 321 302 283 264 244 223 203 183 163 143 124 103 82 61 
+resolve_conflicts end
+group conflict resolution start
+Group conflict resolution end
+	Total Nodes Expanded: 7618
+	Total Time 1s
+grid path= t7_g2.txt	 agent path= t7_a2.txt
+11111101100111011101
+01100001111011100111
+10110100001011100110
+01110100110111110011
+01000101000100011001
+10010011110010001001
+00010110110001001111
+00100000110111101010
+11010010101111010110
+10010110100110100101
+01011011001101000011
+01111111011100101011
+11111110011101110011
+00100110011110001010
+00001101011111110011
+10010001001010001011
+01111101100011000001
+00110000011100111011
+11111011000011000011
+11011111011010111011
+dimX = 20 dimY = 20
+Found path for 0
+Found path for 2
+Cannot solve instance 2
+grid path= t7_g3.txt	 agent path= t7_a3.txt
+11010101110100011100
+00100011001110011010
+11010110110011110111
+01011111111011010011
+00101110111011001110
+11000011111111101010
+01111110010011101001
+11111000001011000010
+11010100111110100101
+01101010110111001101
+10010110010011010010
+11110111111001011110
+00100101001011111001
+00111111011101111100
+11001111111111111111
+11111101101100000001
+10000001111111111110
+00101001101010010110
+11111010111101101101
+11010011111011110101
+dimX = 20 dimY = 20
+Found path for 0
+Found path for 2
+Found path for 4
+Checked solutions OK
+resolve_conflicts start
+starting search groupsize 1
+Found goal with cost 10!
+	Num Expansions = 212 nodes
+***********
+Done
+
+Moves for Agent 0
+Southeast
+Northeast
+Northeast
+North
+Northeast
+East
+Northeast
+Northeast
+North
+Northwest
+Group 0
+   Agent: 0	128 147 168 189 190 211 231 252 273 274 255 
+resolve_conflicts end
+starting search groupsize 1
+Found goal with cost 9!
+	Num Expansions = 85 nodes
+***********
+Done
+
+Moves for Agent 0
+Northwest
+Northwest
+West
+Northwest
+North
+Northwest
+North
+North
+Northwest
+Group 1
+   Agent: 1	223 204 185 165 146 147 128 129 130 111 
+resolve_conflicts end
+starting search groupsize 1
+Found goal with cost 12!
+	Num Expansions = 480 nodes
+***********
+Done
+
+Moves for Agent 0
+Northwest
+Northwest
+Northwest
+Northwest
+North
+North
+Northeast
+Northeast
+Northwest
+North
+North
+Northeast
+Group 2
+   Agent: 2	325 306 287 268 249 250 251 272 293 274 275 276 297 
+resolve_conflicts end
+starting search groupsize 1
+Found goal with cost 7!
+	Num Expansions = 147 nodes
+***********
+Done
+
+Moves for Agent 0
+West
+Northwest
+Northwest
+West
+West
+West
+Southwest
+Group 3
+   Agent: 3	281 261 242 223 203 183 163 142 
+resolve_conflicts end
+starting search groupsize 1
+Found goal with cost 17!
+	Num Expansions = 564 nodes
+***********
+Done
+
+Moves for Agent 0
+Southeast
+East
+Northeast
+East
+Northeast
+East
+East
+East
+Northeast
+Southeast
+Northeast
+Northeast
+Northeast
+East
+Northeast
+Southeast
+Southeast
+Group 4
+   Agent: 4	33 52 72 93 113 134 154 174 194 215 234 255 276 297 317 338 357 376 
+resolve_conflicts end
+starting search groupsize 1
+Found goal with cost 10!
+	Num Expansions = 227 nodes
+***********
+Done
+
+Moves for Agent 0
+West
+Northwest
+Northwest
+Southwest
+Southwest
+South
+South
+Southeast
+Southwest
+Southwest
+Group 5
+   Agent: 5	355 335 316 297 276 255 254 253 272 251 230 
+resolve_conflicts end
+group conflict resolution start
+Conflict at t = 9. Value is 274
+Conflict found between Group 0 and 2
+Group conflict resolution end
+resolve_conflicts start
+starting search groupsize 2
+Found goal with cost 12!
+	Num Expansions = 2369796 nodes
+***********
+Done
+
+Moves for Agent 0
+East
+East
+Northeast
+Northwest
+East
+Northeast
+North
+Northwest
+Northeast
+East
+Northeast
+Wait
+
+Moves for Agent 1
+Northwest
+Northwest
+Northwest
+North
+Northwest
+Northwest
+Northeast
+Northeast
+Northwest
+North
+Northeast
+Northeast
+Group 0
+   Agent: 0	128 148 168 189 170 190 211 212 193 214 234 255 255 
+   Agent: 2	325 306 287 268 269 250 231 252 273 254 255 276 297 
+resolve_conflicts end
+starting search groupsize 1
+Found goal with cost 9!
+	Num Expansions = 85 nodes
+***********
+Done
+
+Moves for Agent 0
+Northwest
+Northwest
+West
+Northwest
+North
+Northwest
+North
+North
+Northwest
+Group 1
+   Agent: 1	223 204 185 165 146 147 128 129 130 111 
+resolve_conflicts end
+starting search groupsize 1
+Found goal with cost 7!
+	Num Expansions = 147 nodes
+***********
+Done
+
+Moves for Agent 0
+West
+Northwest
+Northwest
+West
+West
+West
+Southwest
+Group 2
+   Agent: 3	281 261 242 223 203 183 163 142 
+resolve_conflicts end
+starting search groupsize 1
+Found goal with cost 17!
+	Num Expansions = 564 nodes
+***********
+Done
+
+Moves for Agent 0
+Southeast
+East
+Northeast
+East
+Northeast
+East
+East
+East
+Northeast
+Southeast
+Northeast
+Northeast
+Northeast
+East
+Northeast
+Southeast
+Southeast
+Group 3
+   Agent: 4	33 52 72 93 113 134 154 174 194 215 234 255 276 297 317 338 357 376 
+resolve_conflicts end
+starting search groupsize 1
+Found goal with cost 10!
+	Num Expansions = 227 nodes
+***********
+Done
+
+Moves for Agent 0
+West
+Northwest
+Northwest
+Southwest
+Southwest
+South
+South
+Southeast
+Southwest
+Southwest
+Group 4
+   Agent: 5	355 335 316 297 276 255 254 253 272 251 230 
+resolve_conflicts end
+group conflict resolution start
+Conflict at t = 10. Value is 234
+Conflict found between Group 0 and 3
+Group conflict resolution end
+resolve_conflicts start
+starting search groupsize 3
+Exceeded expansion threshold***********
+Done
+Failed to solve!
+Cannot solve instance 3
+grid path= t7_g4.txt	 agent path= t7_a4.txt
+11001011110111111001
+11011110110111111111
+00001011111001001010
+00001111111111001101
+11110011101111001100
+10011101111011111011
+10010010111011100110
+01100110111011011000
+01100010010011101011
+10011111100100111100
+10111000101010110011
+11111010111111000010
+00100110110000111111
+10101110011111101111
+00000011101110111111
+11111110001111111101
+11010011101011100000
+11001101111101010011
+10100000100110001100
+01001100100001101000
+dimX = 20 dimY = 20
+Found path for 0
+Found path for 2
+Found path for 4
+Checked solutions OK
+resolve_conflicts start
+starting search groupsize 1
+Found goal with cost 17!
+	Num Expansions = 942 nodes
+***********
+Done
+
+Moves for Agent 0
+Northwest
+Northwest
+Northeast
+East
+Northeast
+Northwest
+Northeast
+Northeast
+Northeast
+Northeast
+North
+North
+Northeast
+North
+North
+North
+Northeast
+Group 0
+   Agent: 0	162 143 124 145 165 186 167 188 209 230 251 252 253 274 275 276 277 298 
+resolve_conflicts end
+starting search groupsize 1
+Found goal with cost 4!
+	Num Expansions = 77 nodes
+***********
+Done
+
+Moves for Agent 0
+Southwest
+Southeast
+South
+Southeast
+Group 1
+   Agent: 1	277 256 275 274 293 
+resolve_conflicts end
+starting search groupsize 1
+Found goal with cost 12!
+	Num Expansions = 158 nodes
+***********
+Done
+
+Moves for Agent 0
+South
+Southwest
+Southwest
+Southwest
+Southwest
+Southwest
+Northwest
+Northwest
+West
+West
+Southwest
+Southwest
+Group 2
+   Agent: 2	294 293 272 251 230 209 188 169 150 130 110 89 68 
+resolve_conflicts end
+starting search groupsize 1
+Found goal with cost 18!
+	Num Expansions = 489 nodes
+***********
+Done
+
+Moves for Agent 0
+Northeast
+East
+Southeast
+East
+East
+East
+East
+Southeast
+Southeast
+South
+Southeast
+Southeast
+Southeast
+East
+Southeast
+Southeast
+Southeast
+East
+Group 3
+   Agent: 3	10 31 51 70 90 110 130 150 169 188 187 206 225 244 264 283 302 321 341 
+resolve_conflicts end
+starting search groupsize 1
+Found goal with cost 11!
+	Num Expansions = 148 nodes
+***********
+Done
+
+Moves for Agent 0
+East
+East
+Southeast
+South
+Southeast
+Southwest
+West
+Southwest
+Northwest
+Southwest
+South
+Group 4
+   Agent: 4	48 68 88 107 106 125 104 84 63 44 23 22 
+resolve_conflicts end
+starting search groupsize 1
+Found goal with cost 11!
+	Num Expansions = 303 nodes
+***********
+Done
+
+Moves for Agent 0
+North
+North
+Northeast
+North
+Northwest
+North
+Northwest
+Northwest
+North
+North
+North
+Group 5
+   Agent: 5	168 169 170 191 192 173 174 155 136 137 138 139 
+resolve_conflicts end
+group conflict resolution start
+Group conflict resolution end
+	Total Nodes Expanded: 2117
+	Total Time 2s
+grid path= t7_g5.txt	 agent path= t7_a5.txt
+11001010100110100011
+11000010101111000111
+01100010101110111010
+00011001011100111101
+01110111011111000101
+01101000000011101001
+01001101101011011100
+11110011111001001011
+11101010001111111011
+11110110010101111111
+11101011010011010001
+11001100100011010001
+10011110011010111001
+10101101000110101010
+11110000010001100010
+01111001111001011111
+01110011100110111011
+11100101011011000001
+11100001111110111011
+10111111101100111011
+dimX = 20 dimY = 20
+Found path for 0
+Found path for 2
+Found path for 4
+Checked solutions OK
+resolve_conflicts start
+starting search groupsize 1
+Found goal with cost 6!
+	Num Expansions = 84 nodes
+***********
+Done
+
+Moves for Agent 0
+East
+Northeast
+Southeast
+South
+Southeast
+Southwest
+Group 0
+   Agent: 0	29 49 70 89 88 107 86 
+resolve_conflicts end
+starting search groupsize 1
+Found goal with cost 14!
+	Num Expansions = 172 nodes
+***********
+Done
+
+Moves for Agent 0
+Southwest
+Southwest
+West
+Southwest
+South
+South
+Southwest
+South
+Southeast
+Southwest
+Southwest
+Southeast
+East
+East
+Group 1
+   Agent: 1	392 371 350 330 309 308 307 286 285 304 283 262 281 301 321 
+resolve_conflicts end
+starting search groupsize 1
+Found goal with cost 7!
+	Num Expansions = 82 nodes
+***********
+Done
+
+Moves for Agent 0
+Southwest
+South
+South
+Southeast
+East
+East
+East
+Group 2
+   Agent: 2	64 43 42 41 60 80 100 120 
+resolve_conflicts end
+starting search groupsize 1
+Found goal with cost 11!
+	Num Expansions = 304 nodes
+***********
+Done
+
+Moves for Agent 0
+West
+Southwest
+West
+Southwest
+Southwest
+Southwest
+Northwest
+Northwest
+West
+Northwest
+Southwest
+Group 3
+   Agent: 3	378 358 337 317 296 275 254 235 216 196 177 156 
+resolve_conflicts end
+starting search groupsize 1
+Found goal with cost 14!
+	Num Expansions = 163 nodes
+***********
+Done
+
+Moves for Agent 0
+Northeast
+Northeast
+North
+Northeast
+North
+Northwest
+North
+Northeast
+Northwest
+Northwest
+Northwest
+Northwest
+West
+Northwest
+Group 4
+   Agent: 4	200 221 242 243 264 265 246 247 268 249 230 211 192 172 153 
+resolve_conflicts end
+starting search groupsize 1
+Found goal with cost 9!
+	Num Expansions = 263 nodes
+***********
+Done
+
+Moves for Agent 0
+Southeast
+South
+Southeast
+South
+South
+Southeast
+Southeast
+Southwest
+Southwest
+Group 5
+   Agent: 5	218 237 236 255 254 253 272 291 270 249 
+resolve_conflicts end
+group conflict resolution start
+Conflict at t = 9. Value is 249
+Conflict found between Group 4 and 5
+Group conflict resolution end
+resolve_conflicts start
+starting search groupsize 1
+Found goal with cost 6!
+	Num Expansions = 84 nodes
+***********
+Done
+
+Moves for Agent 0
+East
+Northeast
+Southeast
+South
+Southeast
+Southwest
+Group 0
+   Agent: 0	29 49 70 89 88 107 86 
+resolve_conflicts end
+starting search groupsize 1
+Found goal with cost 14!
+	Num Expansions = 172 nodes
+***********
+Done
+
+Moves for Agent 0
+Southwest
+Southwest
+West
+Southwest
+South
+South
+Southwest
+South
+Southeast
+Southwest
+Southwest
+Southeast
+East
+East
+Group 1
+   Agent: 1	392 371 350 330 309 308 307 286 285 304 283 262 281 301 321 
+resolve_conflicts end
+starting search groupsize 1
+Found goal with cost 7!
+	Num Expansions = 82 nodes
+***********
+Done
+
+Moves for Agent 0
+Southwest
+South
+South
+Southeast
+East
+East
+East
+Group 2
+   Agent: 2	64 43 42 41 60 80 100 120 
+resolve_conflicts end
+starting search groupsize 1
+Found goal with cost 11!
+	Num Expansions = 304 nodes
+***********
+Done
+
+Moves for Agent 0
+West
+Southwest
+West
+Southwest
+Southwest
+Southwest
+Northwest
+Northwest
+West
+Northwest
+Southwest
+Group 3
+   Agent: 3	378 358 337 317 296 275 254 235 216 196 177 156 
+resolve_conflicts end
+starting search groupsize 2
+Exceeded expansion threshold***********
+Done
+Failed to solve!
+Cannot solve instance 5
+grid path= t7_g6.txt	 agent path= t7_a6.txt
+11111101110111001101
+10101110000001010001
+11011010011001101101
+10011011110111111110
+11011011101001110010
+11101110011011101010
+00100101111110110011
+10011111011011101101
+01011011001111101110
+11010011001001110101
+01110010010111010111
+11101101001100101101
+11001111111010111011
+00010111101001101000
+00001101111010011110
+10101111010101110010
+10111101101111100111
+10110111101111111100
+10111101101010000010
+00100110101111111110
+dimX = 20 dimY = 20
+Found path for 0
+Found path for 2
+Found path for 4
+Checked solutions OK
+resolve_conflicts start
+starting search groupsize 1
+Found goal with cost 14!
+	Num Expansions = 542 nodes
+***********
+Done
+
+Moves for Agent 0
+East
+Northeast
+East
+East
+Northeast
+Northeast
+East
+Southeast
+East
+Northeast
+Northeast
+Northeast
+East
+Northeast
+Group 0
+   Agent: 0	71 91 112 132 152 173 194 214 233 253 274 295 316 336 357 
+resolve_conflicts end
+starting search groupsize 1
+Found goal with cost 16!
+	Num Expansions = 1091 nodes
+***********
+Done
+
+Moves for Agent 0
+West
+Southwest
+Northwest
+Southwest
+Northwest
+West
+West
+Southwest
+Southwest
+West
+West
+Southwest
+Northwest
+Northwest
+Northwest
+West
+Group 1
+   Agent: 1	369 349 328 309 288 269 249 229 208 187 167 147 126 107 88 69 49 
+resolve_conflicts end
+starting search groupsize 1
+Found goal with cost 10!
+	Num Expansions = 194 nodes
+***********
+Done
+
+Moves for Agent 0
+West
+Southwest
+Southwest
+Northwest
+Northwest
+Northwest
+Northwest
+West
+Northwest
+West
+Group 2
+   Agent: 2	256 236 215 194 175 156 137 118 98 79 59 
+resolve_conflicts end
+starting search groupsize 1
+Found goal with cost 10!
+	Num Expansions = 243 nodes
+***********
+Done
+
+Moves for Agent 0
+North
+Northeast
+Northeast
+East
+Northeast
+Northeast
+Northeast
+Northeast
+Southeast
+Northeast
+Group 3
+   Agent: 3	144 145 166 187 207 228 249 270 291 310 331 
+resolve_conflicts end
+starting search groupsize 1
+Found goal with cost 11!
+	Num Expansions = 52 nodes
+***********
+Done
+
+Moves for Agent 0
+Northeast
+North
+Northeast
+Northeast
+Northeast
+North
+North
+North
+Northeast
+North
+North
+Group 4
+   Agent: 4	288 309 310 331 352 373 374 375 376 397 398 399 
+resolve_conflicts end
+starting search groupsize 1
+Found goal with cost 11!
+	Num Expansions = 293 nodes
+***********
+Done
+
+Moves for Agent 0
+North
+Northeast
+North
+North
+Northeast
+Northeast
+Northeast
+Southeast
+East
+Northeast
+Northeast
+Group 5
+   Agent: 5	107 108 129 130 131 152 173 194 213 233 254 275 
+resolve_conflicts end
+group conflict resolution start
+Conflict at t = 6. Value is 249
+Conflict found between Group 1 and 3
+Group conflict resolution end
+resolve_conflicts start
+starting search groupsize 1
+Found goal with cost 14!
+	Num Expansions = 542 nodes
+***********
+Done
+
+Moves for Agent 0
+East
+Northeast
+East
+East
+Northeast
+Northeast
+East
+Southeast
+East
+Northeast
+Northeast
+Northeast
+East
+Northeast
+Group 0
+   Agent: 0	71 91 112 132 152 173 194 214 233 253 274 295 316 336 357 
+resolve_conflicts end
+starting search groupsize 2
+Exceeded expansion threshold***********
+Done
+Failed to solve!
+Cannot solve instance 6
+grid path= t7_g7.txt	 agent path= t7_a7.txt
+00110101001111001101
+01101111111011110101
+11010001100000011100
+11000111110110101100
+00100111001110011110
+11011101111001111110
+00111001010100111010
+10111011101001001101
+01110100111111000111
+11111110011110111100
+01111111111010000011
+00110010110110000111
+10111111010111011111
+10101111101101111110
+11110111110011111111
+00111000101111011110
+10001101100110011011
+10111101111110101111
+11101111010101101110
+01111110001011011110
+dimX = 20 dimY = 20
+Found path for 0
+Found path for 2
+Found path for 4
+Checked solutions OK
+resolve_conflicts start
+starting search groupsize 1
+Found goal with cost 5!
+	Num Expansions = 34 nodes
+***********
+Done
+
+Moves for Agent 0
+Northeast
+Northeast
+Northeast
+East
+Northeast
+Group 0
+   Agent: 0	86 107 128 149 169 190 
+resolve_conflicts end
+starting search groupsize 1
+Found goal with cost 8!
+	Num Expansions = 133 nodes
+***********
+Done
+
+Moves for Agent 0
+South
+Southeast
+Southeast
+Southeast
+Southeast
+Southeast
+East
+East
+Group 1
+   Agent: 1	110 109 128 147 166 185 204 224 244 
+resolve_conflicts end
+starting search groupsize 1
+Found goal with cost 15!
+	Num Expansions = 940 nodes
+***********
+Done
+
+Moves for Agent 0
+East
+East
+Northeast
+East
+Northeast
+East
+Northeast
+Northeast
+East
+Northeast
+Northeast
+Northeast
+Northeast
+East
+Southeast
+Group 2
+   Agent: 2	25 45 65 86 106 127 147 168 189 209 230 251 272 293 313 332 
+resolve_conflicts end
+starting search groupsize 1
+Found goal with cost 6!
+	Num Expansions = 63 nodes
+***********
+Done
+
+Moves for Agent 0
+Northwest
+West
+Southwest
+Southwest
+Southwest
+South
+Group 3
+   Agent: 3	290 271 251 230 209 188 187 
+resolve_conflicts end
+starting search groupsize 1
+Found goal with cost 3!
+	Num Expansions = 25 nodes
+***********
+Done
+
+Moves for Agent 0
+East
+East
+Southeast
+Group 4
+   Agent: 4	118 138 158 177 
+resolve_conflicts end
+starting search groupsize 1
+Found goal with cost 13!
+	Num Expansions = 582 nodes
+***********
+Done
+
+Moves for Agent 0
+Northeast
+Northeast
+North
+Northeast
+Northwest
+North
+Northwest
+Northwest
+Northeast
+North
+Northeast
+Northwest
+Northeast
+Group 5
+   Agent: 5	305 326 347 348 369 350 351 332 313 334 335 356 337 358 
+resolve_conflicts end
+group conflict resolution start
+Conflict at t = 2. Value is 128
+Conflict found between Group 0 and 1
+Group conflict resolution end
+resolve_conflicts start
+starting search groupsize 2
+Found goal with cost 8!
+	Num Expansions = 131965 nodes
+***********
+Done
+
+Moves for Agent 0
+Northeast
+East
+North
+Wait
+Northeast
+Wait
+East
+Northeast
+
+Moves for Agent 1
+Southeast
+South
+Southeast
+Southeast
+Southeast
+Southeast
+East
+East
+Group 0
+   Agent: 0	86 107 127 128 128 149 149 169 190 
+   Agent: 1	110 129 128 147 166 185 204 224 244 
+resolve_conflicts end
+starting search groupsize 1
+Found goal with cost 15!
+	Num Expansions = 940 nodes
+***********
+Done
+
+Moves for Agent 0
+East
+East
+Northeast
+East
+Northeast
+East
+Northeast
+Northeast
+East
+Northeast
+Northeast
+Northeast
+Northeast
+East
+Southeast
+Group 1
+   Agent: 2	25 45 65 86 106 127 147 168 189 209 230 251 272 293 313 332 
+resolve_conflicts end
+starting search groupsize 1
+Found goal with cost 6!
+	Num Expansions = 63 nodes
+***********
+Done
+
+Moves for Agent 0
+Northwest
+West
+Southwest
+Southwest
+Southwest
+South
+Group 2
+   Agent: 3	290 271 251 230 209 188 187 
+resolve_conflicts end
+starting search groupsize 1
+Found goal with cost 3!
+	Num Expansions = 25 nodes
+***********
+Done
+
+Moves for Agent 0
+East
+East
+Southeast
+Group 3
+   Agent: 4	118 138 158 177 
+resolve_conflicts end
+starting search groupsize 1
+Found goal with cost 13!
+	Num Expansions = 582 nodes
+***********
+Done
+
+Moves for Agent 0
+Northeast
+Northeast
+North
+Northeast
+Northwest
+North
+Northwest
+Northwest
+Northeast
+North
+Northeast
+Northwest
+Northeast
+Group 4
+   Agent: 5	305 326 347 348 369 350 351 332 313 334 335 356 337 358 
+resolve_conflicts end
+group conflict resolution start
+Group conflict resolution end
+	Total Nodes Expanded: 135352
+	Total Time 3s
+grid path= t7_g8.txt	 agent path= t7_a8.txt
+10000110111110110111
+01010111010000000011
+01111011101110101000
+11111001110111011101
+11111011011100110101
+10101010101101001110
+01010011101111110111
+11010001110110110110
+00111001110010001111
+00111101110010110100
+00111111111011100100
+00111011111011101101
+10100011010100000000
+11101111111101000110
+10011101101100001011
+11011111000010011110
+10011111100001011001
+01111101010001000111
+11011110110111110111
+10101010011010111111
+dimX = 20 dimY = 20
+Found path for 0
+Found path for 2
+Found path for 4
+Checked solutions OK
+resolve_conflicts start
+starting search groupsize 1
+Found goal with cost 7!
+	Num Expansions = 64 nodes
+***********
+Done
+
+Moves for Agent 0
+Northwest
+North
+North
+Northeast
+Northeast
+Northeast
+Northeast
+Group 0
+   Agent: 0	22 3 4 5 26 47 68 89 
+resolve_conflicts end
+starting search groupsize 1
+Found goal with cost 10!
+	Num Expansions = 151 nodes
+***********
+Done
+
+Moves for Agent 0
+East
+Southeast
+Northeast
+Northeast
+Northeast
+Northeast
+North
+Northeast
+Northeast
+North
+Group 1
+   Agent: 1	90 110 129 150 171 192 213 214 235 256 257 
+resolve_conflicts end
+starting search groupsize 1
+Found goal with cost 9!
+	Num Expansions = 537 nodes
+***********
+Done
+
+Moves for Agent 0
+South
+Southeast
+South
+Southwest
+Southwest
+South
+Southwest
+South
+Southwest
+Group 2
+   Agent: 2	152 151 170 169 148 127 126 105 104 83 
+resolve_conflicts end
+starting search groupsize 1
+Found goal with cost 3!
+	Num Expansions = 47 nodes
+***********
+Done
+
+Moves for Agent 0
+Northeast
+East
+Southeast
+Group 3
+   Agent: 3	15 36 56 75 
+resolve_conflicts end
+starting search groupsize 1
+Found goal with cost 10!
+	Num Expansions = 413 nodes
+***********
+Done
+
+Moves for Agent 0
+Northeast
+Southeast
+Northeast
+Southeast
+Southeast
+Southwest
+South
+South
+Southeast
+Southeast
+Group 4
+   Agent: 4	57 78 97 118 137 156 135 134 133 152 171 
+resolve_conflicts end
+starting search groupsize 1
+Found goal with cost 5!
+	Num Expansions = 78 nodes
+***********
+Done
+
+Moves for Agent 0
+East
+East
+East
+Southeast
+Northeast
+Group 5
+   Agent: 5	148 168 188 208 227 248 
+resolve_conflicts end
+group conflict resolution start
+Group conflict resolution end
+	Total Nodes Expanded: 1290
+	Total Time 1s
+grid path= t7_g9.txt	 agent path= t7_a9.txt
+11111101100000001000
+01110011101110000110
+01110000010010111011
+11111101101110011111
+01110001111100100111
+00000010111101011100
+11011010001010011100
+11111100101101001000
+01101000111001101100
+11111100011111111010
+01111001101001101011
+01000101111101110101
+00011011001111011111
+01111000001110111101
+00101011000101101010
+00110100011110101011
+10101011011111000111
+10011101101011011001
+10001100100001001010
+10011110111101111100
+dimX = 20 dimY = 20
+Found path for 0
+Found path for 2
+Found path for 4
+Checked solutions OK
+resolve_conflicts start
+starting search groupsize 1
+Found goal with cost 9!
+	Num Expansions = 50 nodes
+***********
+Done
+
+Moves for Agent 0
+North
+Northeast
+Northeast
+Northeast
+Northeast
+Northeast
+Northeast
+Northeast
+North
+Group 0
+   Agent: 0	168 169 190 211 232 253 274 295 316 317 
+resolve_conflicts end
+starting search groupsize 1
+Found goal with cost 25!
+	Num Expansions = 1107 nodes
+***********
+Done
+
+Moves for Agent 0
+East
+Northeast
+Northwest
+North
+Northwest
+North
+Northwest
+Northwest
+North
+Northeast
+Northwest
+Northwest
+Northwest
+North
+Northwest
+Northwest
+Northwest
+West
+West
+Northwest
+West
+Southwest
+South
+Southeast
+Southwest
+Group 1
+   Agent: 1	302 322 343 324 325 306 307 288 269 270 291 272 253 234 235 216 197 178 158 138 119 99 78 77 96 75 
+resolve_conflicts end
+starting search groupsize 1
+Found goal with cost 17!
+	Num Expansions = 589 nodes
+***********
+Done
+
+Moves for Agent 0
+North
+Northwest
+West
+Northwest
+West
+Northwest
+Southwest
+Northwest
+West
+West
+Southwest
+Northwest
+Northwest
+Northwest
+West
+Northwest
+Northwest
+Group 2
+   Agent: 2	324 325 306 286 267 247 228 207 188 168 148 127 108 89 70 50 31 12 
+resolve_conflicts end
+starting search groupsize 1
+Exceeded expansion threshold***********
+Done
+Failed to solve!
+Cannot solve instance 9
+grid path= t7_g10.txt	 agent path= t7_a10.txt
+11001010000101111111
+11011111101111101001
+01011001111000000100
+11011101011010100011
+10100011000011101111
+11011100100010110111
+00101111001111101111
+10101001011101100000
+00011100001111110011
+11110110011011101110
+01111100100010110111
+10100010110111101111
+11000101111010110001
+01100101001001110111
+01110010111100010011
+00011100100010000100
+11111111010011101101
+00111101010111100111
+10100110011011100111
+10110101101111111000
+dimX = 20 dimY = 20
+Found path for 0
+Found path for 2
+Found path for 4
+Checked solutions OK
+resolve_conflicts start
+starting search groupsize 1
+Found goal with cost 6!
+	Num Expansions = 67 nodes
+***********
+Done
+
+Moves for Agent 0
+West
+West
+Southwest
+West
+Northwest
+West
+Group 0
+   Agent: 0	381 361 341 320 300 281 261 
+resolve_conflicts end
+starting search groupsize 1
+Found goal with cost 16!
+	Num Expansions = 566 nodes
+***********
+Done
+
+Moves for Agent 0
+West
+West
+Southwest
+West
+West
+West
+Northwest
+Northwest
+North
+North
+Northwest
+North
+Northeast
+Northeast
+Northwest
+Northwest
+Group 1
+   Agent: 1	268 248 228 207 187 167 147 128 109 110 111 92 93 114 135 116 97 
+resolve_conflicts end
+starting search groupsize 1
+Found goal with cost 3!
+	Num Expansions = 13 nodes
+***********
+Done
+
+Moves for Agent 0
+Northeast
+Southeast
+Northeast
+Group 2
+   Agent: 2	107 128 147 168 
+resolve_conflicts end
+starting search groupsize 1
+Found goal with cost 5!
+	Num Expansions = 59 nodes
+***********
+Done
+
+Moves for Agent 0
+South
+South
+Southwest
+Southeast
+Southeast
+Group 3
+   Agent: 3	78 77 76 55 74 93 
+resolve_conflicts end
+starting search groupsize 1
+Exceeded expansion threshold***********
+Done
+Failed to solve!
+Cannot solve instance 10
+grid path= t7_g11.txt	 agent path= t7_a11.txt
+11010010001100111101
+10011101111110101111
+11111111101011000111
+01110110000100110011
+10111010000110111111
+11011101011011110100
+11011110101111101111
+11000111111101010000
+00101111101011110001
+11100000001011111111
+01110000010111111111
+00111111100111110110
+11111111111111111010
+11011101100001010111
+01010011011100111001
+01101111111100111001
+11110011111111111010
+01110111100111110111
+11011011100001000011
+11011101011010111011
+dimX = 20 dimY = 20
+Found path for 0
+Found path for 2
+Found path for 4
+Checked solutions OK
+resolve_conflicts start
+starting search groupsize 1
+Found goal with cost 15!
+	Num Expansions = 505 nodes
+***********
+Done
+
+Moves for Agent 0
+Northeast
+East
+Southeast
+Southeast
+Southeast
+Southeast
+South
+South
+Southeast
+Southeast
+Southeast
+Southeast
+Southeast
+South
+Southeast
+Group 0
+   Agent: 0	157 178 198 217 236 255 274 273 272 291 310 329 348 367 366 385 
+resolve_conflicts end
+starting search groupsize 1
+Found goal with cost 3!
+	Num Expansions = 18 nodes
+***********
+Done
+
+Moves for Agent 0
+West
+Northwest
+North
+Group 1
+   Agent: 1	362 342 323 324 
+resolve_conflicts end
+starting search groupsize 1
+Found goal with cost 7!
+	Num Expansions = 145 nodes
+***********
+Done
+
+Moves for Agent 0
+Northeast
+Northeast
+North
+Northeast
+North
+North
+North
+Group 2
+   Agent: 2	240 261 282 283 304 305 306 307 
+resolve_conflicts end
+starting search groupsize 1
+Found goal with cost 12!
+	Num Expansions = 112 nodes
+***********
+Done
+
+Moves for Agent 0
+South
+Southwest
+Southwest
+Southwest
+Southwest
+South
+Southwest
+Southwest
+Southeast
+Southwest
+Southeast
+East
+Group 3
+   Agent: 3	296 295 274 253 232 211 210 189 168 187 166 185 205 
+resolve_conflicts end
+starting search groupsize 1
+Found goal with cost 12!
+	Num Expansions = 318 nodes
+***********
+Done
+
+Moves for Agent 0
+Southwest
+Southeast
+Southwest
+South
+South
+Southeast
+South
+Southeast
+Southeast
+Southeast
+East
+Southeast
+Group 4
+   Agent: 4	57 36 55 34 33 32 51 50 69 88 107 127 146 
+resolve_conflicts end
+starting search groupsize 1
+Found goal with cost 14!
+	Num Expansions = 281 nodes
+***********
+Done
+
+Moves for Agent 0
+Northeast
+North
+North
+Northwest
+Northwest
+Northwest
+Northwest
+Northwest
+Northeast
+Northwest
+North
+Northeast
+Northwest
+Northwest
+Group 5
+   Agent: 5	363 384 385 386 367 348 329 310 291 312 293 294 315 296 277 
+resolve_conflicts end
+group conflict resolution start
+Group conflict resolution end
+	Total Nodes Expanded: 1379
+	Total Time 2s
+grid path= t7_g12.txt	 agent path= t7_a12.txt
+11000010101110111011
+11011001101101111100
+10001001111110101101
+01010111101001000101
+01101000101001010100
+11000100011111111111
+01011111111011010101
+00010111000111010111
+10110011110011000111
+11110101101010011011
+11010101001110101011
+00110111011111100110
+10001110110111001001
+01111000001111011010
+11010101100111010000
+11011111111011011110
+11100100011111101011
+11011000110101011101
+11111000101001111100
+00011011110110011110
+dimX = 20 dimY = 20
+Found path for 0
+Found path for 2
+Found path for 4
+Checked solutions OK
+resolve_conflicts start
+starting search groupsize 1
+Found goal with cost 10!
+	Num Expansions = 474 nodes
+***********
+Done
+
+Moves for Agent 0
+South
+South
+Southwest
+South
+Southeast
+Southwest
+Southwest
+Southwest
+Southwest
+South
+Group 0
+   Agent: 0	251 250 249 228 227 246 225 204 183 162 161 
+resolve_conflicts end
+starting search groupsize 1
+Found goal with cost 8!
+	Num Expansions = 275 nodes
+***********
+Done
+
+Moves for Agent 0
+West
+West
+Southwest
+Northwest
+West
+West
+West
+West
+Group 1
+   Agent: 1	374 354 334 313 294 274 254 234 214 
+resolve_conflicts end
+starting search groupsize 1
+Found goal with cost 4!
+	Num Expansions = 23 nodes
+***********
+Done
+
+Moves for Agent 0
+East
+Southeast
+Southeast
+Southeast
+Group 2
+   Agent: 2	73 93 112 131 150 
+resolve_conflicts end
+starting search groupsize 1
+Found goal with cost 4!
+	Num Expansions = 23 nodes
+***********
+Done
+
+Moves for Agent 0
+Southwest
+Southwest
+Southwest
+West
+Group 3
+   Agent: 3	191 170 149 128 108 
+resolve_conflicts end
+starting search groupsize 1
+Found goal with cost 11!
+	Num Expansions = 246 nodes
+***********
+Done
+
+Moves for Agent 0
+East
+Northeast
+Northeast
+Southeast
+Southeast
+South
+South
+Southeast
+Southeast
+South
+South
+Group 4
+   Agent: 4	14 34 55 76 95 114 113 112 131 150 149 148 
+resolve_conflicts end
+starting search groupsize 1
+Found goal with cost 13!
+	Num Expansions = 111 nodes
+***********
+Done
+
+Moves for Agent 0
+Southeast
+South
+South
+Southeast
+East
+Southeast
+Southeast
+Southwest
+South
+Southwest
+Southwest
+Southwest
+West
+Group 5
+   Agent: 5	131 150 149 148 167 187 206 225 204 203 182 161 140 120 
+resolve_conflicts end
+group conflict resolution start
+Conflict at t = 2. Value is 149
+Conflict found between Group 3 and 5
+Group conflict resolution end
+resolve_conflicts start
+starting search groupsize 1
+Found goal with cost 10!
+	Num Expansions = 474 nodes
+***********
+Done
+
+Moves for Agent 0
+South
+South
+Southwest
+South
+Southeast
+Southwest
+Southwest
+Southwest
+Southwest
+South
+Group 0
+   Agent: 0	251 250 249 228 227 246 225 204 183 162 161 
+resolve_conflicts end
+starting search groupsize 1
+Found goal with cost 8!
+	Num Expansions = 275 nodes
+***********
+Done
+
+Moves for Agent 0
+West
+West
+Southwest
+Northwest
+West
+West
+West
+West
+Group 1
+   Agent: 1	374 354 334 313 294 274 254 234 214 
+resolve_conflicts end
+starting search groupsize 1
+Found goal with cost 4!
+	Num Expansions = 23 nodes
+***********
+Done
+
+Moves for Agent 0
+East
+Southeast
+Southeast
+Southeast
+Group 2
+   Agent: 2	73 93 112 131 150 
+resolve_conflicts end
+starting search groupsize 2
+Exceeded expansion threshold***********
+Done
+Failed to solve!
+Cannot solve instance 12
+grid path= t7_g13.txt	 agent path= t7_a13.txt
+11100011111011101101
+11111011010110111100
+11000001100001010101
+00011011000010011111
+01111111011101110010
+01011110110110101100
+11001001001001000111
+10100110111111101011
+11000001110100111111
+00111111000010010111
+00011110100110000111
+10001111100011000001
+01011101000111000010
+01011101110111001100
+01111110100001000111
+10000010011101110000
+11111111111101011100
+11011110010110111101
+01101011110110100101
+01010011110101100111
+dimX = 20 dimY = 20
+Found path for 0
+Found path for 2
+Found path for 4
+Checked solutions OK
+resolve_conflicts start
+starting search groupsize 1
+Found goal with cost 14!
+	Num Expansions = 491 nodes
+***********
+Done
+
+Moves for Agent 0
+Southwest
+South
+Southeast
+Southwest
+Southeast
+South
+Southwest
+Southwest
+Southwest
+South
+South
+Southeast
+South
+Southwest
+Group 0
+   Agent: 0	177 156 155 174 153 172 171 150 129 108 107 106 125 124 103 
+resolve_conflicts end
+starting search groupsize 1
+Found goal with cost 8!
+	Num Expansions = 166 nodes
+***********
+Done
+
+Moves for Agent 0
+Northwest
+Northwest
+North
+Northeast
+North
+Northwest
+North
+Northwest
+Group 1
+   Agent: 1	391 372 353 354 375 376 357 358 339 
+resolve_conflicts end
+starting search groupsize 1
+Found goal with cost 7!
+	Num Expansions = 147 nodes
+***********
+Done
+
+Moves for Agent 0
+West
+Northwest
+Northeast
+Northwest
+North
+Northwest
+North
+Group 2
+   Agent: 2	161 141 122 143 124 125 106 107 
+resolve_conflicts end
+starting search groupsize 1
+Found goal with cost 5!
+	Num Expansions = 31 nodes
+***********
+Done
+
+Moves for Agent 0
+Southeast
+Southeast
+Southeast
+Southeast
+Northeast
+Group 3
+   Agent: 3	284 303 322 341 360 381 
+resolve_conflicts end
+starting search groupsize 1
+Found goal with cost 8!
+	Num Expansions = 143 nodes
+***********
+Done
+
+Moves for Agent 0
+South
+Southeast
+Southeast
+Southwest
+South
+Southeast
+Southwest
+South
+Group 4
+   Agent: 4	135 134 153 172 151 150 169 148 147 
+resolve_conflicts end
+starting search groupsize 1
+Found goal with cost 6!
+	Num Expansions = 38 nodes
+***********
+Done
+
+Moves for Agent 0
+Northwest
+West
+Northwest
+Northwest
+Northwest
+Southwest
+Group 5
+   Agent: 5	375 356 336 317 298 279 258 
+resolve_conflicts end
+group conflict resolution start
+Group conflict resolution end
+	Total Nodes Expanded: 1016
+	Total Time 1s
+grid path= t7_g14.txt	 agent path= t7_a14.txt
+10001011100011100001
+11011110101110010101
+11011101110111000001
+11111011010111110001
+01101101111010111110
+00111001110111100111
+11010111100001101010
+01101100110001111101
+11001110100001100100
+01101101010111011101
+00000011010001101110
+01111011011010111110
+11011011110011110100
+10111110110011111110
+10100010000001000010
+11010010101110110010
+11000000111110011001
+10110010001011111110
+01011110010100110001
+00100110101100111101
+dimX = 20 dimY = 20
+Found path for 0
+Found path for 2
+Found path for 4
+Checked solutions OK
+resolve_conflicts start
+starting search groupsize 1
+Found goal with cost 12!
+	Num Expansions = 309 nodes
+***********
+Done
+
+Moves for Agent 0
+North
+North
+North
+Northwest
+West
+Northwest
+Northwest
+Southwest
+West
+Northwest
+Northwest
+Southwest
+Group 0
+   Agent: 0	270 271 272 273 254 234 215 196 175 155 136 117 96 
+resolve_conflicts end
+starting search groupsize 1
+Found goal with cost 6!
+	Num Expansions = 92 nodes
+***********
+Done
+
+Moves for Agent 0
+Northeast
+North
+Northwest
+North
+North
+Northwest
+Group 1
+   Agent: 1	33 54 55 36 37 38 19 
+resolve_conflicts end
+starting search groupsize 1
+Found goal with cost 14!
+	Num Expansions = 299 nodes
+***********
+Done
+
+Moves for Agent 0
+South
+Southeast
+Northeast
+Northeast
+East
+East
+Southeast
+East
+Southeast
+Southeast
+Southeast
+East
+Southeast
+South
+Group 2
+   Agent: 2	38 37 56 77 98 118 138 157 177 196 215 234 254 273 272 
+resolve_conflicts end
+starting search groupsize 1
+Found goal with cost 2!
+	Num Expansions = 14 nodes
+***********
+Done
+
+Moves for Agent 0
+North
+Northeast
+Group 3
+   Agent: 3	293 294 315 
+resolve_conflicts end
+starting search groupsize 1
+Found goal with cost 17!
+	Num Expansions = 1060 nodes
+***********
+Done
+
+Moves for Agent 0
+West
+Northwest
+West
+Northwest
+West
+Northwest
+Southwest
+Southwest
+West
+Southwest
+Northwest
+Northwest
+Northwest
+West
+West
+Southwest
+West
+Group 4
+   Agent: 4	374 354 335 315 296 276 257 236 215 195 174 155 136 117 97 77 56 36 
+resolve_conflicts end
+starting search groupsize 1
+Found goal with cost 12!
+	Num Expansions = 488 nodes
+***********
+Done
+
+Moves for Agent 0
+West
+Northwest
+Northwest
+Southwest
+West
+Southwest
+West
+Southwest
+Northwest
+Northwest
+Southwest
+Northwest
+Group 5
+   Agent: 5	276 256 237 218 197 177 156 136 115 96 77 56 37 
+resolve_conflicts end
+group conflict resolution start
+Group conflict resolution end
+	Total Nodes Expanded: 2262
+	Total Time 2s
+grid path= t7_g15.txt	 agent path= t7_a15.txt
+00011001111110100100
+00111110111110111101
+00010010111010110011
+01111011110000101010
+10111010111111110101
+11010001011111011110
+10011000100001101011
+11101111011011001110
+01010010110110111011
+01100000111101100100
+11111111010000100001
+01110110110101110101
+11100111011111000011
+01111010110100011111
+01010110011110101111
+11010100000001011110
+00011101010111010011
+11101111001011110001
+11010110000111010110
+10111100110001110111
+dimX = 20 dimY = 20
+Found path for 0
+Found path for 2
+Found path for 4
+Checked solutions OK
+resolve_conflicts start
+starting search groupsize 1
+Found goal with cost 8!
+	Num Expansions = 182 nodes
+***********
+Done
+
+Moves for Agent 0
+West
+West
+Northwest
+Southwest
+West
+West
+Southwest
+West
+Group 0
+   Agent: 0	227 207 187 168 147 127 107 86 66 
+resolve_conflicts end
+starting search groupsize 1
+Found goal with cost 9!
+	Num Expansions = 284 nodes
+***********
+Done
+
+Moves for Agent 0
+Southeast
+Southeast
+Northeast
+Southeast
+Northeast
+East
+Northeast
+Northeast
+Northwest
+Group 1
+   Agent: 1	156 175 194 215 234 255 275 296 317 298 
+resolve_conflicts end
+starting search groupsize 1
+Found goal with cost 12!
+	Num Expansions = 256 nodes
+***********
+Done
+
+Moves for Agent 0
+Southeast
+Southwest
+Southeast
+Southeast
+Northeast
+Southeast
+Northeast
+Southeast
+Southeast
+Southeast
+Southwest
+Southwest
+Group 2
+   Agent: 2	228 247 226 245 264 285 304 325 344 363 382 361 340 
+resolve_conflicts end
+starting search groupsize 1
+Found goal with cost 3!
+	Num Expansions = 23 nodes
+***********
+Done
+
+Moves for Agent 0
+Southwest
+Southwest
+Southeast
+Group 3
+   Agent: 3	238 217 196 215 
+resolve_conflicts end
+starting search groupsize 1
+Found goal with cost 10!
+	Num Expansions = 132 nodes
+***********
+Done
+
+Moves for Agent 0
+West
+Southwest
+West
+West
+Southwest
+South
+Southeast
+Southwest
+South
+Southwest
+Group 4
+   Agent: 4	179 159 138 118 98 77 76 95 74 73 52 
+resolve_conflicts end
+starting search groupsize 1
+Found goal with cost 8!
+	Num Expansions = 245 nodes
+***********
+Done
+
+Moves for Agent 0
+Northwest
+Northwest
+North
+North
+North
+Northwest
+Northeast
+Northeast
+Group 5
+   Agent: 5	101 82 63 64 65 66 47 68 89 
+resolve_conflicts end
+group conflict resolution start
+Conflict at t = 3. Value is 215
+Conflict found between Group 1 and 3
+Group conflict resolution end
+resolve_conflicts start
+starting search groupsize 1
+Found goal with cost 8!
+	Num Expansions = 182 nodes
+***********
+Done
+
+Moves for Agent 0
+West
+West
+Northwest
+Southwest
+West
+West
+Southwest
+West
+Group 0
+   Agent: 0	227 207 187 168 147 127 107 86 66 
+resolve_conflicts end
+starting search groupsize 2
+Exceeded expansion threshold***********
+Done
+Failed to solve!
+Cannot solve instance 15
+grid path= t7_g16.txt	 agent path= t7_a16.txt
+00110111110011111110
+11101010011111001110
+01111100010011101010
+11010111001111111001
+00111000111111000100
+01100011111110000001
+10001010111110100111
+10111011110111100101
+10110110011100000101
+01000111111001111100
+00010011111110001011
+01001101001011111010
+10010100011110110010
+11011010110111101110
+01100011010111101110
+10110011001100011101
+10010001110100101110
+00001000111011111100
+11010110011111010011
+11001010011110110000
+dimX = 20 dimY = 20
+Found path for 0
+Found path for 2
+Found path for 4
+Checked solutions OK
+resolve_conflicts start
+starting search groupsize 1
+Found goal with cost 1!
+	Num Expansions = 4 nodes
+***********
+Done
+
+Moves for Agent 0
+West
+Group 0
+   Agent: 0	121 101 
+resolve_conflicts end
+starting search groupsize 1
+Found goal with cost 5!
+	Num Expansions = 27 nodes
+***********
+Done
+
+Moves for Agent 0
+Northwest
+Northwest
+North
+Northeast
+Northeast
+Group 1
+   Agent: 1	145 126 107 108 129 150 
+resolve_conflicts end
+starting search groupsize 1
+Found goal with cost 10!
+	Num Expansions = 517 nodes
+***********
+Done
+
+Moves for Agent 0
+North
+Northwest
+North
+Northeast
+Northeast
+Northeast
+North
+North
+North
+Northeast
+Group 2
+   Agent: 2	209 210 191 192 213 234 255 256 257 258 279 
+resolve_conflicts end
+starting search groupsize 1
+Found goal with cost 16!
+	Num Expansions = 310 nodes
+***********
+Done
+
+Moves for Agent 0
+South
+Southeast
+Northeast
+East
+Northeast
+Southeast
+Southeast
+East
+Southeast
+East
+Northeast
+Southeast
+East
+Southeast
+East
+East
+Group 3
+   Agent: 3	12 11 30 51 71 92 111 130 150 169 189 210 229 249 268 288 308 
+resolve_conflicts end
+starting search groupsize 1
+Found goal with cost 14!
+	Num Expansions = 68 nodes
+***********
+Done
+
+Moves for Agent 0
+Northeast
+East
+Northeast
+Southeast
+Southeast
+Northeast
+Northeast
+Northeast
+Northeast
+East
+Northeast
+East
+East
+East
+Group 4
+   Agent: 4	45 66 86 107 126 145 166 187 208 229 249 270 290 310 330 
+resolve_conflicts end
+starting search groupsize 1
+Found goal with cost 16!
+	Num Expansions = 986 nodes
+***********
+Done
+
+Moves for Agent 0
+South
+Southeast
+Southwest
+Southwest
+South
+Southeast
+Southwest
+Southwest
+Southeast
+Southeast
+South
+Southeast
+Southeast
+Southeast
+Southwest
+Southwest
+Group 5
+   Agent: 5	258 257 276 255 234 233 252 231 210 229 248 247 266 285 304 283 262 
+resolve_conflicts end
+group conflict resolution start
+Conflict at t = 9. Value is 229
+Conflict found between Group 4 and 5
+Group conflict resolution end
+resolve_conflicts start
+starting search groupsize 1
+Found goal with cost 1!
+	Num Expansions = 4 nodes
+***********
+Done
+
+Moves for Agent 0
+West
+Group 0
+   Agent: 0	121 101 
+resolve_conflicts end
+starting search groupsize 1
+Found goal with cost 5!
+	Num Expansions = 27 nodes
+***********
+Done
+
+Moves for Agent 0
+Northwest
+Northwest
+North
+Northeast
+Northeast
+Group 1
+   Agent: 1	145 126 107 108 129 150 
+resolve_conflicts end
+starting search groupsize 1
+Found goal with cost 10!
+	Num Expansions = 517 nodes
+***********
+Done
+
+Moves for Agent 0
+North
+Northwest
+North
+Northeast
+Northeast
+Northeast
+North
+North
+North
+Northeast
+Group 2
+   Agent: 2	209 210 191 192 213 234 255 256 257 258 279 
+resolve_conflicts end
+starting search groupsize 1
+Found goal with cost 16!
+	Num Expansions = 310 nodes
+***********
+Done
+
+Moves for Agent 0
+South
+Southeast
+Northeast
+East
+Northeast
+Southeast
+Southeast
+East
+Southeast
+East
+Northeast
+Southeast
+East
+Southeast
+East
+East
+Group 3
+   Agent: 3	12 11 30 51 71 92 111 130 150 169 189 210 229 249 268 288 308 
+resolve_conflicts end
+starting search groupsize 2
+Found goal with cost 16!
+	Num Expansions = 2471831 nodes
+***********
+Done
+
+Moves for Agent 0
+Northeast
+North
+Northeast
+East
+Northeast
+Southeast
+Northeast
+Northeast
+Southeast
+East
+East
+Northeast
+Wait
+East
+East
+East
+
+Moves for Agent 1
+Southeast
+Southwest
+Southwest
+Southwest
+South
+Southeast
+South
+Southwest
+Southeast
+Southeast
+South
+Southeast
+Southeast
+Southeast
+Southwest
+Southwest
+Group 4
+   Agent: 4	45 66 67 88 108 129 148 169 190 209 229 249 270 270 290 310 330 
+   Agent: 5	258 277 256 235 214 213 232 231 210 229 248 247 266 285 304 283 262 
+resolve_conflicts end
+group conflict resolution start
+Group conflict resolution end
+	Total Nodes Expanded: 2474601
+	Total Time 7s
+grid path= t7_g17.txt	 agent path= t7_a17.txt
+00011101010111011101
+11110011111111101110
+01111011001111110010
+01101000101010111110
+10000001001010110011
+11110011011011110001
+01111110011110101010
+01011110111110010010
+10111101111011101010
+01011111101010110100
+01011110110110001101
+11100111111110100011
+10000011100011101111
+11111110110101010110
+00001010011111101100
+11010111110010011110
+10010001111001101001
+10100011011001101101
+01011100101010110100
+11010101110100011110
+dimX = 20 dimY = 20
+Found path for 0
+Found path for 2
+Found path for 4
+Checked solutions OK
+resolve_conflicts start
+starting search groupsize 1
+Found goal with cost 2!
+	Num Expansions = 13 nodes
+***********
+Done
+
+Moves for Agent 0
+Northwest
+Northwest
+Group 0
+   Agent: 0	157 138 119 
+resolve_conflicts end
+starting search groupsize 1
+Found goal with cost 12!
+	Num Expansions = 306 nodes
+***********
+Done
+
+Moves for Agent 0
+Northeast
+East
+Northeast
+East
+Northeast
+East
+Southeast
+East
+Southeast
+Southeast
+East
+Southeast
+Group 1
+   Agent: 1	129 150 170 191 211 232 252 271 291 310 329 349 368 
+resolve_conflicts end
+starting search groupsize 1
+Found goal with cost 19!
+	Num Expansions = 301 nodes
+***********
+Done
+
+Moves for Agent 0
+Southwest
+Southwest
+West
+Southwest
+Southwest
+West
+West
+Northwest
+Southwest
+West
+Southwest
+Southwest
+Southwest
+Southwest
+West
+West
+Northwest
+Southwest
+South
+Group 2
+   Agent: 2	389 368 347 327 306 285 265 245 226 205 185 164 143 122 101 81 61 42 21 20 
+resolve_conflicts end
+starting search groupsize 1
+Found goal with cost 8!
+	Num Expansions = 48 nodes
+***********
+Done
+
+Moves for Agent 0
+Southeast
+Southeast
+Southeast
+East
+Southeast
+Southeast
+South
+Southwest
+Group 3
+   Agent: 3	148 167 186 205 225 244 263 262 241 
+resolve_conflicts end
+starting search groupsize 1
+Found goal with cost 13!
+	Num Expansions = 532 nodes
+***********
+Done
+
+Moves for Agent 0
+Northwest
+Southwest
+Northwest
+West
+West
+Northwest
+West
+Southwest
+Southwest
+Northwest
+Northwest
+West
+Northwest
+Group 4
+   Agent: 4	350 331 310 291 271 251 232 212 191 170 151 132 112 93 
+resolve_conflicts end
+starting search groupsize 1
+Found goal with cost 8!
+	Num Expansions = 88 nodes
+***********
+Done
+
+Moves for Agent 0
+Northeast
+Northeast
+Northeast
+North
+Northwest
+Northeast
+North
+North
+Group 5
+   Agent: 5	184 205 226 247 248 229 250 251 252 
+resolve_conflicts end
+group conflict resolution start
+Group conflict resolution end
+	Total Nodes Expanded: 1288
+	Total Time 2s
+grid path= t7_g18.txt	 agent path= t7_a18.txt
+00110111100100011000
+10100011101001101011
+10100000001000000010
+11110000111011001111
+00111111111011011000
+11111001110011011110
+10010000011011110010
+00011110101111011010
+11010011111011001000
+00101010011101111001
+11001110011111110101
+11101000101110111101
+10011111101110110000
+11111010100110000100
+01010001011000110111
+11010101011111011111
+01101100000101010110
+10110000110010101110
+11111101001110110001
+10101110111011101111
+dimX = 20 dimY = 20
+Found path for 0
+Found path for 2
+Found path for 4
+Checked solutions OK
+resolve_conflicts start
+starting search groupsize 1
+Found goal with cost 6!
+	Num Expansions = 81 nodes
+***********
+Done
+
+Moves for Agent 0
+West
+Southwest
+Northwest
+Northwest
+North
+North
+Group 0
+   Agent: 0	273 253 232 213 194 195 196 
+resolve_conflicts end
+starting search groupsize 1
+Found goal with cost 4!
+	Num Expansions = 29 nodes
+***********
+Done
+
+Moves for Agent 0
+Northeast
+Northeast
+Northeast
+Northeast
+Group 1
+   Agent: 1	230 251 272 293 314 
+resolve_conflicts end
+starting search groupsize 1
+Found goal with cost 19!
+	Num Expansions = 585 nodes
+***********
+Done
+
+Moves for Agent 0
+North
+Northwest
+Northwest
+Southwest
+Southwest
+West
+West
+Southwest
+West
+Northwest
+Northwest
+West
+Northwest
+West
+West
+Northwest
+Northwest
+North
+North
+Group 2
+   Agent: 2	372 373 354 335 314 293 273 253 232 212 193 174 154 135 115 95 76 57 58 59 
+resolve_conflicts end
+starting search groupsize 1
+Found goal with cost 14!
+	Num Expansions = 514 nodes
+***********
+Done
+
+Moves for Agent 0
+Northwest
+Southwest
+Southwest
+Southwest
+South
+South
+Southwest
+South
+South
+Southwest
+Southwest
+Southeast
+East
+Southeast
+Group 3
+   Agent: 3	354 335 314 293 272 271 270 249 248 247 226 205 224 244 263 
+resolve_conflicts end
+starting search groupsize 1
+Found goal with cost 8!
+	Num Expansions = 42 nodes
+***********
+Done
+
+Moves for Agent 0
+Southwest
+Southeast
+East
+Southeast
+Southeast
+Southeast
+Southeast
+East
+Group 4
+   Agent: 4	226 205 224 244 263 282 301 320 340 
+resolve_conflicts end
+starting search groupsize 1
+Found goal with cost 18!
+	Num Expansions = 543 nodes
+***********
+Done
+
+Moves for Agent 0
+Southeast
+Southeast
+Northeast
+East
+East
+Southeast
+Northeast
+Southeast
+East
+Northeast
+East
+Southeast
+East
+Northeast
+East
+Northeast
+Northeast
+Northeast
+Group 5
+   Agent: 5	2 21 40 61 81 101 120 141 160 180 201 221 240 260 281 301 322 343 364 
+resolve_conflicts end
+group conflict resolution start
+Conflict at t = 4. Value is 314
+Conflict found between Group 1 and 2
+Group conflict resolution end
+resolve_conflicts start
+starting search groupsize 1
+Found goal with cost 6!
+	Num Expansions = 81 nodes
+***********
+Done
+
+Moves for Agent 0
+West
+Southwest
+Northwest
+Northwest
+North
+North
+Group 0
+   Agent: 0	273 253 232 213 194 195 196 
+resolve_conflicts end
+starting search groupsize 2
+Exceeded expansion threshold***********
+Done
+Failed to solve!
+Cannot solve instance 18
+grid path= t7_g19.txt	 agent path= t7_a19.txt
+01011001010110011100
+11100110010100111101
+11000100110011010011
+01010010001001010111
+10011111100010000111
+11011010100101000001
+11111101111011101111
+00001111010011101100
+01111111111011101100
+00101111110111010100
+10001000010111110111
+11010111011110011101
+01010111101111101001
+00001110101010111001
+00000111010100101010
+10011001101001011000
+01110001110100110000
+11101010110110100100
+01111110111111001110
+11010101110101010111
+dimX = 20 dimY = 20
+Found path for 0
+Found path for 2
+Cannot solve instance 19
+grid path= t7_g20.txt	 agent path= t7_a20.txt
+11100010111111001110
+01000111111100001011
+11111001010100111111
+11101010110101111000
+01110001111000001101
+10010010111011101011
+10100110001011111010
+10111110010110000000
+11010110111101010101
+00001010001100010001
+11111000100110111001
+01111100111011010101
+00011111111111011111
+11101100111100101110
+10011011110011001001
+00100111110110010011
+10011111111010110111
+11110001001100100100
+11100110100110010011
+01000111011100110000
+dimX = 20 dimY = 20
+Found path for 0
+Found path for 2
+Found path for 4
+Checked solutions OK
+resolve_conflicts start
+starting search groupsize 1
+Found goal with cost 9!
+	Num Expansions = 310 nodes
+***********
+Done
+
+Moves for Agent 0
+Northeast
+East
+Northeast
+Northeast
+East
+Northeast
+Southeast
+Southeast
+East
+Group 0
+   Agent: 0	165 186 206 227 248 268 289 308 327 347 
+resolve_conflicts end
+starting search groupsize 1
+Found goal with cost 15!
+	Num Expansions = 945 nodes
+***********
+Done
+
+Moves for Agent 0
+North
+Northwest
+North
+Northwest
+Northeast
+Northwest
+Northeast
+Northeast
+North
+Northeast
+North
+Northeast
+Northeast
+Northeast
+Northwest
+Group 1
+   Agent: 1	103 104 85 86 67 88 69 90 111 112 133 134 155 176 197 178 
+resolve_conflicts end
+starting search groupsize 1
+Found goal with cost 14!
+	Num Expansions = 162 nodes
+***********
+Done
+
+Moves for Agent 0
+Southwest
+Southwest
+Northwest
+Northwest
+North
+Northwest
+Northwest
+Northwest
+West
+Southwest
+West
+West
+Northwest
+Northwest
+Group 2
+   Agent: 2	274 253 232 213 194 195 176 157 138 118 97 77 57 38 19 
+resolve_conflicts end
+starting search groupsize 1
+Found goal with cost 19!
+	Num Expansions = 528 nodes
+***********
+Done
+
+Moves for Agent 0
+South
+Southeast
+South
+Southeast
+South
+Southwest
+Southeast
+South
+Southeast
+South
+Southeast
+Southeast
+East
+Southeast
+South
+Southeast
+Southeast
+Southeast
+Southeast
+Group 3
+   Agent: 3	39 38 57 56 75 74 53 72 71 90 89 108 127 147 166 165 184 203 222 241 
+resolve_conflicts end
+starting search groupsize 1
+Found goal with cost 9!
+	Num Expansions = 124 nodes
+***********
+Done
+
+Moves for Agent 0
+East
+East
+East
+Northeast
+East
+East
+East
+East
+Northeast
+Group 4
+   Agent: 4	37 57 77 97 118 138 158 178 198 219 
+resolve_conflicts end
+starting search groupsize 1
+Found goal with cost 21!
+	Num Expansions = 466 nodes
+***********
+Done
+
+Moves for Agent 0
+Northwest
+North
+Northeast
+Northeast
+Northwest
+West
+Northwest
+Northwest
+Northwest
+Southwest
+Northwest
+Northwest
+Northwest
+Northeast
+Northwest
+Northwest
+Northwest
+North
+Northwest
+Northwest
+North
+Group 5
+   Agent: 5	361 342 343 364 385 366 346 327 308 289 268 249 230 211 232 213 194 175 176 157 138 139 
+resolve_conflicts end
+group conflict resolution start
+Group conflict resolution end
+	Total Nodes Expanded: 2535
+	Total Time 1s
+grid path= t7_g21.txt	 agent path= t7_a21.txt
+11110110101111111100
+01101010001011110101
+01011100100111111110
+11101100101011100001
+01110001011101101111
+00001001010011111011
+00111111110110011011
+00111011110111110001
+10111101100000000110
+11010111111110011111
+01001111100001010011
+01111110110111001110
+00111100110011101101
+01010001100111101110
+10000100011110101001
+01011101101001111101
+11101100111111011010
+11101100101010110100
+01001110111111000001
+11101000100101001100
+dimX = 20 dimY = 20
+Found path for 0
+Found path for 2
+Found path for 4
+Checked solutions OK
+resolve_conflicts start
+starting search groupsize 1
+Found goal with cost 13!
+	Num Expansions = 311 nodes
+***********
+Done
+
+Moves for Agent 0
+Southeast
+East
+Southeast
+Northeast
+East
+Southeast
+South
+Southeast
+Southwest
+Southwest
+Southeast
+South
+Southeast
+Group 0
+   Agent: 0	256 275 295 314 335 355 374 373 392 371 350 369 368 387 
+resolve_conflicts end
+starting search groupsize 1
+Found goal with cost 6!
+	Num Expansions = 26 nodes
+***********
+Done
+
+Moves for Agent 0
+East
+East
+East
+East
+Southeast
+South
+Group 1
+   Agent: 1	170 190 210 230 250 269 268 
+resolve_conflicts end
+starting search groupsize 1
+Found goal with cost 15!
+	Num Expansions = 327 nodes
+***********
+Done
+
+Moves for Agent 0
+West
+West
+Northwest
+Northwest
+North
+Northwest
+Northeast
+Northwest
+West
+West
+West
+Northwest
+North
+North
+Northeast
+Group 2
+   Agent: 2	344 324 304 285 266 267 248 269 250 230 210 190 171 172 173 194 
+resolve_conflicts end
+starting search groupsize 1
+Found goal with cost 10!
+	Num Expansions = 175 nodes
+***********
+Done
+
+Moves for Agent 0
+North
+Northeast
+Northeast
+Northeast
+East
+Northeast
+Southeast
+Southeast
+Southeast
+South
+Group 3
+   Agent: 3	151 152 173 194 215 235 256 275 294 313 312 
+resolve_conflicts end
+starting search groupsize 1
+Found goal with cost 7!
+	Num Expansions = 98 nodes
+***********
+Done
+
+Moves for Agent 0
+North
+North
+Northwest
+Northeast
+Northeast
+Northeast
+North
+Group 4
+   Agent: 4	92 93 94 75 96 117 138 139 
+resolve_conflicts end
+starting search groupsize 1
+Found goal with cost 11!
+	Num Expansions = 278 nodes
+***********
+Done
+
+Moves for Agent 0
+Northeast
+North
+Northwest
+Northeast
+Northeast
+North
+North
+Northwest
+Northeast
+Northwest
+Northwest
+Group 5
+   Agent: 5	347 368 369 350 371 392 393 394 375 396 377 358 
+resolve_conflicts end
+group conflict resolution start
+Group conflict resolution end
+	Total Nodes Expanded: 1215
+	Total Time 2s
+grid path= t7_g22.txt	 agent path= t7_a22.txt
+00010111110111011100
+01011000010110011111
+11011100001110101110
+11011011101000000101
+10110110101110101100
+00101010111001010111
+01010101010111010111
+11100110100101111101
+10110001111101111101
+11011100011111110010
+11011100111011101110
+01110001011111011111
+01100101010011001011
+01111000010011010000
+10101011101111111111
+00111110101001101100
+10001110101000010011
+11001100011011001100
+01111011111011011100
+11111111110111101011
+dimX = 20 dimY = 20
+Found path for 0
+Found path for 2
+Found path for 4
+Checked solutions OK
+resolve_conflicts start
+starting search groupsize 1
+Found goal with cost 10!
+	Num Expansions = 258 nodes
+***********
+Done
+
+Moves for Agent 0
+Southwest
+Southwest
+Northwest
+Northwest
+Northwest
+Southwest
+Southwest
+South
+Southwest
+South
+Group 0
+   Agent: 0	193 172 151 132 113 94 73 52 51 30 29 
+resolve_conflicts end
+starting search groupsize 1
+Found goal with cost 6!
+	Num Expansions = 37 nodes
+***********
+Done
+
+Moves for Agent 0
+Northwest
+Southwest
+Southwest
+Southwest
+Southwest
+Southwest
+Group 1
+   Agent: 1	164 145 124 103 82 61 40 
+resolve_conflicts end
+starting search groupsize 1
+Found goal with cost 11!
+	Num Expansions = 140 nodes
+***********
+Done
+
+Moves for Agent 0
+East
+Northeast
+Northeast
+Northeast
+North
+Northeast
+Northeast
+North
+Northeast
+Northeast
+Southeast
+Group 2
+   Agent: 2	120 140 161 182 203 204 225 246 247 268 289 308 
+resolve_conflicts end
+starting search groupsize 1
+Found goal with cost 7!
+	Num Expansions = 57 nodes
+***********
+Done
+
+Moves for Agent 0
+Southwest
+Southwest
+Southwest
+Southwest
+South
+Southeast
+Southeast
+Group 3
+   Agent: 3	136 115 94 73 52 51 70 89 
+resolve_conflicts end
+starting search groupsize 1
+Found goal with cost 15!
+	Num Expansions = 518 nodes
+***********
+Done
+
+Moves for Agent 0
+Northeast
+Northwest
+Northwest
+Northwest
+Northwest
+North
+Northwest
+Northwest
+Northwest
+Northwest
+North
+Northwest
+Northeast
+North
+Northwest
+Group 4
+   Agent: 4	320 341 322 303 284 265 266 247 228 209 190 191 172 193 194 175 
+resolve_conflicts end
+starting search groupsize 1
+Found goal with cost 10!
+	Num Expansions = 283 nodes
+***********
+Done
+
+Moves for Agent 0
+East
+Southeast
+East
+Northeast
+Southeast
+Southeast
+East
+Northeast
+Southeast
+Southeast
+Group 5
+   Agent: 5	151 171 190 210 231 250 269 289 310 329 348 
+resolve_conflicts end
+group conflict resolution start
+Group conflict resolution end
+	Total Nodes Expanded: 1293
+	Total Time 2s
+grid path= t7_g23.txt	 agent path= t7_a23.txt
+10111000100010001101
+00111110101010101101
+10101111110101111011
+11100111110011100011
+11100101101101011110
+01001110010101110111
+11011111010111001111
+11011110111000001000
+11010011111000001111
+10111001111011111000
+01101001111110010101
+01111111101011110100
+11011101011110110100
+11101101110111111010
+11111111100101011111
+10110010101111101111
+00111011110111110111
+10100010000110111110
+11100111100010011000
+11000001111101100100
+dimX = 20 dimY = 20
+Found path for 0
+Found path for 2
+Found path for 4
+Checked solutions OK
+resolve_conflicts start
+starting search groupsize 1
+Found goal with cost 11!
+	Num Expansions = 517 nodes
+***********
+Done
+
+Moves for Agent 0
+Northeast
+Northeast
+East
+East
+Southeast
+Northeast
+Southeast
+Southeast
+East
+Southeast
+Southeast
+Group 0
+   Agent: 0	165 186 207 227 247 266 287 306 325 345 364 383 
+resolve_conflicts end
+starting search groupsize 1
+Found goal with cost 7!
+	Num Expansions = 92 nodes
+***********
+Done
+
+Moves for Agent 0
+Northwest
+Northwest
+West
+West
+West
+West
+Northwest
+Group 1
+   Agent: 1	143 124 105 85 65 45 25 6 
+resolve_conflicts end
+starting search groupsize 1
+Found goal with cost 13!
+	Num Expansions = 502 nodes
+***********
+Done
+
+Moves for Agent 0
+Northeast
+Northeast
+East
+Southeast
+East
+Southeast
+East
+East
+Southeast
+East
+Northeast
+Northeast
+Northeast
+Group 2
+   Agent: 2	36 57 78 98 117 137 156 176 196 215 235 256 277 298 
+resolve_conflicts end
+starting search groupsize 1
+Found goal with cost 8!
+	Num Expansions = 536 nodes
+***********
+Done
+
+Moves for Agent 0
+Northeast
+Northwest
+Northeast
+North
+Northwest
+North
+North
+Northwest
+Group 3
+   Agent: 3	187 208 189 210 211 192 193 194 175 
+resolve_conflicts end
+starting search groupsize 1
+Found goal with cost 3!
+	Num Expansions = 33 nodes
+***********
+Done
+
+Moves for Agent 0
+South
+South
+Southwest
+Group 4
+   Agent: 4	332 331 330 309 
+resolve_conflicts end
+starting search groupsize 1
+Found goal with cost 15!
+	Num Expansions = 506 nodes
+***********
+Done
+
+Moves for Agent 0
+East
+Southeast
+Southeast
+East
+Southeast
+Northeast
+Northeast
+Southeast
+Southeast
+Southeast
+Southeast
+Southeast
+Southeast
+Southeast
+East
+Group 5
+   Agent: 5	50 70 89 108 128 147 168 189 208 227 246 265 284 303 322 342 
+resolve_conflicts end
+group conflict resolution start
+Group conflict resolution end
+	Total Nodes Expanded: 2186
+	Total Time 1s
+grid path= t7_g24.txt	 agent path= t7_a24.txt
+11010010111101100101
+01000101010110000100
+11001001101100110011
+11000010111111111110
+10001001100101010101
+01001111111100101011
+11111111111011001010
+10011101010111001101
+00001001001001110110
+11110011011101111011
+10011100111110000010
+11110100101000010111
+11111101110111111101
+01110000111010000100
+11111110001111110100
+11010010010111111010
+01101100000100101110
+01110111011001011001
+01101001010111001101
+11000111110111111101
+dimX = 20 dimY = 20
+Found path for 0
+Found path for 2
+Found path for 4
+Checked solutions OK
+resolve_conflicts start
+starting search groupsize 1
+Found goal with cost 10!
+	Num Expansions = 280 nodes
+***********
+Done
+
+Moves for Agent 0
+North
+Northeast
+Northeast
+North
+North
+Northeast
+Northeast
+Northeast
+East
+Northeast
+Group 0
+   Agent: 0	25 26 47 68 69 70 91 112 133 153 174 
+resolve_conflicts end
+starting search groupsize 1
+Found goal with cost 11!
+	Num Expansions = 67 nodes
+***********
+Done
+
+Moves for Agent 0
+East
+Southeast
+South
+South
+Southeast
+East
+Southeast
+Southeast
+Southeast
+Southeast
+East
+Group 1
+   Agent: 1	113 133 152 151 150 169 189 208 227 246 265 285 
+resolve_conflicts end
+starting search groupsize 1
+Found goal with cost 12!
+	Num Expansions = 284 nodes
+***********
+Done
+
+Moves for Agent 0
+Southwest
+Southwest
+West
+Southwest
+West
+West
+Southwest
+West
+Northwest
+Northwest
+North
+Northeast
+Group 2
+   Agent: 2	217 196 175 155 134 114 94 73 53 34 15 16 37 
+resolve_conflicts end
+starting search groupsize 1
+Found goal with cost 12!
+	Num Expansions = 96 nodes
+***********
+Done
+
+Moves for Agent 0
+Southwest
+West
+Northwest
+Southwest
+Southwest
+Northwest
+Northwest
+Northwest
+West
+Northwest
+North
+North
+Group 3
+   Agent: 3	262 241 221 202 181 160 141 122 103 83 64 65 66 
+resolve_conflicts end
+starting search groupsize 1
+Found goal with cost 11!
+	Num Expansions = 140 nodes
+***********
+Done
+
+Moves for Agent 0
+Southeast
+Southwest
+South
+South
+Southeast
+Southeast
+Southeast
+Southeast
+Southwest
+Southeast
+East
+Group 4
+   Agent: 4	19 38 17 16 15 34 53 72 91 70 89 109 
+resolve_conflicts end
+starting search groupsize 1
+Found goal with cost 8!
+	Num Expansions = 148 nodes
+***********
+Done
+
+Moves for Agent 0
+Northeast
+East
+Northeast
+North
+Northeast
+Northeast
+Northeast
+Southeast
+Group 5
+   Agent: 5	7 28 48 69 70 91 112 133 152 
+resolve_conflicts end
+group conflict resolution start
+Group conflict resolution end
+	Total Nodes Expanded: 1015
+	Total Time 2s
+grid path= t7_g25.txt	 agent path= t7_a25.txt
+01111011000111111111
+10011111111101101111
+11001110011101101001
+10100011110011000011
+10111111101100001111
+01111100100011000101
+11100011001111011010
+10101110001011110111
+11111000111010011111
+11001101001101111100
+01001100000011110111
+00101010011101000111
+11110011001001010111
+11011111100101100100
+10000101111111100111
+01111110101100111100
+00110011100001011001
+01010010111000001110
+10001111110000101110
+11101010000110011110
+dimX = 20 dimY = 20
+Found path for 0
+Found path for 2
+Found path for 4
+Checked solutions OK
+resolve_conflicts start
+starting search groupsize 1
+Found goal with cost 14!
+	Num Expansions = 504 nodes
+***********
+Done
+
+Moves for Agent 0
+Southwest
+Southwest
+Northwest
+Northwest
+West
+West
+West
+West
+Southwest
+Northwest
+Southwest
+Northwest
+Northwest
+West
+Group 0
+   Agent: 0	345 324 303 284 265 245 225 205 185 164 145 124 105 86 66 
+resolve_conflicts end
+starting search groupsize 1
+Found goal with cost 21!
+	Num Expansions = 485 nodes
+***********
+Done
+
+Moves for Agent 0
+Northwest
+Southwest
+Southwest
+Southwest
+Northwest
+West
+Southwest
+Southwest
+South
+Southwest
+West
+Southwest
+Southwest
+South
+Southeast
+Southwest
+Southwest
+West
+Southwest
+Southwest
+Southeast
+Group 1
+   Agent: 1	338 319 298 277 256 237 217 196 175 174 153 133 112 91 90 109 88 67 47 26 5 24 
+resolve_conflicts end
+starting search groupsize 1
+Found goal with cost 20!
+	Num Expansions = 501 nodes
+***********
+Done
+
+Moves for Agent 0
+West
+Northwest
+Northeast
+Northeast
+East
+Northeast
+Northeast
+Northeast
+North
+North
+Northwest
+Northwest
+North
+Northeast
+Northeast
+Northwest
+Northeast
+North
+North
+Northeast
+Group 2
+   Agent: 2	40 20 1 22 43 63 84 105 126 127 128 109 90 91 112 133 114 135 136 137 158 
+resolve_conflicts end
+starting search groupsize 1
+Found goal with cost 14!
+	Num Expansions = 212 nodes
+***********
+Done
+
+Moves for Agent 0
+East
+Southeast
+Southwest
+Southwest
+South
+Southwest
+Southwest
+South
+Southwest
+West
+Southwest
+Southwest
+Southwest
+Southeast
+Group 3
+   Agent: 3	358 378 397 376 355 354 333 312 311 290 270 249 228 207 226 
+resolve_conflicts end
+starting search groupsize 1
+Found goal with cost 11!
+	Num Expansions = 80 nodes
+***********
+Done
+
+Moves for Agent 0
+Northeast
+Northeast
+North
+Northeast
+Southeast
+East
+Southeast
+South
+South
+South
+Southeast
+Group 4
+   Agent: 4	132 153 174 175 196 215 235 254 253 252 251 270 
+resolve_conflicts end
+starting search groupsize 1
+Found goal with cost 18!
+	Num Expansions = 197 nodes
+***********
+Done
+
+Moves for Agent 0
+Southwest
+Southwest
+West
+Southwest
+Northwest
+Northwest
+Northwest
+West
+Northwest
+Southwest
+South
+Southwest
+West
+Southwest
+West
+Southwest
+West
+Southwest
+Group 5
+   Agent: 5	375 354 333 313 292 273 254 235 215 196 175 174 153 133 112 92 71 51 30 
+resolve_conflicts end
+group conflict resolution start
+Conflict at t = 13. Value is 91
+Conflict found between Group 1 and 2
+Group conflict resolution end
+resolve_conflicts start
+starting search groupsize 1
+Found goal with cost 14!
+	Num Expansions = 504 nodes
+***********
+Done
+
+Moves for Agent 0
+Southwest
+Southwest
+Northwest
+Northwest
+West
+West
+West
+West
+Southwest
+Northwest
+Southwest
+Northwest
+Northwest
+West
+Group 0
+   Agent: 0	345 324 303 284 265 245 225 205 185 164 145 124 105 86 66 
+resolve_conflicts end
+starting search groupsize 2
+Found goal with cost 21!
+	Num Expansions = 70486 nodes
+***********
+Done
+
+Moves for Agent 0
+Northwest
+Southwest
+Southwest
+Southwest
+Northwest
+West
+Southwest
+Southwest
+South
+Southwest
+West
+Southwest
+Southwest
+South
+Southeast
+Southwest
+Southwest
+West
+Southwest
+Southwest
+Southeast
+
+Moves for Agent 1
+West
+Northwest
+Northeast
+Northeast
+Northwest
+Northwest
+Northeast
+Northeast
+North
+Northwest
+North
+Northeast
+North
+North
+Northeast
+East
+Northeast
+Northeast
+North
+Northeast
+Wait
+Group 1
+   Agent: 1	338 319 298 277 256 237 217 196 175 174 153 133 112 91 90 109 88 67 47 26 5 24 
+   Agent: 2	40 20 1 22 43 24 5 26 47 48 29 30 51 52 53 74 94 115 136 137 158 158 
+resolve_conflicts end
+starting search groupsize 1
+Found goal with cost 14!
+	Num Expansions = 212 nodes
+***********
+Done
+
+Moves for Agent 0
+East
+Southeast
+Southwest
+Southwest
+South
+Southwest
+Southwest
+South
+Southwest
+West
+Southwest
+Southwest
+Southwest
+Southeast
+Group 2
+   Agent: 3	358 378 397 376 355 354 333 312 311 290 270 249 228 207 226 
+resolve_conflicts end
+starting search groupsize 1
+Found goal with cost 11!
+	Num Expansions = 80 nodes
+***********
+Done
+
+Moves for Agent 0
+Northeast
+Northeast
+North
+Northeast
+Southeast
+East
+Southeast
+South
+South
+South
+Southeast
+Group 3
+   Agent: 4	132 153 174 175 196 215 235 254 253 252 251 270 
+resolve_conflicts end
+starting search groupsize 1
+Found goal with cost 18!
+	Num Expansions = 197 nodes
+***********
+Done
+
+Moves for Agent 0
+Southwest
+Southwest
+West
+Southwest
+Northwest
+Northwest
+Northwest
+West
+Northwest
+Southwest
+South
+Southwest
+West
+Southwest
+West
+Southwest
+West
+Southwest
+Group 4
+   Agent: 5	375 354 333 313 292 273 254 235 215 196 175 174 153 133 112 92 71 51 30 
+resolve_conflicts end
+group conflict resolution start
+Group conflict resolution end
+	Total Nodes Expanded: 73458
+	Total Time 1s
+grid path= t7_g26.txt	 agent path= t7_a26.txt
+01111111000111111110
+01010110000011011000
+11101100000110010010
+01001110111011011111
+10011100100011011100
+11100010010111101111
+10001101101101010011
+10111100011100010101
+00111011111000101111
+10001101111011000110
+10001010101111011111
+01101101111111000110
+01011110111110011110
+11011000111101011011
+11101001001110001010
+01111011001010001110
+11101101110011001110
+01111101111100000111
+11111101001011101011
+10101001110011011111
+dimX = 20 dimY = 20
+Found path for 0
+Found path for 2
+Found path for 4
+Checked solutions OK
+resolve_conflicts start
+starting search groupsize 1
+Found goal with cost 8!
+	Num Expansions = 152 nodes
+***********
+Done
+
+Moves for Agent 0
+Northeast
+East
+Southeast
+East
+Northeast
+Northeast
+Northeast
+Northeast
+Group 0
+   Agent: 0	23 44 64 83 103 124 145 166 187 
+resolve_conflicts end
+starting search groupsize 1
+Found goal with cost 13!
+	Num Expansions = 538 nodes
+***********
+Done
+
+Moves for Agent 0
+Southeast
+East
+Northeast
+Southeast
+Southeast
+East
+Northeast
+Northeast
+Northeast
+Southeast
+Southeast
+Southeast
+Southwest
+Group 1
+   Agent: 1	131 150 170 191 210 229 249 270 291 312 331 350 369 348 
+resolve_conflicts end
+starting search groupsize 1
+Found goal with cost 15!
+	Num Expansions = 601 nodes
+***********
+Done
+
+Moves for Agent 0
+Southeast
+Northeast
+East
+Southeast
+Northeast
+Southeast
+East
+Northeast
+East
+Northeast
+Northeast
+Northeast
+Northeast
+Southeast
+Northeast
+Group 2
+   Agent: 2	48 67 88 108 127 148 167 187 208 228 249 270 291 312 331 352 
+resolve_conflicts end
+starting search groupsize 1
+Found goal with cost 13!
+	Num Expansions = 569 nodes
+***********
+Done
+
+Moves for Agent 0
+Northeast
+North
+Northeast
+North
+North
+Northeast
+Northeast
+Northeast
+Southeast
+Southeast
+Southwest
+Southeast
+Southwest
+Group 3
+   Agent: 3	204 225 226 247 248 249 270 291 312 331 350 329 348 327 
+resolve_conflicts end
+starting search groupsize 1
+Found goal with cost 15!
+	Num Expansions = 164 nodes
+***********
+Done
+
+Moves for Agent 0
+West
+Southwest
+Southwest
+South
+South
+Southwest
+Southwest
+Southwest
+Southwest
+Southwest
+Southwest
+Southwest
+Southwest
+Southwest
+Southwest
+Group 4
+   Agent: 4	319 299 278 257 256 255 234 213 192 171 150 129 108 87 66 45 
+resolve_conflicts end
+starting search groupsize 1
+Found goal with cost 15!
+	Num Expansions = 499 nodes
+***********
+Done
+
+Moves for Agent 0
+Southeast
+South
+Southeast
+Southwest
+Southwest
+South
+South
+South
+Southeast
+Southwest
+Southwest
+Southwest
+Southeast
+Southwest
+South
+Group 5
+   Agent: 5	97 116 115 134 113 92 91 90 89 108 87 66 45 64 43 42 
+resolve_conflicts end
+group conflict resolution start
+Group conflict resolution end
+	Total Nodes Expanded: 2523
+	Total Time 2s
+grid path= t7_g27.txt	 agent path= t7_a27.txt
+00101101111110110111
+11101011000101000111
+01101011111110111011
+11011011011011110001
+01100011111110111111
+10101011100001001011
+11000001000111111110
+01110011100100101101
+01110101111101010101
+10101101001011101111
+11001010001111001111
+10001011111101111110
+11011010101011010111
+11111000011010111110
+11001011011000000011
+01001001111101001101
+11000010101110110101
+00011011100101100111
+11011001111001111010
+01000001111111110001
+dimX = 20 dimY = 20
+Found path for 0
+Found path for 2
+Found path for 4
+Checked solutions OK
+resolve_conflicts start
+starting search groupsize 1
+Found goal with cost 17!
+	Num Expansions = 543 nodes
+***********
+Done
+
+Moves for Agent 0
+West
+Southwest
+Southwest
+Northwest
+Southwest
+Southwest
+Northwest
+Northwest
+West
+Southwest
+Southwest
+Northwest
+Southwest
+South
+Southwest
+Southwest
+Southwest
+Group 0
+   Agent: 0	352 332 311 290 271 250 229 210 191 171 150 129 110 89 88 67 46 25 
+resolve_conflicts end
+starting search groupsize 1
+Found goal with cost 11!
+	Num Expansions = 152 nodes
+***********
+Done
+
+Moves for Agent 0
+Southwest
+Southwest
+Southeast
+Southeast
+Southeast
+Southeast
+Northeast
+Southeast
+Southeast
+Southeast
+South
+Group 1
+   Agent: 1	195 174 153 172 191 210 229 250 269 288 307 306 
+resolve_conflicts end
+starting search groupsize 1
+Found goal with cost 20!
+	Num Expansions = 558 nodes
+***********
+Done
+
+Moves for Agent 0
+South
+Southwest
+Southeast
+Southeast
+Southeast
+Northeast
+Northeast
+Southeast
+East
+East
+East
+East
+Southeast
+Southeast
+Southeast
+Southeast
+Southeast
+East
+Southeast
+Southeast
+Group 2
+   Agent: 2	55 54 33 52 71 90 111 132 151 171 191 211 231 250 269 288 307 326 346 365 384 
+resolve_conflicts end
+starting search groupsize 1
+Found goal with cost 18!
+	Num Expansions = 102 nodes
+***********
+Done
+
+Moves for Agent 0
+North
+Northwest
+Northwest
+Northwest
+Northwest
+Northwest
+Northwest
+Northwest
+Northwest
+West
+Northwest
+Northwest
+Northwest
+Northeast
+North
+Northeast
+Northeast
+North
+Group 3
+   Agent: 3	261 262 243 224 205 186 167 148 129 110 90 71 52 33 54 55 76 97 98 
+resolve_conflicts end
+starting search groupsize 1
+Exceeded expansion threshold***********
+Done
+Failed to solve!
+Cannot solve instance 27
+grid path= t7_g28.txt	 agent path= t7_a28.txt
+01110000001100000110
+00111010011110010111
+11101001011101100111
+10110101101001111100
+10110011100000011101
+01101100111101011011
+00101101001111111100
+00101001100100111011
+01100010101111011001
+11001110100111111110
+11110001010101011011
+11001100101000010100
+10101011111111010111
+11011000110001101101
+11111000001001000100
+01101111011001110000
+00110011101001111110
+11110011110111110100
+11000101111101110111
+01100010100011001111
+dimX = 20 dimY = 20
+Found path for 0
+Found path for 2
+Found path for 4
+Checked solutions OK
+resolve_conflicts start
+starting search groupsize 1
+Found goal with cost 9!
+	Num Expansions = 172 nodes
+***********
+Done
+
+Moves for Agent 0
+North
+Northeast
+Northeast
+East
+Northeast
+Northeast
+East
+Northeast
+East
+Group 0
+   Agent: 0	92 93 114 135 155 176 197 217 238 258 
+resolve_conflicts end
+starting search groupsize 1
+Found goal with cost 8!
+	Num Expansions = 63 nodes
+***********
+Done
+
+Moves for Agent 0
+Northeast
+Southeast
+East
+Northeast
+East
+Northeast
+Northeast
+Southeast
+Group 1
+   Agent: 1	54 75 94 114 135 155 176 197 216 
+resolve_conflicts end
+starting search groupsize 1
+Found goal with cost 11!
+	Num Expansions = 119 nodes
+***********
+Done
+
+Moves for Agent 0
+North
+Northeast
+Southeast
+East
+Northeast
+East
+East
+Southeast
+Southeast
+East
+East
+Group 2
+   Agent: 2	53 54 75 94 114 135 155 175 194 213 233 253 
+resolve_conflicts end
+starting search groupsize 1
+Found goal with cost 16!
+	Num Expansions = 284 nodes
+***********
+Done
+
+Moves for Agent 0
+East
+Northeast
+East
+Southeast
+Southwest
+Southeast
+South
+South
+Southeast
+Southeast
+South
+Southwest
+Southeast
+South
+South
+Southeast
+Group 3
+   Agent: 3	94 114 135 155 174 153 172 171 170 189 208 207 186 205 204 203 222 
+resolve_conflicts end
+starting search groupsize 1
+Found goal with cost 6!
+	Num Expansions = 71 nodes
+***********
+Done
+
+Moves for Agent 0
+Northeast
+Northeast
+Northeast
+Southeast
+Northeast
+Southeast
+Group 4
+   Agent: 4	208 229 250 271 290 311 330 
+resolve_conflicts end
+starting search groupsize 1
+Found goal with cost 12!
+	Num Expansions = 127 nodes
+***********
+Done
+
+Moves for Agent 0
+South
+Southwest
+Southwest
+Southwest
+Southwest
+South
+Southwest
+Southeast
+Southwest
+Southeast
+Southwest
+Southeast
+Group 5
+   Agent: 5	293 292 271 250 229 208 207 186 205 184 203 182 201 
+resolve_conflicts end
+group conflict resolution start
+Group conflict resolution end
+	Total Nodes Expanded: 836
+	Total Time 2s
+grid path= t7_g29.txt	 agent path= t7_a29.txt
+11000001111110001010
+11101100010000110110
+10110111011010010110
+11101011011111010110
+10010011111100100001
+11110111110111110111
+11001100010101110001
+10111110101101101011
+00100000111101111001
+10011111011111001000
+00010110001010000010
+01000001100110111111
+11111111111010110111
+01110110100011010101
+01110101110001010010
+10000001100111011010
+00000111111001111101
+10101101111111111011
+11101111100111011001
+01000101100101101011
+dimX = 20 dimY = 20
+Cannot solve instance 29
+grid path= t7_g30.txt	 agent path= t7_a30.txt
+01001111111111010000
+10010111000000101111
+11000100111000010100
+01111100111101111101
+10001011010111011110
+00010111000111110011
+10101111110100111100
+11110001101010000110
+01011011011110011111
+11001111110101001010
+11111111011111110110
+01100001010010010111
+10111001011111111001
+10111110000101101100
+01110100110101100111
+00011110110010011001
+00110111011011011111
+00011110111001110101
+10001101110011001111
+11001111000011101001
+dimX = 20 dimY = 20
+Found path for 0
+Found path for 2
+Found path for 4
+Checked solutions OK
+resolve_conflicts start
+starting search groupsize 1
+Found goal with cost 1!
+	Num Expansions = 8 nodes
+***********
+Done
+
+Moves for Agent 0
+North
+Group 0
+   Agent: 0	90 91 
+resolve_conflicts end
+starting search groupsize 1
+Found goal with cost 18!
+	Num Expansions = 253 nodes
+***********
+Done
+
+Moves for Agent 0
+North
+North
+Northwest
+Northwest
+North
+Northwest
+Northwest
+North
+Northwest
+Southwest
+South
+South
+Southwest
+Southwest
+Southeast
+Southeast
+Northeast
+North
+Group 1
+   Agent: 1	261 262 263 244 225 226 207 188 189 170 149 148 147 126 105 124 143 164 165 
+resolve_conflicts end
+starting search groupsize 1
+Found goal with cost 7!
+	Num Expansions = 35 nodes
+***********
+Done
+
+Moves for Agent 0
+Southeast
+South
+Southeast
+Southeast
+East
+Northeast
+Northwest
+Group 2
+   Agent: 2	233 252 251 270 289 309 330 311 
+resolve_conflicts end
+starting search groupsize 1
+Found goal with cost 13!
+	Num Expansions = 286 nodes
+***********
+Done
+
+Moves for Agent 0
+West
+Northwest
+Northeast
+Northeast
+North
+Northwest
+Northeast
+Northeast
+Northeast
+Northwest
+North
+Northeast
+Northwest
+Group 3
+   Agent: 3	87 67 48 69 90 91 72 93 114 135 116 117 138 119 
+resolve_conflicts end
+starting search groupsize 1
+Found goal with cost 14!
+	Num Expansions = 303 nodes
+***********
+Done
+
+Moves for Agent 0
+South
+South
+Southeast
+Southwest
+South
+South
+Southeast
+South
+Southwest
+Southwest
+Southeast
+South
+Southwest
+Southeast
+Group 4
+   Agent: 4	357 356 355 374 353 352 351 370 369 348 327 346 345 324 343 
+resolve_conflicts end
+starting search groupsize 1
+Found goal with cost 19!
+	Num Expansions = 281 nodes
+***********
+Done
+
+Moves for Agent 0
+Northwest
+Northwest
+Northwest
+Northwest
+Northwest
+Northwest
+North
+Northwest
+Northwest
+West
+West
+Northwest
+Southwest
+South
+South
+Southwest
+Southwest
+Southwest
+West
+Group 5
+   Agent: 5	380 361 342 323 304 285 266 267 248 229 209 189 170 149 148 147 126 105 84 64 
+resolve_conflicts end
+group conflict resolution start
+Group conflict resolution end
+	Total Nodes Expanded: 1166
+	Total Time 1s
+grid path= t7_g31.txt	 agent path= t7_a31.txt
+11001101111111111010
+11111101001111110011
+00111010101100110101
+10100011010110100011
+11011000111101111010
+00010111100110100001
+11011011101010010111
+11100100111101000000
+00000111110111111111
+00011101101010110101
+00000110000100001110
+01010011010111001111
+10001011101000001011
+10011111111111111101
+01101001101011100101
+11000001011001110011
+01101011011011111010
+00101011011100111100
+01001111000001011101
+01111111101001111011
+dimX = 20 dimY = 20
+Found path for 0
+Cannot solve instance 31
+grid path= t7_g32.txt	 agent path= t7_a32.txt
+11011001010100110010
+00111100011001001011
+10111001100010000100
+11001110001110011011
+01011101110110101010
+11011100011110101011
+11011110101010010100
+10101110001111011110
+11001011101110111000
+01111010111101001001
+00010010111001001111
+11111001001110001100
+00011011011100011111
+10001111101000111000
+00001100111101101011
+11000111011001111110
+10101011100011001100
+00010010110110001000
+11101111111010110101
+00101101111100010010
+dimX = 20 dimY = 20
+Found path for 0
+Found path for 2
+Found path for 4
+Checked solutions OK
+resolve_conflicts start
+starting search groupsize 1
+Found goal with cost 12!
+	Num Expansions = 139 nodes
+***********
+Done
+
+Moves for Agent 0
+Southwest
+Southwest
+Southeast
+Southeast
+Northeast
+Northeast
+Northeast
+East
+East
+East
+East
+Northeast
+Group 0
+   Agent: 0	205 184 163 182 201 222 243 264 284 304 324 344 365 
+resolve_conflicts end
+starting search groupsize 1
+Found goal with cost 10!
+	Num Expansions = 116 nodes
+***********
+Done
+
+Moves for Agent 0
+North
+Northeast
+East
+East
+Southeast
+East
+Southeast
+East
+East
+Northeast
+Group 1
+   Agent: 1	35 36 57 77 97 116 136 155 175 195 216 
+resolve_conflicts end
+starting search groupsize 1
+Found goal with cost 7!
+	Num Expansions = 76 nodes
+***********
+Done
+
+Moves for Agent 0
+Southeast
+South
+South
+Southwest
+Southwest
+Southwest
+South
+Group 2
+   Agent: 2	194 213 212 211 190 169 148 147 
+resolve_conflicts end
+starting search groupsize 1
+Found goal with cost 2!
+	Num Expansions = 9 nodes
+***********
+Done
+
+Moves for Agent 0
+Southwest
+Southwest
+Group 3
+   Agent: 3	390 369 348 
+resolve_conflicts end
+starting search groupsize 1
+Found goal with cost 18!
+	Num Expansions = 951 nodes
+***********
+Done
+
+Moves for Agent 0
+Northeast
+Northeast
+North
+North
+Northwest
+Northwest
+North
+Northwest
+Northwest
+Northeast
+Northeast
+Northeast
+Northeast
+Northeast
+Northeast
+East
+Northeast
+North
+Group 4
+   Agent: 4	62 83 104 105 106 87 68 69 50 31 52 73 94 115 136 157 177 198 199 
+resolve_conflicts end
+starting search groupsize 1
+Found goal with cost 12!
+	Num Expansions = 485 nodes
+***********
+Done
+
+Moves for Agent 0
+Southeast
+South
+South
+South
+Southeast
+Southeast
+Southeast
+Southeast
+Southeast
+Southeast
+Southwest
+Southwest
+Group 5
+   Agent: 5	78 97 96 95 94 113 132 151 170 189 208 187 166 
+resolve_conflicts end
+group conflict resolution start
+Group conflict resolution end
+	Total Nodes Expanded: 1776
+	Total Time 1s
+grid path= t7_g33.txt	 agent path= t7_a33.txt
+11110010110110101100
+11011011011101111011
+01111010111100110111
+10010001011111011111
+00110110011110011110
+01101110101110001100
+10101100001000111111
+01101000110100010000
+11101010101100110010
+10101100010001101110
+11111111101100011111
+00100111110111010001
+00000011010111101111
+10100000011110010110
+00111010001111110101
+11100111100111100111
+01000001000001101010
+10101100011001110010
+10110100110110111101
+10110111101110101111
+dimX = 20 dimY = 20
+Found path for 0
+Found path for 2
+Found path for 4
+Checked solutions OK
+resolve_conflicts start
+starting search groupsize 1
+Found goal with cost 8!
+	Num Expansions = 122 nodes
+***********
+Done
+
+Moves for Agent 0
+Southeast
+Southeast
+Southwest
+South
+Southeast
+East
+Northeast
+Northeast
+Group 0
+   Agent: 0	59 78 97 76 75 94 114 135 156 
+resolve_conflicts end
+starting search groupsize 1
+Found goal with cost 13!
+	Num Expansions = 479 nodes
+***********
+Done
+
+Moves for Agent 0
+West
+Northwest
+Northwest
+Northwest
+Northeast
+Northwest
+Northeast
+Northeast
+Northwest
+Northwest
+Northwest
+Southwest
+Southwest
+Group 1
+   Agent: 1	267 247 228 209 190 211 192 213 234 215 196 177 156 135 
+resolve_conflicts end
+starting search groupsize 1
+Found goal with cost 7!
+	Num Expansions = 96 nodes
+***********
+Done
+
+Moves for Agent 0
+South
+South
+South
+South
+South
+Southeast
+East
+Group 2
+   Agent: 2	55 54 53 52 51 50 69 89 
+resolve_conflicts end
+starting search groupsize 1
+Found goal with cost 11!
+	Num Expansions = 312 nodes
+***********
+Done
+
+Moves for Agent 0
+Northwest
+Southwest
+West
+Southwest
+Northwest
+Southwest
+Northwest
+Northwest
+Northwest
+Southwest
+Northwest
+Group 3
+   Agent: 3	327 308 287 267 246 227 206 187 168 149 128 109 
+resolve_conflicts end
+starting search groupsize 1
+Found goal with cost 6!
+	Num Expansions = 82 nodes
+***********
+Done
+
+Moves for Agent 0
+Southeast
+East
+Northeast
+Southeast
+Southeast
+Northeast
+Group 4
+   Agent: 4	50 69 89 110 129 148 169 
+resolve_conflicts end
+starting search groupsize 1
+Found goal with cost 5!
+	Num Expansions = 34 nodes
+***********
+Done
+
+Moves for Agent 0
+Southeast
+Northeast
+Northeast
+East
+East
+Group 5
+   Agent: 5	283 302 323 344 364 384 
+resolve_conflicts end
+group conflict resolution start
+Group conflict resolution end
+	Total Nodes Expanded: 1125
+	Total Time 1s
+grid path= t7_g34.txt	 agent path= t7_a34.txt
+11001011110110111001
+10111101111111101111
+11011101111011111100
+00100101101101111001
+11101111111101000100
+11111001110101001111
+11001010111011001010
+11011010001010011111
+01011100111110011111
+01111110001101000110
+11111010101100001001
+11111110101110111111
+10111101010001011000
+01001001111001010110
+00101111001100101011
+01001001011101111111
+01010111100001011111
+01011011001011100000
+11011110110101010100
+10111111100111111000
+dimX = 20 dimY = 20
+Found path for 0
+Found path for 2
+Found path for 4
+Checked solutions OK
+resolve_conflicts start
+starting search groupsize 1
+Found goal with cost 5!
+	Num Expansions = 61 nodes
+***********
+Done
+
+Moves for Agent 0
+West
+West
+Southwest
+Southeast
+Southwest
+Group 0
+   Agent: 0	343 323 303 282 301 280 
+resolve_conflicts end
+starting search groupsize 1
+Found goal with cost 9!
+	Num Expansions = 124 nodes
+***********
+Done
+
+Moves for Agent 0
+Southwest
+Northwest
+North
+Northwest
+Northwest
+Southwest
+Southwest
+South
+Southeast
+Group 1
+   Agent: 1	306 285 266 267 248 229 208 187 186 205 
+resolve_conflicts end
+starting search groupsize 1
+Found goal with cost 9!
+	Num Expansions = 261 nodes
+***********
+Done
+
+Moves for Agent 0
+Northwest
+Southwest
+Northwest
+Southwest
+Northwest
+Southwest
+West
+Southwest
+West
+Group 2
+   Agent: 2	198 179 158 139 118 99 78 58 37 17 
+resolve_conflicts end
+starting search groupsize 1
+Found goal with cost 11!
+	Num Expansions = 312 nodes
+***********
+Done
+
+Moves for Agent 0
+West
+Northwest
+Northwest
+North
+Northwest
+North
+Northwest
+North
+North
+North
+Northwest
+Group 3
+   Agent: 3	125 105 86 67 68 49 50 31 32 33 34 15 
+resolve_conflicts end
+starting search groupsize 1
+Found goal with cost 4!
+	Num Expansions = 41 nodes
+***********
+Done
+
+Moves for Agent 0
+Northeast
+East
+Northeast
+Southeast
+Group 4
+   Agent: 4	26 47 67 88 107 
+resolve_conflicts end
+starting search groupsize 1
+Found goal with cost 12!
+	Num Expansions = 293 nodes
+***********
+Done
+
+Moves for Agent 0
+Southwest
+West
+Northwest
+Southwest
+Northwest
+Northwest
+North
+North
+Northwest
+Northwest
+Northwest
+Northeast
+Group 5
+   Agent: 5	348 327 307 288 267 248 229 230 231 212 193 174 195 
+resolve_conflicts end
+group conflict resolution start
+Group conflict resolution end
+	Total Nodes Expanded: 1092
+	Total Time 2s
+grid path= t7_g35.txt	 agent path= t7_a35.txt
+10111111101001011110
+01011110111010110011
+01000010111010001111
+11000010111110101111
+01111000110100100101
+11000001011111111010
+11101011001000101011
+11001110111010010111
+11110000111110110010
+11100110111101000001
+11011011011011111011
+00110111111001111000
+00010000011101111111
+11100111101111010110
+01011010011111111011
+10010111111100001101
+11111101010101010000
+10111100010101111100
+11101010110100001110
+00101110000011011011
+dimX = 20 dimY = 20
+Found path for 0
+Found path for 2
+Found path for 4
+Checked solutions OK
+resolve_conflicts start
+starting search groupsize 1
+Found goal with cost 2!
+	Num Expansions = 16 nodes
+***********
+Done
+
+Moves for Agent 0
+Northwest
+Northwest
+Group 0
+   Agent: 0	245 226 207 
+resolve_conflicts end
+starting search groupsize 1
+Found goal with cost 2!
+	Num Expansions = 12 nodes
+***********
+Done
+
+Moves for Agent 0
+Southeast
+Southwest
+Group 1
+   Agent: 1	194 213 192 
+resolve_conflicts end
+starting search groupsize 1
+Found goal with cost 17!
+	Num Expansions = 191 nodes
+***********
+Done
+
+Moves for Agent 0
+Northeast
+Northeast
+Northeast
+Northeast
+East
+Northeast
+Northeast
+North
+Northeast
+Northeast
+Southeast
+Northeast
+Northeast
+Northeast
+Southeast
+East
+Northeast
+Group 2
+   Agent: 2	62 83 104 125 146 166 187 208 209 230 251 270 291 312 333 352 372 393 
+resolve_conflicts end
+starting search groupsize 1
+Found goal with cost 6!
+	Num Expansions = 81 nodes
+***********
+Done
+
+Moves for Agent 0
+South
+South
+Southeast
+East
+Southeast
+South
+Group 3
+   Agent: 3	214 213 212 231 251 270 269 
+resolve_conflicts end
+starting search groupsize 1
+Found goal with cost 7!
+	Num Expansions = 140 nodes
+***********
+Done
+
+Moves for Agent 0
+Northeast
+East
+Southeast
+Southeast
+East
+Northeast
+North
+Group 4
+   Agent: 4	175 196 216 235 254 274 295 296 
+resolve_conflicts end
+starting search groupsize 1
+Found goal with cost 12!
+	Num Expansions = 598 nodes
+***********
+Done
+
+Moves for Agent 0
+North
+Northwest
+Northwest
+Northwest
+Northeast
+Northeast
+Northeast
+Northwest
+North
+Northwest
+Northwest
+Northeast
+Group 5
+   Agent: 5	224 225 206 187 168 189 210 231 212 213 194 175 196 
+resolve_conflicts end
+group conflict resolution start
+Conflict at t = 1. Value is 213
+Conflict found between Group 1 and 3
+Group conflict resolution end
+resolve_conflicts start
+starting search groupsize 1
+Found goal with cost 2!
+	Num Expansions = 16 nodes
+***********
+Done
+
+Moves for Agent 0
+Northwest
+Northwest
+Group 0
+   Agent: 0	245 226 207 
+resolve_conflicts end
+starting search groupsize 2
+Found goal with cost 6!
+	Num Expansions = 32196 nodes
+***********
+Done
+
+Moves for Agent 0
+Wait
+Southeast
+Southwest
+East
+Wait
+West
+
+Moves for Agent 1
+South
+Southwest
+Southeast
+Southeast
+Southeast
+East
+Group 1
+   Agent: 1	194 194 213 192 212 212 192 
+   Agent: 3	214 213 192 211 230 249 269 
+resolve_conflicts end
+starting search groupsize 1
+Found goal with cost 17!
+	Num Expansions = 191 nodes
+***********
+Done
+
+Moves for Agent 0
+Northeast
+Northeast
+Northeast
+Northeast
+East
+Northeast
+Northeast
+North
+Northeast
+Northeast
+Southeast
+Northeast
+Northeast
+Northeast
+Southeast
+East
+Northeast
+Group 2
+   Agent: 2	62 83 104 125 146 166 187 208 209 230 251 270 291 312 333 352 372 393 
+resolve_conflicts end
+starting search groupsize 1
+Found goal with cost 7!
+	Num Expansions = 140 nodes
+***********
+Done
+
+Moves for Agent 0
+Northeast
+East
+Southeast
+Southeast
+East
+Northeast
+North
+Group 3
+   Agent: 4	175 196 216 235 254 274 295 296 
+resolve_conflicts end
+starting search groupsize 1
+Found goal with cost 12!
+	Num Expansions = 598 nodes
+***********
+Done
+
+Moves for Agent 0
+North
+Northwest
+Northwest
+Northwest
+Northeast
+Northeast
+Northeast
+Northwest
+North
+Northwest
+Northwest
+Northeast
+Group 4
+   Agent: 5	224 225 206 187 168 189 210 231 212 213 194 175 196 
+resolve_conflicts end
+group conflict resolution start
+Group conflict resolution end
+	Total Nodes Expanded: 34179
+	Total Time 2s
+grid path= t7_g36.txt	 agent path= t7_a36.txt
+00101100111001111101
+11000001001111100110
+00011100110111111010
+11100110001011000000
+11100011000000100110
+11001111100101111110
+11111110101010100101
+00111111100111010101
+11011011101010101111
+11110101000010111110
+00110110100101101010
+00111111011101111010
+11100001011110110111
+00011111010000101011
+11111011110000001000
+10100011110110000101
+11011110110010010101
+11010011111011101100
+01110111101111110111
+01011011110101111011
+dimX = 20 dimY = 20
+Found path for 0
+Found path for 2
+Found path for 4
+Checked solutions OK
+resolve_conflicts start
+starting search groupsize 1
+Found goal with cost 4!
+	Num Expansions = 58 nodes
+***********
+Done
+
+Moves for Agent 0
+Northwest
+North
+Northeast
+North
+Group 0
+   Agent: 0	295 276 277 298 299 
+resolve_conflicts end
+starting search groupsize 1
+Found goal with cost 8!
+	Num Expansions = 133 nodes
+***********
+Done
+
+Moves for Agent 0
+East
+Northeast
+Southeast
+Northeast
+East
+Northeast
+North
+Northeast
+Group 1
+   Agent: 1	25 45 66 85 106 126 147 148 169 
+resolve_conflicts end
+starting search groupsize 1
+Found goal with cost 14!
+	Num Expansions = 945 nodes
+***********
+Done
+
+Moves for Agent 0
+North
+Northwest
+Northeast
+Northwest
+Northeast
+Northwest
+North
+North
+Northwest
+North
+Northeast
+Northeast
+East
+East
+Group 2
+   Agent: 2	307 308 289 310 291 312 293 294 295 276 277 298 319 339 359 
+resolve_conflicts end
+starting search groupsize 1
+Found goal with cost 19!
+	Num Expansions = 516 nodes
+***********
+Done
+
+Moves for Agent 0
+Southeast
+Northeast
+Northeast
+East
+Northeast
+East
+Northeast
+Northeast
+Northeast
+North
+Northeast
+Northeast
+North
+Northwest
+Northeast
+Northeast
+Northeast
+Northwest
+North
+Group 3
+   Agent: 3	22 41 62 83 103 124 144 165 186 207 208 229 250 251 232 253 274 295 276 277 
+resolve_conflicts end
+starting search groupsize 1
+Found goal with cost 11!
+	Num Expansions = 282 nodes
+***********
+Done
+
+Moves for Agent 0
+Southeast
+Southeast
+Southwest
+South
+South
+Southwest
+Southwest
+Southwest
+South
+Southwest
+West
+Group 4
+   Agent: 4	97 116 135 114 113 112 91 70 49 48 27 7 
+resolve_conflicts end
+starting search groupsize 1
+Found goal with cost 12!
+	Num Expansions = 150 nodes
+***********
+Done
+
+Moves for Agent 0
+Southwest
+Southeast
+Southeast
+Southeast
+South
+Southeast
+South
+Southwest
+Northwest
+Southwest
+West
+Northwest
+Group 5
+   Agent: 5	290 269 288 307 326 325 344 343 322 303 282 262 243 
+resolve_conflicts end
+group conflict resolution start
+Group conflict resolution end
+	Total Nodes Expanded: 2084
+	Total Time 1s
+grid path= t7_g37.txt	 agent path= t7_a37.txt
+11011110101110010011
+10111110010010110101
+10011010010001110101
+10001111001111010100
+11110110100111001111
+10101011111101100111
+00000001111110101100
+01001101110000111100
+11100010011100011111
+10011001101010110000
+11010110111100111110
+00111001000000001101
+10000001100100101010
+01101111100011001110
+01011111110011111001
+11111110111101101101
+00111111010010111101
+10101001100111011111
+10010001010101110011
+10011110100101010111
+dimX = 20 dimY = 20
+Found path for 0
+Found path for 2
+Found path for 4
+Checked solutions OK
+resolve_conflicts start
+starting search groupsize 1
+Found goal with cost 17!
+	Num Expansions = 599 nodes
+***********
+Done
+
+Moves for Agent 0
+Southeast
+Southeast
+Southwest
+South
+Southwest
+West
+West
+West
+Southwest
+West
+Southwest
+Northwest
+Southwest
+West
+Northwest
+Northwest
+Southwest
+Group 0
+   Agent: 0	310 329 348 327 326 305 285 265 245 224 204 183 164 143 123 104 85 64 
+resolve_conflicts end
+starting search groupsize 1
+Found goal with cost 18!
+	Num Expansions = 580 nodes
+***********
+Done
+
+Moves for Agent 0
+South
+Southeast
+Southwest
+South
+Southeast
+Southeast
+South
+Southeast
+South
+Southeast
+Southeast
+Southwest
+South
+Southwest
+West
+Southwest
+Southwest
+Southwest
+Group 1
+   Agent: 1	259 258 277 256 255 274 293 292 311 310 329 348 327 326 305 285 264 243 222 
+resolve_conflicts end
+starting search groupsize 1
+Found goal with cost 6!
+	Num Expansions = 248 nodes
+***********
+Done
+
+Moves for Agent 0
+Southeast
+East
+Northeast
+Southeast
+East
+Northeast
+Group 2
+   Agent: 2	44 63 83 104 123 143 164 
+resolve_conflicts end
+starting search groupsize 1
+Found goal with cost 16!
+	Num Expansions = 192 nodes
+***********
+Done
+
+Moves for Agent 0
+Southeast
+Northeast
+Northeast
+Southeast
+East
+Northeast
+Northwest
+Northeast
+North
+Northwest
+Northwest
+Northwest
+Northwest
+Northwest
+Northwest
+West
+Group 3
+   Agent: 3	29 48 69 90 109 129 150 131 152 153 134 115 96 77 58 39 19 
+resolve_conflicts end
+starting search groupsize 1
+Found goal with cost 13!
+	Num Expansions = 212 nodes
+***********
+Done
+
+Moves for Agent 0
+Northeast
+Southeast
+Northeast
+Southeast
+Southeast
+Southeast
+Southeast
+Southwest
+South
+Southwest
+South
+Southwest
+Southwest
+Group 4
+   Agent: 4	54 75 94 115 134 153 172 191 170 169 148 147 126 105 
+resolve_conflicts end
+starting search groupsize 1
+Exceeded expansion threshold***********
+Done
+Failed to solve!
+Cannot solve instance 37
+grid path= t7_g38.txt	 agent path= t7_a38.txt
+11111111001010011111
+10000011111101111100
+00011000110011110011
+01110001110011110111
+01011001000111110011
+10100001111111110110
+10111011000001011011
+11101011110111001110
+00001100111111011011
+01011101111100110000
+11111100001110000010
+11001110001001011111
+01001111110111101111
+11100011101010111011
+01111111000000111111
+11110001111101111111
+11110110101001010110
+11110011011011111100
+11010100101110001000
+00000010111011110010
+dimX = 20 dimY = 20
+Found path for 0
+Found path for 2
+Found path for 4
+Checked solutions OK
+resolve_conflicts start
+starting search groupsize 1
+Found goal with cost 11!
+	Num Expansions = 149 nodes
+***********
+Done
+
+Moves for Agent 0
+Southwest
+Southwest
+South
+Southwest
+Southwest
+Southeast
+Southeast
+South
+Southeast
+Southeast
+Southwest
+Group 0
+   Agent: 0	315 294 273 272 251 230 249 268 267 286 305 284 
+resolve_conflicts end
+starting search groupsize 1
+Found goal with cost 5!
+	Num Expansions = 35 nodes
+***********
+Done
+
+Moves for Agent 0
+Southeast
+South
+Southwest
+West
+Southwest
+Group 1
+   Agent: 1	190 209 208 187 167 146 
+resolve_conflicts end
+starting search groupsize 1
+Found goal with cost 3!
+	Num Expansions = 45 nodes
+***********
+Done
+
+Moves for Agent 0
+Northeast
+East
+East
+Group 2
+   Agent: 2	210 231 251 271 
+resolve_conflicts end
+starting search groupsize 1
+Found goal with cost 14!
+	Num Expansions = 546 nodes
+***********
+Done
+
+Moves for Agent 0
+East
+Northeast
+Southeast
+South
+Southwest
+Southeast
+Southeast
+South
+Southeast
+Southeast
+South
+Southeast
+Southeast
+Southeast
+Group 3
+   Agent: 3	32 52 73 92 91 70 89 108 107 126 145 144 163 182 201 
+resolve_conflicts end
+starting search groupsize 1
+Found goal with cost 9!
+	Num Expansions = 106 nodes
+***********
+Done
+
+Moves for Agent 0
+Northwest
+West
+West
+Northwest
+Southwest
+Southwest
+Southwest
+South
+Southwest
+Group 4
+   Agent: 4	286 267 247 227 208 187 166 145 144 123 
+resolve_conflicts end
+starting search groupsize 1
+Found goal with cost 15!
+	Num Expansions = 260 nodes
+***********
+Done
+
+Moves for Agent 0
+Southwest
+Southwest
+West
+Southwest
+Northwest
+West
+Southwest
+South
+Southwest
+Southwest
+Southwest
+Southwest
+Southeast
+East
+East
+Group 5
+   Agent: 5	373 352 331 311 290 271 251 230 229 208 187 166 145 164 184 204 
+resolve_conflicts end
+group conflict resolution start
+Group conflict resolution end
+	Total Nodes Expanded: 1141
+	Total Time 2s
+grid path= t7_g39.txt	 agent path= t7_a39.txt
+11110001101001011111
+11111100101111011111
+10100010010101001011
+00111100110110100111
+01111100010111101001
+11011000111100110010
+11101110010011011101
+00011111111100110110
+01011111011100100111
+10101101101110111001
+11111110110111110001
+11101010101111011001
+11111110010111010110
+10110111010110010011
+11100001111101110011
+11111010010011101000
+01010101111000111001
+01101101101011001111
+11111111010111111011
+10011111101101111010
+dimX = 20 dimY = 20
+Found path for 0
+Found path for 2
+Found path for 4
+Checked solutions OK
+resolve_conflicts start
+starting search groupsize 1
+Found goal with cost 16!
+	Num Expansions = 600 nodes
+***********
+Done
+
+Moves for Agent 0
+Northeast
+Northeast
+Northwest
+North
+Northeast
+Northeast
+Northeast
+North
+North
+Northwest
+North
+Northwest
+Northwest
+Northeast
+Northwest
+Northwest
+Group 0
+   Agent: 0	160 181 202 183 184 205 226 247 248 249 230 231 212 193 214 195 176 
+resolve_conflicts end
+starting search groupsize 1
+Found goal with cost 16!
+	Num Expansions = 451 nodes
+***********
+Done
+
+Moves for Agent 0
+Northwest
+West
+Northwest
+Southwest
+Southwest
+Southwest
+Southwest
+Northwest
+Southwest
+West
+Southwest
+Southwest
+Southwest
+Northwest
+Northwest
+Southwest
+Group 1
+   Agent: 1	347 328 308 289 268 247 226 205 186 165 145 124 103 82 63 44 23 
+resolve_conflicts end
+starting search groupsize 1
+Found goal with cost 13!
+	Num Expansions = 203 nodes
+***********
+Done
+
+Moves for Agent 0
+Northeast
+North
+Northeast
+East
+Northeast
+East
+Northeast
+East
+Northeast
+Northeast
+East
+Northeast
+East
+Group 2
+   Agent: 2	66 87 88 109 129 150 170 191 211 232 253 273 294 314 
+resolve_conflicts end
+starting search groupsize 1
+Found goal with cost 7!
+	Num Expansions = 99 nodes
+***********
+Done
+
+Moves for Agent 0
+East
+Southeast
+Southeast
+East
+Southeast
+East
+East
+Group 3
+   Agent: 3	163 183 202 221 241 260 280 300 
+resolve_conflicts end
+starting search groupsize 1
+Found goal with cost 12!
+	Num Expansions = 285 nodes
+***********
+Done
+
+Moves for Agent 0
+Northwest
+West
+Southwest
+Northwest
+North
+Northwest
+Northwest
+Northwest
+Northwest
+West
+Northwest
+Southwest
+Group 4
+   Agent: 4	281 262 242 221 202 203 184 165 146 127 107 88 67 
+resolve_conflicts end
+starting search groupsize 1
+Found goal with cost 15!
+	Num Expansions = 625 nodes
+***********
+Done
+
+Moves for Agent 0
+Northwest
+Northwest
+Northwest
+West
+West
+Southwest
+West
+West
+Northwest
+Northwest
+West
+Northwest
+West
+West
+West
+Group 5
+   Agent: 5	366 347 328 309 289 269 248 228 208 189 170 150 131 111 91 71 
+resolve_conflicts end
+group conflict resolution start
+Conflict at t = 6. Value is 226
+Conflict found between Group 0 and 1
+Group conflict resolution end
+resolve_conflicts start
+starting search groupsize 2
+Found goal with cost 16!
+	Num Expansions = 2187 nodes
+***********
+Done
+
+Moves for Agent 0
+Northeast
+Northwest
+North
+Northeast
+Northwest
+Northeast
+North
+Northwest
+Northeast
+Northeast
+Northwest
+Northwest
+Northeast
+Northeast
+Northwest
+Northwest
+
+Moves for Agent 1
+Northwest
+West
+Northwest
+Southwest
+Southwest
+Southwest
+Southwest
+Southwest
+Southwest
+Southwest
+Southwest
+West
+Northwest
+Southwest
+Northwest
+Northwest
+Group 0
+   Agent: 0	160 181 162 163 184 165 186 187 168 189 210 191 172 193 214 195 176 
+   Agent: 1	347 328 308 289 268 247 226 205 184 163 142 121 101 82 61 42 23 
+resolve_conflicts end
+starting search groupsize 1
+Found goal with cost 13!
+	Num Expansions = 203 nodes
+***********
+Done
+
+Moves for Agent 0
+Northeast
+North
+Northeast
+East
+Northeast
+East
+Northeast
+East
+Northeast
+Northeast
+East
+Northeast
+East
+Group 1
+   Agent: 2	66 87 88 109 129 150 170 191 211 232 253 273 294 314 
+resolve_conflicts end
+starting search groupsize 1
+Found goal with cost 7!
+	Num Expansions = 99 nodes
+***********
+Done
+
+Moves for Agent 0
+East
+Southeast
+Southeast
+East
+Southeast
+East
+East
+Group 2
+   Agent: 3	163 183 202 221 241 260 280 300 
+resolve_conflicts end
+starting search groupsize 1
+Found goal with cost 12!
+	Num Expansions = 285 nodes
+***********
+Done
+
+Moves for Agent 0
+Northwest
+West
+Southwest
+Northwest
+North
+Northwest
+Northwest
+Northwest
+Northwest
+West
+Northwest
+Southwest
+Group 3
+   Agent: 4	281 262 242 221 202 203 184 165 146 127 107 88 67 
+resolve_conflicts end
+starting search groupsize 1
+Found goal with cost 15!
+	Num Expansions = 625 nodes
+***********
+Done
+
+Moves for Agent 0
+Northwest
+Northwest
+Northwest
+West
+West
+Southwest
+West
+West
+Northwest
+Northwest
+West
+Northwest
+West
+West
+West
+Group 4
+   Agent: 5	366 347 328 309 289 269 248 228 208 189 170 150 131 111 91 71 
+resolve_conflicts end
+group conflict resolution start
+Conflict at t = 9. Value is 189
+Conflict found between Group 0 and 4
+Group conflict resolution end
+resolve_conflicts start
+starting search groupsize 3
+Exceeded expansion threshold***********
+Done
+Failed to solve!
+Cannot solve instance 39
+grid path= t7_g40.txt	 agent path= t7_a40.txt
+11111010110111011111
+01001010111000111110
+00101000110101111001
+00000101011101111101
+11010001111100110100
+10110111101100111101
+11110010001001111011
+11000011111101011110
+10111111101001011101
+00001011011100101100
+10001011001011111110
+01110011111101101110
+11000000011110100111
+00111110110111110101
+01011010001010100100
+11111101001111011111
+01000101110111110111
+11111011000000010110
+01111100100011111100
+11000000001101101101
+dimX = 20 dimY = 20
+Found path for 0
+Cannot solve instance 40
+grid path= t7_g41.txt	 agent path= t7_a41.txt
+10000101110111101011
+11011011101110000110
+11111011100101011111
+11111110110110001000
+10100000100110100011
+11111101010011111100
+01000111010110010100
+10001101000111001001
+10011011011011111111
+00010101010111111110
+10110000110110101110
+01100111111101010000
+11111110110111011100
+00110110110111111010
+00111011001011100111
+10110011111111100111
+11011011000110101000
+11010111101011110101
+01111101110000000100
+01111101111000111011
+dimX = 20 dimY = 20
+Found path for 0
+Found path for 2
+Cannot solve instance 41
+grid path= t7_g42.txt	 agent path= t7_a42.txt
+11101101011011010111
+00011100010101100111
+00010110101011100110
+10101111101101001100
+11101111011100001110
+01001111100011101001
+10110110101011110110
+11101010110111111011
+11100111100100101110
+01101101011001100110
+11111110111100011111
+10101111101111011100
+00001111101010111111
+11100100011110111001
+01010100011011011001
+01101001111110101110
+11111110100111110111
+11101011101010100101
+11101101101110010010
+11100000111111101001
+dimX = 20 dimY = 20
+Found path for 0
+Found path for 2
+Found path for 4
+Checked solutions OK
+resolve_conflicts start
+starting search groupsize 1
+Found goal with cost 9!
+	Num Expansions = 140 nodes
+***********
+Done
+
+Moves for Agent 0
+Northwest
+Southwest
+Southwest
+West
+Southwest
+West
+Southwest
+West
+Southwest
+Group 0
+   Agent: 0	276 257 236 215 195 174 154 133 113 92 
+resolve_conflicts end
+starting search groupsize 1
+Found goal with cost 17!
+	Num Expansions = 594 nodes
+***********
+Done
+
+Moves for Agent 0
+Northeast
+North
+Northeast
+Northeast
+Northwest
+Northwest
+North
+Northeast
+North
+Northwest
+Northwest
+North
+Northwest
+North
+Northwest
+West
+West
+Group 1
+   Agent: 1	84 105 106 127 148 129 110 111 132 133 114 95 96 77 78 59 39 19 
+resolve_conflicts end
+starting search groupsize 1
+Found goal with cost 5!
+	Num Expansions = 22 nodes
+***********
+Done
+
+Moves for Agent 0
+East
+Southeast
+Southeast
+Northeast
+North
+Group 2
+   Agent: 2	26 46 65 84 105 106 
+resolve_conflicts end
+starting search groupsize 1
+Found goal with cost 7!
+	Num Expansions = 138 nodes
+***********
+Done
+
+Moves for Agent 0
+West
+West
+Southwest
+Southwest
+Southwest
+Southwest
+South
+Group 3
+   Agent: 3	176 156 136 115 94 73 52 51 
+resolve_conflicts end
+starting search groupsize 1
+Found goal with cost 7!
+	Num Expansions = 52 nodes
+***********
+Done
+
+Moves for Agent 0
+Northeast
+Northeast
+Northeast
+Northeast
+Northeast
+East
+Northeast
+Group 4
+   Agent: 4	147 168 189 210 231 252 272 293 
+resolve_conflicts end
+starting search groupsize 1
+Found goal with cost 8!
+	Num Expansions = 78 nodes
+***********
+Done
+
+Moves for Agent 0
+Northwest
+Northwest
+Northwest
+Northwest
+Northwest
+Northeast
+Northwest
+North
+Group 5
+   Agent: 5	243 224 205 186 167 148 169 150 151 
+resolve_conflicts end
+group conflict resolution start
+Group conflict resolution end
+	Total Nodes Expanded: 1024
+	Total Time 2s
+grid path= t7_g43.txt	 agent path= t7_a43.txt
+11110111100110101001
+00101111011100111011
+11100011011111011010
+11111011100010101110
+01000001111011000011
+10101010111110010010
+11100101110001110100
+11001011111111110111
+11110000110101010111
+11011110110101110111
+11010010101100101101
+10001101110101111110
+00011101110011000111
+01000101111010100101
+00101101001111001111
+01101011101100111111
+11101011100000101110
+10011011001101010111
+11111001100011011001
+11111110111010010000
+dimX = 20 dimY = 20
+Found path for 0
+Found path for 2
+Found path for 4
+Checked solutions OK
+resolve_conflicts start
+starting search groupsize 1
+Found goal with cost 7!
+	Num Expansions = 89 nodes
+***********
+Done
+
+Moves for Agent 0
+East
+East
+East
+Northeast
+Northeast
+Northeast
+Southeast
+Group 0
+   Agent: 0	11 31 51 71 92 113 134 153 
+resolve_conflicts end
+starting search groupsize 1
+Found goal with cost 7!
+	Num Expansions = 153 nodes
+***********
+Done
+
+Moves for Agent 0
+Southwest
+Southwest
+West
+West
+Northwest
+Northwest
+Northwest
+Group 1
+   Agent: 1	296 275 254 234 214 195 176 157 
+resolve_conflicts end
+starting search groupsize 1
+Found goal with cost 12!
+	Num Expansions = 59 nodes
+***********
+Done
+
+Moves for Agent 0
+East
+Southeast
+Southeast
+Southeast
+South
+Southeast
+Southeast
+South
+Southwest
+Southwest
+Northwest
+West
+Group 2
+   Agent: 2	170 190 209 228 247 246 265 284 283 262 241 222 202 
+resolve_conflicts end
+starting search groupsize 1
+Found goal with cost 16!
+	Num Expansions = 237 nodes
+***********
+Done
+
+Moves for Agent 0
+Southeast
+Northeast
+North
+Northeast
+Southeast
+Northeast
+North
+Northeast
+Northeast
+Northeast
+Northeast
+North
+Northeast
+Northeast
+East
+Southeast
+Group 3
+   Agent: 3	43 62 83 84 105 124 145 146 167 188 209 230 231 252 273 293 312 
+resolve_conflicts end
+starting search groupsize 1
+Found goal with cost 9!
+	Num Expansions = 92 nodes
+***********
+Done
+
+Moves for Agent 0
+Northeast
+Northeast
+Southeast
+East
+Southeast
+Southeast
+South
+Southeast
+Southeast
+Group 4
+   Agent: 4	37 58 79 98 118 137 156 155 174 193 
+resolve_conflicts end
+starting search groupsize 1
+Found goal with cost 16!
+	Num Expansions = 534 nodes
+***********
+Done
+
+Moves for Agent 0
+West
+Northwest
+Northwest
+West
+West
+West
+Southwest
+Northwest
+West
+Northwest
+Southwest
+Southwest
+West
+Northwest
+North
+Northwest
+Group 5
+   Agent: 5	310 290 271 252 232 212 192 171 152 132 113 92 71 51 32 33 14 
+resolve_conflicts end
+group conflict resolution start
+Group conflict resolution end
+	Total Nodes Expanded: 1164
+	Total Time 2s
+grid path= t7_g44.txt	 agent path= t7_a44.txt
+10110011011011101100
+00110100111010101101
+11010101101101111011
+00100110110000111111
+01001001100110001111
+01010000100010010111
+10100101010101101010
+11110111111101101000
+10101111001001101111
+11110110101001111010
+11001000100111111000
+11010100110010101110
+10011011110000100011
+10111101010111011011
+11110101011111010011
+11010111011010011010
+01100001011000101111
+10111000101010011111
+11010010011001001111
+11111111010011110101
+dimX = 20 dimY = 20
+Found path for 0
+Found path for 2
+Found path for 4
+Checked solutions OK
+resolve_conflicts start
+starting search groupsize 1
+Found goal with cost 23!
+	Num Expansions = 1160 nodes
+***********
+Done
+
+Moves for Agent 0
+Northeast
+Northwest
+Northwest
+Northeast
+North
+North
+Northwest
+North
+Northwest
+Southwest
+Northwest
+Northwest
+North
+Northwest
+West
+Northwest
+Southwest
+Southwest
+West
+Northwest
+Northwest
+Northwest
+North
+Group 0
+   Agent: 0	300 321 302 283 304 305 306 287 288 269 248 229 210 211 192 172 153 132 111 91 72 53 34 35 
+resolve_conflicts end
+starting search groupsize 1
+Found goal with cost 4!
+	Num Expansions = 21 nodes
+***********
+Done
+
+Moves for Agent 0
+North
+Northeast
+Northeast
+North
+Group 1
+   Agent: 1	174 175 196 217 218 
+resolve_conflicts end
+starting search groupsize 1
+Found goal with cost 12!
+	Num Expansions = 111 nodes
+***********
+Done
+
+Moves for Agent 0
+Southwest
+West
+Northwest
+North
+Northwest
+West
+Southwest
+West
+Southwest
+Southwest
+Southwest
+South
+Group 2
+   Agent: 2	270 249 229 210 211 192 172 151 131 110 89 68 67 
+resolve_conflicts end
+starting search groupsize 1
+Found goal with cost 16!
+	Num Expansions = 159 nodes
+***********
+Done
+
+Moves for Agent 0
+West
+Northwest
+Southwest
+West
+Southwest
+Southwest
+South
+Southwest
+South
+Southwest
+Southwest
+Southwest
+Southwest
+Southeast
+South
+Southeast
+Group 3
+   Agent: 3	297 277 258 237 217 196 175 174 153 152 131 110 89 68 87 86 105 
+resolve_conflicts end
+starting search groupsize 1
+Found goal with cost 12!
+	Num Expansions = 143 nodes
+***********
+Done
+
+Moves for Agent 0
+Northwest
+Southwest
+West
+Northwest
+Southwest
+Southwest
+Northwest
+Southwest
+West
+Southwest
+Southwest
+Southwest
+Group 4
+   Agent: 4	333 314 293 273 254 233 212 193 172 152 131 110 89 
+resolve_conflicts end
+starting search groupsize 1
+Found goal with cost 5!
+	Num Expansions = 48 nodes
+***********
+Done
+
+Moves for Agent 0
+Southeast
+Southwest
+Southwest
+South
+Southwest
+Group 5
+   Agent: 5	91 110 89 68 67 46 
+resolve_conflicts end
+group conflict resolution start
+Conflict at t = 9. Value is 152
+Conflict found between Group 3 and 4
+Group conflict resolution end
+resolve_conflicts start
+starting search groupsize 1
+Found goal with cost 23!
+	Num Expansions = 1160 nodes
+***********
+Done
+
+Moves for Agent 0
+Northeast
+Northwest
+Northwest
+Northeast
+North
+North
+Northwest
+North
+Northwest
+Southwest
+Northwest
+Northwest
+North
+Northwest
+West
+Northwest
+Southwest
+Southwest
+West
+Northwest
+Northwest
+Northwest
+North
+Group 0
+   Agent: 0	300 321 302 283 304 305 306 287 288 269 248 229 210 211 192 172 153 132 111 91 72 53 34 35 
+resolve_conflicts end
+starting search groupsize 1
+Found goal with cost 4!
+	Num Expansions = 21 nodes
+***********
+Done
+
+Moves for Agent 0
+North
+Northeast
+Northeast
+North
+Group 1
+   Agent: 1	174 175 196 217 218 
+resolve_conflicts end
+starting search groupsize 1
+Found goal with cost 12!
+	Num Expansions = 111 nodes
+***********
+Done
+
+Moves for Agent 0
+Southwest
+West
+Northwest
+North
+Northwest
+West
+Southwest
+West
+Southwest
+Southwest
+Southwest
+South
+Group 2
+   Agent: 2	270 249 229 210 211 192 172 151 131 110 89 68 67 
+resolve_conflicts end
+starting search groupsize 2
+Exceeded expansion threshold***********
+Done
+Failed to solve!
+Cannot solve instance 44
+grid path= t7_g45.txt	 agent path= t7_a45.txt
+11001000011110011111
+11001000101111101001
+11011010111110110111
+11000101110001011110
+01111111010111111010
+11100111111111011011
+10111111101000100101
+11001010111011110010
+00001010000010010101
+00011101111101100111
+01010111111101110010
+01011011011000111101
+01110101010011101010
+01110100111111100011
+11100011111111111001
+11111100001101111110
+11101011001111111100
+11110101110110100100
+11001101101100111110
+01111111110101011100
+dimX = 20 dimY = 20
+Found path for 0
+Found path for 2
+Found path for 4
+Checked solutions OK
+resolve_conflicts start
+starting search groupsize 1
+Found goal with cost 9!
+	Num Expansions = 119 nodes
+***********
+Done
+
+Moves for Agent 0
+North
+Northwest
+Northwest
+Northwest
+West
+Northwest
+West
+West
+West
+Group 0
+   Agent: 0	390 391 372 353 334 314 295 275 255 235 
+resolve_conflicts end
+starting search groupsize 1
+Found goal with cost 13!
+	Num Expansions = 170 nodes
+***********
+Done
+
+Moves for Agent 0
+Northwest
+Northwest
+Northwest
+West
+Southwest
+Southwest
+Southwest
+Southwest
+Southwest
+West
+Northwest
+Southwest
+Southwest
+Group 1
+   Agent: 1	391 372 353 334 314 293 272 251 230 209 189 170 149 128 
+resolve_conflicts end
+starting search groupsize 1
+Found goal with cost 3!
+	Num Expansions = 20 nodes
+***********
+Done
+
+Moves for Agent 0
+Northeast
+East
+Northeast
+Group 2
+   Agent: 2	88 109 129 150 
+resolve_conflicts end
+starting search groupsize 1
+Found goal with cost 6!
+	Num Expansions = 71 nodes
+***********
+Done
+
+Moves for Agent 0
+Northeast
+Northwest
+Northeast
+Northeast
+Northwest
+North
+Group 3
+   Agent: 3	81 102 83 104 125 106 107 
+resolve_conflicts end
+starting search groupsize 1
+Found goal with cost 16!
+	Num Expansions = 587 nodes
+***********
+Done
+
+Moves for Agent 0
+Southwest
+Southwest
+Southeast
+South
+Southeast
+South
+Southwest
+Southeast
+South
+Southwest
+South
+Southeast
+Southwest
+Southeast
+Southeast
+South
+Group 4
+   Agent: 4	137 116 95 114 113 132 131 110 129 128 107 106 125 104 123 142 141 
+resolve_conflicts end
+starting search groupsize 1
+Found goal with cost 10!
+	Num Expansions = 101 nodes
+***********
+Done
+
+Moves for Agent 0
+Southwest
+Southwest
+Southwest
+Southwest
+Southwest
+Southeast
+South
+Southwest
+South
+South
+Group 5
+   Agent: 5	398 377 356 335 314 293 312 311 290 289 288 
+resolve_conflicts end
+group conflict resolution start
+Conflict at t = 4. Value is 314
+Conflict found between Group 1 and 5
+Group conflict resolution end
+resolve_conflicts start
+starting search groupsize 1
+Found goal with cost 9!
+	Num Expansions = 119 nodes
+***********
+Done
+
+Moves for Agent 0
+North
+Northwest
+Northwest
+Northwest
+West
+Northwest
+West
+West
+West
+Group 0
+   Agent: 0	390 391 372 353 334 314 295 275 255 235 
+resolve_conflicts end
+starting search groupsize 2
+Found goal with cost 13!
+	Num Expansions = 3261927 nodes
+***********
+Done
+
+Moves for Agent 0
+Northwest
+Northwest
+Northwest
+West
+Southwest
+Southwest
+Southwest
+Southwest
+West
+Southwest
+West
+West
+Southwest
+
+Moves for Agent 1
+Southwest
+Southwest
+Southwest
+South
+West
+Southwest
+Southeast
+South
+Southwest
+West
+South
+Southeast
+Wait
+Group 1
+   Agent: 1	391 372 353 334 314 293 272 251 230 210 189 169 149 128 
+   Agent: 5	398 377 356 335 334 314 293 312 311 290 270 269 288 288 
+resolve_conflicts end
+starting search groupsize 1
+Found goal with cost 3!
+	Num Expansions = 20 nodes
+***********
+Done
+
+Moves for Agent 0
+Northeast
+East
+Northeast
+Group 2
+   Agent: 2	88 109 129 150 
+resolve_conflicts end
+starting search groupsize 1
+Found goal with cost 6!
+	Num Expansions = 71 nodes
+***********
+Done
+
+Moves for Agent 0
+Northeast
+Northwest
+Northeast
+Northeast
+Northwest
+North
+Group 3
+   Agent: 3	81 102 83 104 125 106 107 
+resolve_conflicts end
+starting search groupsize 1
+Found goal with cost 16!
+	Num Expansions = 587 nodes
+***********
+Done
+
+Moves for Agent 0
+Southwest
+Southwest
+Southeast
+South
+Southeast
+South
+Southwest
+Southeast
+South
+Southwest
+South
+Southeast
+Southwest
+Southeast
+Southeast
+South
+Group 4
+   Agent: 4	137 116 95 114 113 132 131 110 129 128 107 106 125 104 123 142 141 
+resolve_conflicts end
+group conflict resolution start
+Conflict at t = 4. Value is 334
+Conflict found between Group 0 and 1
+Group conflict resolution end
+resolve_conflicts start
+starting search groupsize 3
+Exceeded expansion threshold***********
+Done
+Failed to solve!
+Cannot solve instance 45
+grid path= t7_g46.txt	 agent path= t7_a46.txt
+01101110111000000001
+01100101100011111110
+01010011000110101110
+11111000011100101111
+11110011101101011001
+10001101001101101011
+10101000110011111111
+10101100111100011100
+01000101111110111111
+11101010101001110011
+10101111100101100000
+11011011111000100111
+11101000001111110111
+00001011010011101011
+10101111100111111111
+11011111100000010111
+11101111111010011011
+11101011010011001100
+10111011111111000000
+10010011010100110000
+dimX = 20 dimY = 20
+Found path for 0
+Cannot solve instance 46
+grid path= t7_g47.txt	 agent path= t7_a47.txt
+10011100110110010110
+00011101100101011111
+01110011101101011110
+00111010001110010010
+01111101111001010011
+11111101100101011001
+01011111011110110110
+11111110111000110111
+11001110111011011100
+10110011111101100111
+11001011001111111111
+11111111010111111010
+11101101111001100111
+10100110001101111111
+01000011001011100010
+00111010011101010011
+11101000101111010011
+01101110010111011111
+01000011001111110111
+01111101101110100110
+dimX = 20 dimY = 20
+Found path for 0
+Found path for 2
+Found path for 4
+Checked solutions OK
+resolve_conflicts start
+starting search groupsize 1
+Found goal with cost 12!
+	Num Expansions = 98 nodes
+***********
+Done
+
+Moves for Agent 0
+Southwest
+Southeast
+Southwest
+Southwest
+South
+Southwest
+Southeast
+South
+Southwest
+South
+Southeast
+East
+Group 0
+   Agent: 0	91 70 89 68 47 46 25 44 43 22 21 40 60 
+resolve_conflicts end
+starting search groupsize 1
+Found goal with cost 3!
+	Num Expansions = 21 nodes
+***********
+Done
+
+Moves for Agent 0
+Northwest
+Northwest
+Northwest
+Group 1
+   Agent: 1	212 193 174 155 
+resolve_conflicts end
+starting search groupsize 1
+Found goal with cost 17!
+	Num Expansions = 552 nodes
+***********
+Done
+
+Moves for Agent 0
+Southwest
+South
+Southeast
+South
+Southwest
+South
+Southwest
+Southeast
+Southeast
+Southwest
+South
+Southeast
+Southwest
+Southeast
+Southwest
+South
+Southwest
+Group 2
+   Agent: 2	398 377 376 395 394 373 372 351 370 389 368 367 386 365 384 363 362 341 
+resolve_conflicts end
+starting search groupsize 1
+Found goal with cost 7!
+	Num Expansions = 231 nodes
+***********
+Done
+
+Moves for Agent 0
+Southwest
+West
+Northwest
+Southwest
+Southwest
+West
+Southwest
+Group 3
+   Agent: 3	149 128 108 89 68 47 27 6 
+resolve_conflicts end
+starting search groupsize 1
+Found goal with cost 1!
+	Num Expansions = 5 nodes
+***********
+Done
+
+Moves for Agent 0
+Southeast
+Group 4
+   Agent: 4	274 293 
+resolve_conflicts end
+starting search groupsize 1
+Found goal with cost 8!
+	Num Expansions = 140 nodes
+***********
+Done
+
+Moves for Agent 0
+North
+Northwest
+North
+North
+Northwest
+North
+Northeast
+Northeast
+Group 5
+   Agent: 5	386 387 368 369 370 351 352 373 394 
+resolve_conflicts end
+group conflict resolution start
+Group conflict resolution end
+	Total Nodes Expanded: 1047
+	Total Time 2s
+grid path= t7_g48.txt	 agent path= t7_a48.txt
+10011000000001100101
+01110110111011011011
+00111100101011011101
+11010111111101110011
+00000010100000000111
+00101001111111101101
+11111011111100000010
+11001111111110011100
+01101110111100101111
+11111110010110000111
+11101111101010110001
+01111011110000101001
+10110001111111011010
+11011100000100111100
+11110110110110101101
+11100011101100110101
+01100100011100110101
+10111100100111001101
+11111011001010111110
+00111100110101000111
+dimX = 20 dimY = 20
+Found path for 0
+Found path for 2
+Found path for 4
+Checked solutions OK
+resolve_conflicts start
+starting search groupsize 1
+Found goal with cost 10!
+	Num Expansions = 141 nodes
+***********
+Done
+
+Moves for Agent 0
+North
+Northeast
+Northwest
+Northwest
+Northwest
+North
+Northeast
+Northeast
+Northwest
+North
+Group 0
+   Agent: 0	102 103 124 105 86 67 68 89 110 91 92 
+resolve_conflicts end
+starting search groupsize 1
+Found goal with cost 9!
+	Num Expansions = 60 nodes
+***********
+Done
+
+Moves for Agent 0
+Southwest
+South
+Southwest
+Southwest
+Southeast
+East
+East
+East
+Southeast
+Group 1
+   Agent: 1	252 231 230 209 188 207 227 247 267 286 
+resolve_conflicts end
+starting search groupsize 1
+Found goal with cost 9!
+	Num Expansions = 150 nodes
+***********
+Done
+
+Moves for Agent 0
+South
+Southeast
+Southeast
+East
+Southeast
+Southeast
+East
+Southeast
+Northeast
+Group 2
+   Agent: 2	49 48 67 86 106 125 144 164 183 204 
+resolve_conflicts end
+starting search groupsize 1
+Found goal with cost 23!
+	Num Expansions = 568 nodes
+***********
+Done
+
+Moves for Agent 0
+Southeast
+Southwest
+Southeast
+Southeast
+South
+South
+Southwest
+Southwest
+Southwest
+Southwest
+Southwest
+Southwest
+Southwest
+Northwest
+Southwest
+Southwest
+West
+Northwest
+West
+Northwest
+West
+West
+Southwest
+Group 3
+   Agent: 3	354 373 352 371 390 389 388 367 346 325 304 283 262 241 222 201 180 160 141 121 102 82 62 41 
+resolve_conflicts end
+starting search groupsize 1
+Found goal with cost 21!
+	Num Expansions = 565 nodes
+***********
+Done
+
+Moves for Agent 0
+Northwest
+West
+West
+Northwest
+West
+Northwest
+North
+North
+North
+Northwest
+Northwest
+Northwest
+Northeast
+North
+Northeast
+North
+Northwest
+Northwest
+North
+North
+North
+Group 4
+   Agent: 4	340 321 301 281 262 242 223 224 225 226 207 188 169 190 191 212 213 194 175 176 177 178 
+resolve_conflicts end
+starting search groupsize 1
+Found goal with cost 18!
+	Num Expansions = 613 nodes
+***********
+Done
+
+Moves for Agent 0
+North
+Northeast
+Northeast
+Northeast
+Northeast
+Northeast
+Northeast
+Northwest
+Northeast
+Northeast
+Northeast
+East
+East
+Northeast
+East
+Southeast
+Northeast
+Northeast
+Group 5
+   Agent: 5	25 26 47 68 89 110 131 152 133 154 175 196 216 236 257 277 296 317 338 
+resolve_conflicts end
+group conflict resolution start
+Group conflict resolution end
+	Total Nodes Expanded: 2097
+	Total Time 2s
+grid path= t7_g49.txt	 agent path= t7_a49.txt
+10111001111101101110
+10011011000001010100
+11111010100000011111
+01010011110111111011
+11100010111001110101
+11011011101000100111
+01100001011101101111
+10100011101110101111
+00011000111000111101
+11100011111111110001
+01111000010111101101
+01111100001011111110
+00101000101000101100
+01100100001010100011
+00101100100011011010
+11101011001011111111
+00011110011100110001
+11111010100111100111
+01101111011110001010
+10110110111011111100
+dimX = 20 dimY = 20
+Found path for 0
+Found path for 2
+Found path for 4
+Checked solutions OK
+resolve_conflicts start
+starting search groupsize 1
+Found goal with cost 11!
+	Num Expansions = 284 nodes
+***********
+Done
+
+Moves for Agent 0
+Southeast
+Southeast
+Southwest
+South
+South
+Southeast
+South
+Southeast
+Southeast
+South
+South
+Group 0
+   Agent: 0	137 156 175 154 153 152 171 170 189 208 207 206 
+resolve_conflicts end
+starting search groupsize 1
+Found goal with cost 12!
+	Num Expansions = 300 nodes
+***********
+Done
+
+Moves for Agent 0
+North
+Northwest
+Northeast
+Northeast
+Northeast
+North
+Northwest
+Northeast
+Northwest
+Northeast
+North
+North
+Group 1
+   Agent: 1	241 242 223 244 265 286 287 268 289 270 291 292 293 
+resolve_conflicts end
+starting search groupsize 1
+Found goal with cost 27!
+	Num Expansions = 294 nodes
+***********
+Done
+
+Moves for Agent 0
+South
+Southeast
+Southeast
+South
+Southeast
+Southeast
+South
+Southeast
+Southeast
+Southeast
+Southeast
+South
+Southwest
+Southwest
+Southwest
+West
+West
+Southwest
+Southwest
+West
+West
+Northwest
+Northwest
+Northwest
+North
+North
+North
+Group 2
+   Agent: 2	138 137 156 175 174 193 212 211 230 249 268 287 286 265 244 223 203 183 162 141 121 101 82 63 44 45 46 47 
+resolve_conflicts end
+starting search groupsize 1
+Found goal with cost 26!
+	Num Expansions = 1173 nodes
+***********
+Done
+
+Moves for Agent 0
+Southeast
+Southwest
+Southeast
+South
+Southeast
+Southwest
+Southeast
+Southeast
+Northeast
+Northeast
+East
+East
+Northeast
+Northeast
+Northeast
+North
+North
+North
+Northeast
+North
+Northeast
+Northeast
+Northeast
+Northwest
+Northwest
+Northwest
+Group 3
+   Agent: 3	89 108 87 106 105 124 103 122 141 162 183 203 223 244 265 286 287 288 289 310 311 332 353 374 355 336 317 
+resolve_conflicts end
+starting search groupsize 1
+Found goal with cost 25!
+	Num Expansions = 584 nodes
+***********
+Done
+
+Moves for Agent 0
+West
+West
+West
+Southwest
+Southeast
+Southeast
+Southeast
+South
+South
+South
+South
+Southeast
+Southeast
+Southeast
+Southeast
+South
+Southwest
+Southwest
+Southwest
+West
+West
+Southwest
+Southwest
+Northwest
+North
+Group 4
+   Agent: 4	239 219 199 179 158 177 196 215 214 213 212 211 230 249 268 287 286 265 244 223 203 183 162 141 122 123 
+resolve_conflicts end
+starting search groupsize 1
+Found goal with cost 28!
+	Num Expansions = 995 nodes
+***********
+Done
+
+Moves for Agent 0
+South
+Southeast
+Southwest
+South
+Southeast
+Southeast
+Southeast
+South
+Southwest
+Southeast
+Southeast
+Southeast
+Northeast
+Northeast
+East
+East
+Northeast
+Northeast
+Northeast
+North
+Northwest
+Northwest
+Northwest
+Northwest
+West
+Northwest
+Northwest
+Northwest
+Group 5
+   Agent: 5	53 52 71 50 49 68 87 106 105 84 103 122 141 162 183 203 223 244 265 286 287 268 249 230 211 191 172 153 134 
+resolve_conflicts end
+group conflict resolution start
+Group conflict resolution end
+	Total Nodes Expanded: 3630
+	Total Time 1s
+###############################################
+Solved 30/50 instances
+Instance 0
+	Grid x=20, y=20
+	Num agents = 6
+	Time = 2s
+	Collisions = 0
+	Num expansions = 2479
+Instance 1
+	Grid x=20, y=20
+	Num agents = 6
+	Time = 1s
+	Collisions = 1
+	Num expansions = 7618
+Instance 2
+	Grid x=20, y=20
+	Num agents = 6
+	Time = 2s
+	Collisions = 0
+	Num expansions = 2117
+Instance 3
+	Grid x=20, y=20
+	Num agents = 6
+	Time = 3s
+	Collisions = 1
+	Num expansions = 135352
+Instance 4
+	Grid x=20, y=20
+	Num agents = 6
+	Time = 1s
+	Collisions = 0
+	Num expansions = 1290
+Instance 5
+	Grid x=20, y=20
+	Num agents = 6
+	Time = 2s
+	Collisions = 0
+	Num expansions = 1379
+Instance 6
+	Grid x=20, y=20
+	Num agents = 6
+	Time = 1s
+	Collisions = 0
+	Num expansions = 1016
+Instance 7
+	Grid x=20, y=20
+	Num agents = 6
+	Time = 2s
+	Collisions = 0
+	Num expansions = 2262
+Instance 8
+	Grid x=20, y=20
+	Num agents = 6
+	Time = 7s
+	Collisions = 1
+	Num expansions = 2474601
+Instance 9
+	Grid x=20, y=20
+	Num agents = 6
+	Time = 2s
+	Collisions = 0
+	Num expansions = 1288
+Instance 10
+	Grid x=20, y=20
+	Num agents = 6
+	Time = 1s
+	Collisions = 0
+	Num expansions = 2535
+Instance 11
+	Grid x=20, y=20
+	Num agents = 6
+	Time = 2s
+	Collisions = 0
+	Num expansions = 1215
+Instance 12
+	Grid x=20, y=20
+	Num agents = 6
+	Time = 2s
+	Collisions = 0
+	Num expansions = 1293
+Instance 13
+	Grid x=20, y=20
+	Num agents = 6
+	Time = 1s
+	Collisions = 0
+	Num expansions = 2186
+Instance 14
+	Grid x=20, y=20
+	Num agents = 6
+	Time = 2s
+	Collisions = 0
+	Num expansions = 1015
+Instance 15
+	Grid x=20, y=20
+	Num agents = 6
+	Time = 1s
+	Collisions = 1
+	Num expansions = 73458
+Instance 16
+	Grid x=20, y=20
+	Num agents = 6
+	Time = 2s
+	Collisions = 0
+	Num expansions = 2523
+Instance 17
+	Grid x=20, y=20
+	Num agents = 6
+	Time = 2s
+	Collisions = 0
+	Num expansions = 836
+Instance 18
+	Grid x=20, y=20
+	Num agents = 6
+	Time = 1s
+	Collisions = 0
+	Num expansions = 1166
+Instance 19
+	Grid x=20, y=20
+	Num agents = 6
+	Time = 1s
+	Collisions = 0
+	Num expansions = 1776
+Instance 20
+	Grid x=20, y=20
+	Num agents = 6
+	Time = 1s
+	Collisions = 0
+	Num expansions = 1125
+Instance 21
+	Grid x=20, y=20
+	Num agents = 6
+	Time = 2s
+	Collisions = 0
+	Num expansions = 1092
+Instance 22
+	Grid x=20, y=20
+	Num agents = 6
+	Time = 2s
+	Collisions = 1
+	Num expansions = 34179
+Instance 23
+	Grid x=20, y=20
+	Num agents = 6
+	Time = 1s
+	Collisions = 0
+	Num expansions = 2084
+Instance 24
+	Grid x=20, y=20
+	Num agents = 6
+	Time = 2s
+	Collisions = 0
+	Num expansions = 1141
+Instance 25
+	Grid x=20, y=20
+	Num agents = 6
+	Time = 2s
+	Collisions = 0
+	Num expansions = 1024
+Instance 26
+	Grid x=20, y=20
+	Num agents = 6
+	Time = 2s
+	Collisions = 0
+	Num expansions = 1164
+Instance 27
+	Grid x=20, y=20
+	Num agents = 6
+	Time = 2s
+	Collisions = 0
+	Num expansions = 1047
+Instance 28
+	Grid x=20, y=20
+	Num agents = 6
+	Time = 2s
+	Collisions = 0
+	Num expansions = 2097
+Instance 29
+	Grid x=20, y=20
+	Num agents = 6
+	Time = 1s
+	Collisions = 0
+	Num expansions = 3630
+###############################################
+Average Node exp = 92199.60
+	Min = 836	Max = 2474601
+Average solution time = 1.83
+	Min = 1.00	Max = 7

@@ -5,11 +5,11 @@ A* with Operator Decomposition (OD). Written by Brandon Wu.
 ##Current Metrics
 Node Generation Time:	
 74,120 Nodes/second	(5/29/15)
+
 12,625 Nodes/second	(6/1/15)	-- Smarter duplicate detection on large maps
 
 ##Completed
-* Naive A* algorithm that stores all nodes expanded. Implement iterative
-deepening A* (IDA*) for lower space complexity.
+* Naive A* algorithm that stores all nodes expanded.
 * Path backtrace from goal to root enabled for n agents
 * Multiple agent path finding with simple collision detection
 * Smarter checking of post-move collision
@@ -22,7 +22,6 @@ deepening A* (IDA*) for lower space complexity.
 * Added test generation suite
 
 ##Todo
-* Make struct of test vectors {grid name, agents, num exp, time}
 * Pre-compute true distance heuristic
 * Reduce redundant node expansions across all iterations of ID
 * More testing for ID implementation
@@ -31,4 +30,4 @@ deepening A* (IDA*) for lower space complexity.
 ##Bugs
 * Some maps cannot be solved although a solution supposedly exists
 * There is no way to kill a search that is taking too long
-* preprocessed BFS causes issues
+* Preprocessed BFS causes issues -- fixed heuristic overflow bug
