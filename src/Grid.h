@@ -5,6 +5,7 @@
 #define DIM 8	//Change to 8 from 4
 
 #include <string>
+#include <iostream>
 using namespace std;
 enum Card {	NORTH, SOUTH, EAST, WEST, NE, NW, SE, SW, WAIT};
 

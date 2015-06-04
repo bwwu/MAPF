@@ -18,6 +18,10 @@ Search::Search(int n, Point* init, Point* goal, Grid* g, Distance* d):
 	
 	current = NULL;
 
+	/*if (!dlt) {
+		dlt = new Distance(grid);
+		cout << "Created transposition table\n";
+	}*/
 	this->goal = new Point[n];
 	for (int i=0; i<n; i++)
 		this->goal[i] = goal[i];
@@ -33,13 +37,18 @@ Search::Search(int n, Point* init, Point* goal, Grid* g, Distance* d):
 
 Search::~Search() {
 	delete [] goal;
+	///delete dlt;
 	while(!open.empty()) {
 		Node_t t = open.top();
+		delete t.n->s;
 		delete t.n;
 		open.pop();
 	}
-	for (auto it = closed.begin(); it != closed.end(); it++)
+	for (auto it = closed.begin(); it != closed.end(); it++) {
+		delete (*it)->s;
 		delete (*it);
+
+	}
 }
 
 int Search::expand(void) {
@@ -55,12 +64,14 @@ int Search::expand(void) {
 	nd = nt.n;
 	open.pop();
 
+	int myf = nd->f;
+	int mylen = open.size();
 	/* Check if node chosen for exp is goal */
 	if (is_goal(nd))
 		return 1;
 	
-	if (nd->s->g() >= COST_THRESH) {
-		cout << "Exceeded cost threshold";
+	if (num_expansions() > EXPLIM) {
+		cout << "Exceeded expansion threshold";
 		return 2;
 	}
 	/* Get adj list for position of agent about to move */
@@ -73,15 +84,20 @@ int Search::expand(void) {
 		nd->p->s->get_pos(turn)) : WAIT;
 
 	for (int i=0; i<DIM+1;i++) {
-		if (valid_m[i]) { // && i != lastmove) {
+		if (valid_m[i]) { //&& i != lastmove) {
 			open.push((Node_t)generate(nd,i));
 		}
 	}
 
-	if (turn) delete nd;
+	if (turn) {
+		delete nd->s;
+		delete nd;
+	}
 	else closed.push_back(nd);
 
 	delete [] valid_m;
+	
+	mylen = open.size();
 	return 0;
 }
 
@@ -96,11 +112,10 @@ Node* Search::generate(Node* p, int dir) {
 	child->s = new State(n, *(p->s), m);
 	
 	// Replace MANHATTAN DIST
-	//child->f = p->s->g() + child->s->h(goal, grid);	// true dist
-	if (dlt)
-		child->f = p->s->g() + child->s->h(goal, dlt);	// true dist
-	else
-		child->f = p->s->g() + child->s->h(goal, grid);	// true dist
+	int g = p->s->g();
+	int h = child->s->h(goal, dlt);
+	//child->f = p->s->g() + child->s->h(goal, dlt);	// true dist
+	child->f = (g+h < h) ? h : g+h;	// Set to INT_MAX if overflow
 	
 		
 	child->dir = dir;

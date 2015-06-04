@@ -3,6 +3,7 @@
 #include "Distance.h"
 #include <iomanip>
 using namespace std;
+static int conflict_watch = 0;
 
 Mapf::Mapf(int n, Point* s_init, Point* s_goal, Grid* gd): n(n), grid(gd) {
 	num_exp = 0;
@@ -26,7 +27,7 @@ Mapf::~Mapf() {
 
 // Resolve conflicts among groups. If conflicts exist, merge groups
 int Mapf::resolve_conflicts(void) {
-
+	cout << "resolve_conflicts start\n";
 	// For each group find independent soln and look for conflicts
 	bool conflicts = false;	// Indicates whether conflicts found
 	vector<int>** id_paths = new vector<int>*[groups.size()];
@@ -45,9 +46,14 @@ int Mapf::resolve_conflicts(void) {
 			s_goal[j] = agentlist[agent_id].goal;
 		}
 		// Find solution on group
+		cout << "starting search groupsize " << len << endl;
 		Search s(len, s_init, s_goal, grid, dlt);
-		int result;
-		while (!(result = s.expand())) ;
+		int result = 0;
+		do {
+			result = s.expand();
+		} while (!result);
+		cout << "***********\nDone\n";
+
 		if (result == 2) {
 			delete [] s_init;
 			delete [] s_goal;
@@ -75,11 +81,11 @@ int Mapf::resolve_conflicts(void) {
 				cout << endl;
 			}
 		}
-
+		cout << "resolve_conflicts end\n";
 		delete [] s_init;
 		delete [] s_goal;
 	}
-
+	cout << "group conflict resolution start\n";
 	for (int i=0; i<num_groups-1; i++) {
 		int len1 = groups[i].size();
 		for (int j=i+1; j<num_groups && !conflicts; j++) {	
@@ -91,7 +97,7 @@ int Mapf::resolve_conflicts(void) {
 				conflicts = true;
 			
 				/* Merge the groups */
-				cout << "Conflict found between Group " << i << " and " << j;
+				cout << "Conflict found between Group "<<i<<" and "<<j<<endl;
 				collisions++;
 				vector<int>* g1 = &groups[i];
 				vector<int>* g2 = &groups[j];
@@ -108,6 +114,7 @@ int Mapf::resolve_conflicts(void) {
 		diff_t = difftime(end_t, start_t);
 	}
 
+	cout << "Group conflict resolution end\n";
 	for (int i=0; i<num_groups; i++)
 		delete [] id_paths[i];
 	delete [] id_paths;
@@ -118,6 +125,7 @@ bool
 Mapf::group_conflict(vector<int>* g1,vector<int>* g2,int len1,int len2) {
 	if (!(g1&&g2)) return false;
 
+	//cout << "group_conflicts start\n";
 	/* Use len of shortest path */
 	int plen = (g1[0].size() > g2[0].size()) ? g2[0].size() : g1[0].size();
 
@@ -130,6 +138,9 @@ Mapf::group_conflict(vector<int>* g1,vector<int>* g2,int len1,int len2) {
 		}
 	}
 	/* No path conflict between groups g1 and g2*/
+	
+	//conflict_watch++;
+	//cout << "group_conflicts end\n";
 	return false;
 }
 

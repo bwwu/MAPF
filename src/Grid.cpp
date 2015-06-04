@@ -69,6 +69,7 @@ Grid::Grid(string pathname) {
 		}
 	}
 	display();
+	cout << "dimX = " << dimX << " dimY = " << dimY << endl;
 }
 
 Grid::~Grid() {
@@ -85,3 +86,4 @@ void Grid::display(void) {
 		cout << endl;
 	}
 }
+

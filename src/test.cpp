@@ -78,11 +78,11 @@ void testState1() {
 }
 
 void testSearch3() {
-	int init[] = {9,0,10,3};
-	int goal[] = {5,3,3,1};
-	Grid g("../grids/g1.txt");
+	int init[] = {3,7,10,3};
+	int goal[] = {0,6,3,1};
+	Grid g("../grids/t6_g1.txt");
 	
-	Search s(2, (Point*) init, (Point*) goal, &g);
+	Search s(1, (Point*) init, (Point*) goal, &g);
 	while(!s.expand());
 }
 void testSearch2() {

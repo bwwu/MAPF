@@ -5,7 +5,6 @@
 /* Implements A* exploration on a grid 
 		Maintains open list of search nodes and a goal state*/
 
-
 #include "Grid.h"
 #include "State.h"
 #include "Distance.h"
@@ -13,6 +12,8 @@
 #include <vector>
 #include <queue>
 #include <string>
+
+#define EXPLIM 20000000	// Quit if not solved after 15,000,000 nodes
 using namespace std;
 
 struct Node {
@@ -57,9 +58,8 @@ private:
 	Distance* dlt;	// Distance lookup table
 
 	priority_queue<Node_t> open;	// Open list
-	vector<Node*> closed;
+	vector<Node*> closed;	// Closed list
 	
-
 };
 
 inline
