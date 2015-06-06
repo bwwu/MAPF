@@ -176,10 +176,12 @@ bool mapftest(string testfile) {
 	
 	while(getline(file,line)) {
 		if (line[0] == '#') continue;	
+		
 
 		string grid_path = line;
 		string agent_path;
 		getline(file, agent_path);
+		cerr << "Beginning instance " << total << endl;
 		cout << "grid path= "+grid_path+"\t agent path= "+agent_path+"\n";
 
 		Mapf_t tmp = run_mapf(grid_path, agent_path);

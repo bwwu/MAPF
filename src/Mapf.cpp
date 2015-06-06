@@ -33,7 +33,9 @@ Mapf::~Mapf() {
 
 // Resolve conflicts among groups. If conflicts exist, merge groups
 int Mapf::resolve_conflicts(void) {
-	cout << "resolve_conflicts start\n";
+	//cout << "resolve_conflicts start\n";
+	cout << "..........................\n";
+
 	// For each group find independent soln and look for conflicts
 	bool conflicts = false;	// Indicates whether conflicts found
 	vector<int>** id_paths = new vector<int>*[groups.size()];
@@ -59,7 +61,7 @@ int Mapf::resolve_conflicts(void) {
 		do {
 			result = s.expand();
 		} while (!result);
-		cout << "***********\nDone\n";
+		//cout << "***********\nDone\n";
 
 		if (result == 2) {
 			delete [] s_init;
@@ -89,12 +91,14 @@ int Mapf::resolve_conflicts(void) {
 				cout << endl;
 			}
 		}
-		cout << "resolve_conflicts end\n";
+		//cout << "resolve_conflicts end\n";
+
 		delete [] s_init;
 		delete [] s_goal;
 	}
 
-	cout << "group conflict resolution start\n";
+	//cout << "group conflict resolution start\n";
+
 	for (int i=0; i<num_groups-1; i++) {
 		int len1 = groups[i].size();
 		for (int j=i+1; j<num_groups && !conflicts; j++) {	
@@ -108,8 +112,12 @@ int Mapf::resolve_conflicts(void) {
 				collisions++;
 			
 				cout<<"Conflict found between Group "<<i<<" and "<<j<<endl;
-				if (numc == 1 && cat[i].size() < 2) {
+				if (numc == 1 && cat[i].size() < 2 && 
+					cat[i].find(lastConflict.timestep) == cat[i].end()) {
 					cout << "Adding conflict avoidance entry\n";
+					cout << "\tGroup: " << i << "\tAgent: " <<
+						lastConflict.turn << "\tTime: " << lastConflict.timestep
+						<< endl;
 					cat[i].insert({{lastConflict.timestep, lastConflict}});
 				} 
 				else {
@@ -133,7 +141,8 @@ int Mapf::resolve_conflicts(void) {
 		diff_t = difftime(end_t, start_t);
 	}
 
-	cout << "Group conflict resolution end\n";
+	//cout << "Group conflict resolution end\n";
+
 	for (int i=0; i<num_groups; i++)
 		delete [] id_paths[i];
 

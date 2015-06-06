@@ -93,8 +93,8 @@ int Search::expand(void) {
 				if ((cat->find(tmp_m.timestep)) != cat->end()) {
 						auto it = cat->find(tmp_m.timestep);
 						if (it->second == tmp_m) {
-							cout << "Avoiding Point " << 
-								grid->hash_pt(&(tmp_m.pos)) << endl;
+							//cout << "Avoiding Point " << 
+								//grid->hash_pt(&(tmp_m.pos)) << endl;
 							continue;
 						}
 				}
