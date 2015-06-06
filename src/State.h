@@ -9,6 +9,7 @@
 
 #include "Grid.h"
 #include "Distance.h"
+#include "Globals.h"
 #include <iostream>
 using namespace std;
 
@@ -16,6 +17,17 @@ struct Move {
 	Card	dir;
 	int	p;
 	Move(Card dir, int p):dir(dir),p(p) { };
+};
+
+struct Apos_t {	// Agent position vector
+	Point pos;	// Position
+	int timestep;	// Time
+	int turn;	// Agent to move
+	Apos_t(Point p, int t, int turn): pos(p), timestep(t), turn(turn) {};
+	Apos_t(): pos(0,0), timestep(0), turn(0) {}
+	bool operator==(const Apos_t& lhs) {
+		return (pointEquals(&(this->pos), lhs.pos.x, lhs.pos.y) && (turn==lhs.turn));
+	};
 };
 
 class State {
@@ -26,6 +38,11 @@ public:
 	int h(Point* goal, Distance* dist);
 
 	int g(void);		// Cost from root
+	int timestep(void);	// Current timestep
+
+	/* Return hash val of would-be move */
+	Apos_t movecheck(const Move& move);
+
 	bool*	valid_moves(int, Grid*);	// list of valid moves for agent n
 	Point* get_pos(int id);	// Get pre-move pos of agent id
 
@@ -34,11 +51,13 @@ public:
 	State(int n, const State& parent, const Move& move);
 	~State();
 private:
-	int 	n;
-	int	cost;
 	const	State* parent;	// Previous Standard node
 	Point*	pre_move;
 	Point*	post_move;
+	short	n;
+	short	cost;
+
+	//Apos_t lastConflict;
 
 	void increment_step();
 	Point* collision(Point* p, int agent, bool post);
@@ -71,6 +90,11 @@ inline
 void State::increment_step(void) {
 	for (int i=0; i<n; i++)
 		pre_move[i] = post_move[i];
+}
+
+inline
+int State::timestep(void) {
+	return cost/n;
 }
 
 

@@ -1,7 +1,11 @@
 /* Written by Brandon Wu */
 #include "Mapf.h"
 #include "Distance.h"
+
+
 #include <iomanip>
+#include <unordered_map>
+	
 using namespace std;
 static int conflict_watch = 0;
 
@@ -10,6 +14,7 @@ Mapf::Mapf(int n, Point* s_init, Point* s_goal, Grid* gd): n(n), grid(gd) {
 	collisions = 0;
 	time(&start_t);
 	dlt = new Distance(grid);
+	cat = new unordered_map<int, Apos_t>[n];
 
 	/* Begin with n singleton groups */
 	for (int i=0; i<n; i++) {
@@ -23,6 +28,7 @@ Mapf::Mapf(int n, Point* s_init, Point* s_goal, Grid* gd): n(n), grid(gd) {
 
 Mapf::~Mapf() {
 	delete dlt;
+	delete [] cat;
 }
 
 // Resolve conflicts among groups. If conflicts exist, merge groups
@@ -48,7 +54,7 @@ int Mapf::resolve_conflicts(void) {
 		}
 		// Find solution on group
 		cout << "starting search groupsize " << len << endl;
-		Search s(len, s_init, s_goal, grid, dlt);
+		Search s(len, s_init, s_goal, grid, dlt, &cat[i]);
 		int result = 0;
 		do {
 			result = s.expand();
@@ -95,19 +101,29 @@ int Mapf::resolve_conflicts(void) {
 			// For ea pair of groups
 			int len2 = groups[j].size();
 			
+			int numc = 0;
 			/* If there is a path conflict between groups i and j */
-			if (group_conflict(id_paths[i], id_paths[j], len1, len2)) {
+			if (numc = group_conflict(id_paths[i], id_paths[j], len1, len2)) {
 				conflicts = true;
-			
-				/* Merge the groups */
-				cout << "Conflict found between Group "<<i<<" and "<<j<<endl;
 				collisions++;
-				vector<int>* g1 = &groups[i];
-				vector<int>* g2 = &groups[j];
-				g1->insert(g1->end(), g2->begin(), g2->end());
-				
-				auto it = groups.begin() + j;
-				groups.erase(it);
+			
+				cout<<"Conflict found between Group "<<i<<" and "<<j<<endl;
+				if (numc == 1 && cat[i].size() < 2) {
+					cout << "Adding conflict avoidance entry\n";
+					cat[i].insert({{lastConflict.timestep, lastConflict}});
+				} 
+				else {
+				/* Merge the groups */
+					cout << "Merging\n";
+					vector<int>* g1 = &groups[i];
+					vector<int>* g2 = &groups[j];
+					cat[i].clear();
+					cat[j].clear();
+					g1->insert(g1->end(), g2->begin(), g2->end());
+					
+					auto it = groups.begin() + j;
+					groups.erase(it);
+				}
 
 			}
 		}
@@ -125,38 +141,45 @@ int Mapf::resolve_conflicts(void) {
 	return (conflicts) ? 1 : 0;
 }
 
-bool
+int
 Mapf::group_conflict(vector<int>* g1,vector<int>* g2,int len1,int len2) {
 	if (!(g1&&g2)) return false;
 
-	//cout << "group_conflicts start\n";
 	/* Use len of shortest path */
 	int plen = (g1[0].size() > g2[0].size()) ? g2[0].size() : g1[0].size();
+	int numc = 0;
 
 	/* Take cross product
 	 * Consider all pairs of agents (u, v) where u in g1 and v in g2 */
 	for (int i=0; i<len1; i++) {
 		for (int j=0; j<len2; j++) {
-			if (path_conflict(&g1[i], &g2[j], plen))
-				return true;	
+			int pc = path_conflict(&g1[i], &g2[j], plen);
+
+			if (pc) lastConflict.turn = i;
+
+			numc += pc;
+			//if (path_conflict(&g1[i], &g2[j], plen))
+				//return true;	
 		}
 	}
 	/* No path conflict between groups g1 and g2*/
-	
-	//conflict_watch++;
-	//cout << "group_conflicts end\n";
-	return false;
+	//return false;
+	if (!numc) return 0;	// No conflicts
+	return (numc > 1) ? 2 : 1;	// 2 = More than 1 conflict, 1 = just one
 }
 
-bool
+int
 Mapf::path_conflict(vector<int>* p1, vector<int>* p2, int len) {
-	/* Return true if there is conflict on path of 2 agents */
+	int numc = 0;
+	/* Return # of conflicts on path of 2 agents */
 	for (int i=0; i<len; i++)
 		if (p1->at(i) == p2->at(i)) {
 			cout << "Conflict at t = " << i << ". Value is " << p1->at(i) 
 				<< endl;
-			return true;
+			numc++;
+			lastConflict.pos = grid->unhash(p1->at(i));
+			lastConflict.timestep = i;
 		}
 
-	return false;
+	return numc;
 }

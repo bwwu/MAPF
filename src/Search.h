@@ -12,7 +12,7 @@
 #include <vector>
 #include <queue>
 #include <string>
-
+#include <unordered_map>
 #define EXPLIM 20000000	// Quit if not solved after 15,000,000 nodes
 using namespace std;
 
@@ -38,7 +38,8 @@ public:
 	int	num_expansions(void);	// Return num of node expansion
 	vector<int>* path(bool print);	// Retrieve the path found from goal
 	
-	Search(int n, Point* init, Point* goal, Grid* g, Distance* d=NULL);
+	Search(int n, Point* init, Point* goal, Grid* g, Distance* d=NULL,
+		unordered_map<int,Apos_t>* cat = NULL);
 	~Search();
 
 private:
@@ -56,6 +57,7 @@ private:
 
 	Node*	current;	// Set to goal node if found (TODO: make current)
 	Distance* dlt;	// Distance lookup table
+	unordered_map<int,Apos_t>* cat;	// Collision avoidance table
 
 	priority_queue<Node_t> open;	// Open list
 	vector<Node*> closed;	// Closed list

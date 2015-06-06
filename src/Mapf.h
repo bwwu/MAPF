@@ -4,6 +4,10 @@
 #include "Distance.h"
 #include "Search.h"
 #include "Grid.h"
+#include "State.h"
+
+#include <unordered_map>
+using namespace std;
 
 struct agent_t {	// Agent type
 	int id;
@@ -33,11 +37,14 @@ private:
 
 	Distance* dlt;	//Distance lookup table
 	Grid* grid;
+	Apos_t lastConflict;
+	
+	unordered_map<int,Apos_t>* cat;	// List of avoidance tables
 	vector<agent_t> agentlist;	// List of agents
 	vector<vector<int>> groups;	// Independent groups
 
-	bool group_conflict(vector<int>* g1,vector<int>* g2,int len1,int len2);
-	bool path_conflict(vector<int>* p1, vector<int>* p2, int len);
+	int group_conflict(vector<int>* g1,vector<int>* g2,int len1,int len2);
+	int path_conflict(vector<int>* p1, vector<int>* p2, int len);
 };
 
 inline

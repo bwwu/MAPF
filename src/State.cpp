@@ -64,6 +64,7 @@ Point* State::collision(Point* p, int agent, bool post) {
 State::State(int n, const State& parent, const Move& move): n(n) { 
 	int pid = move.p;
 	cost = parent.cost+1;
+	
 
 	if (pid)	// If agent id != 0
 		this->parent = (&parent)->parent;
@@ -127,3 +128,13 @@ int State::h(Point* goal, Distance* d) {
 	return dist;
 }
 
+
+Apos_t State::movecheck(const Move& move) {
+	// Return the resulting position mapping for an agent's would be move
+	int turn = move.p;
+	int dir = move.dir;
+	int time;
+	Point p = move_dir(&post_move[turn], dir);
+	time = (turn == n-1) ? timestep() + 1 : timestep();
+	return Apos_t(p, time, turn);
+}

@@ -3,18 +3,20 @@
 #include "Search.h"
 #include "Globals.h"
 #include <limits>
-#include <list>
+//#include <list>
 #include <vector>
 #include <iostream>
 #include <iomanip>
 #include <ctime>
 #include <algorithm>
+#include <unordered_map>
 using namespace std;
 
 bool mincmp(Node*, Node*);
 
-Search::Search(int n, Point* init, Point* goal, Grid* g, Distance* d):
-	n(n), init(init), grid(g), dlt(d), exp_cnt(1) {
+Search::Search(int n, Point* init, Point* goal, Grid* g, Distance* d,
+	unordered_map<int,Apos_t>* cat):
+	n(n), init(init), grid(g), dlt(d), cat(cat), exp_cnt(1) {
 	
 	current = NULL;
 
@@ -85,6 +87,18 @@ int Search::expand(void) {
 
 	for (int i=0; i<DIM+1;i++) {
 		if (valid_m[i]) { //&& i != lastmove) {
+
+			if (cat != NULL) {
+				Apos_t tmp_m = nd->s->movecheck(Move((Card)i, turn));
+				if ((cat->find(tmp_m.timestep)) != cat->end()) {
+						auto it = cat->find(tmp_m.timestep);
+						if (it->second == tmp_m) {
+							cout << "Avoiding Point " << 
+								grid->hash_pt(&(tmp_m.pos)) << endl;
+							continue;
+						}
+				}
+			}
 			open.push((Node_t)generate(nd,i));
 		}
 	}

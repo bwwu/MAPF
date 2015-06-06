@@ -6,6 +6,7 @@
 
 #include <string>
 #include <iostream>
+//#include "Globals.h"
 using namespace std;
 enum Card {	NORTH, SOUTH, EAST, WEST, NE, NW, SE, SW, WAIT};
 
@@ -14,13 +15,16 @@ struct Point {
 	int y;
 	Point(int posx, int posy): x(posx), y(posy) {}
 	Point(): x(0),y(0) {};
+/*	operator=(const Point& lhs) {
+		return pointEquals(this, lhs.x, lhs.y);};*/
 };
 
 class Grid {
 public:
 	bool*	adj(const Point& pos) const;
 	bool	clear(const Point& pos) const;
-	int	hash_pt(Point* p);	
+	int	hash_pt(Point* p);
+	Point	unhash(int hash);	
 	void	display(void);
 	Point	dim(void);	// Dimension of the grid
 
@@ -47,5 +51,9 @@ bool Grid::clear(const Point& pos) const {
 	return (pos.x>=0 && pos.x<dimX && pos.y>=0 && 
 		pos.y<dimY && grid[pos.x][pos.y]);
 
+}
+inline
+Point Grid::unhash(int hash) {
+	return Point((hash/dimY),(hash%dimY));
 }
 #endif //GRID_H
