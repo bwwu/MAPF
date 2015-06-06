@@ -18,8 +18,8 @@ using namespace std;
 
 struct Node {
 	int f;		// f(n) = g(n) + h(n)
-	int turn;	// id of agent to move
-	int dir;	// direction from parent
+	short turn;	// id of agent to move
+	short dir;	// direction from parent
 	State* s;	
 	Node *p;
 	bool operator<(const Node& lhs) const { return lhs.f < f; };
