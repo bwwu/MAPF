@@ -24,10 +24,13 @@ public:
 	int	num_expansions(void);
 	time_t	get_time(void);
 	int	get_collisions(void);
+	int	cost(void);	// Cost of solution
 private:
 	int n;		// Num of agents
 	int num_exp;	// Total node exp
 	int collisions;	// Num of collisions
+	int max_cost;
+
 	time_t	start_t;
 	time_t	diff_t;	// Total time elapsed
 
@@ -52,4 +55,6 @@ time_t Mapf::get_time(void) {
 
 inline
 int Mapf::get_collisions(void) { return collisions; }
+inline
+int Mapf::cost(void) {	return max_cost;	}
 #endif	// MAPF_H

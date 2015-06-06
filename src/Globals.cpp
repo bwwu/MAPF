@@ -214,6 +214,14 @@ bool mapftest(string testfile) {
 			max_exp = (it->num_exp > max_exp) ? it->num_exp : max_exp;
 			avg_exp += it->num_exp;	
 			avg_t += it->time;
+
+			// Use cerr to print csv formatted data
+			cerr << fixed;
+			cerr << setprecision(3);
+			cerr << i << "," <<it->dim.x << "x" << it->dim.y << ",";
+			cerr << it->num_agents << "," <<(double) it->time << ",";
+			cerr << it->collisions << "," << it->num_exp << ",";
+			cerr << it->cost << endl;
 		}
 	}
 	
@@ -264,6 +272,7 @@ Mapf_t run_mapf(string path_g, string path_a) {
 	info.num_exp = m.num_expansions();
 	info.time = m.get_time();
 	info.collisions = m.get_collisions();
+	info.cost = m.cost();
 
 	delete [] states[0];
 	delete [] states[1];
