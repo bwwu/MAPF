@@ -148,6 +148,7 @@ bool Search::is_goal(Node* nd) {
 	}
 	current = nd;	// Set goal node
 	cout << "Found goal with cost " << nd->s->g()/n << "!\n";
+	cost_p = nd->s->g()/n;
 	cout << "\tNum Expansions = " << num_expansions() << " nodes\n";
 	
 	return true;

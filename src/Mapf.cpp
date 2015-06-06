@@ -12,6 +12,7 @@ static int conflict_watch = 0;
 Mapf::Mapf(int n, Point* s_init, Point* s_goal, Grid* gd): n(n), grid(gd) {
 	num_exp = 0;
 	collisions = 0;
+	max_cost = 0;
 	time(&start_t);
 	dlt = new Distance(grid);
 	cat = new unordered_map<int, Apos_t>[n];
@@ -61,6 +62,8 @@ int Mapf::resolve_conflicts(void) {
 		do {
 			result = s.expand();
 		} while (!result);
+	
+		max_cost = (s.cost() > max_cost) ? s.cost() : max_cost;
 		//cout << "***********\nDone\n";
 
 		if (result == 2) {

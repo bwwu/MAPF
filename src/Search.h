@@ -36,11 +36,14 @@ class Search {
 public:
 	int	expand(void);	// Return 1 if goal is expanded
 	int	num_expansions(void);	// Return num of node expansion
+	int cost(void);	// Solution cost
+
 	vector<int>* path(bool print);	// Retrieve the path found from goal
 	
 	Search(int n, Point* init, Point* goal, Grid* g, Distance* d=NULL,
 		unordered_map<int,Apos_t>* cat = NULL);
 	~Search();
+
 
 private:
 	Node*	generate(Node* p, int dir);	// Generate child of node
@@ -51,6 +54,7 @@ private:
 
 	int 	n;
 	int	exp_cnt;	// Number of node expansions
+	int	cost_p;	// Cost of path
 	Grid* 	grid;
 	Point* 	goal;	// Set of goal states
 	Point*	init;	// Set of initial states
@@ -67,4 +71,6 @@ private:
 inline
 int Search::num_expansions(void) { return exp_cnt; }
 
+inline
+int Search::cost(void) {	return cost_p; }
 #endif //SEARCH_H
